@@ -1,0 +1,114 @@
+{
+"CNC Programming": {
+"Week 1": {
+"Lesson 1": [
+{
+"qE": "Which of the following is NOT a type of CNC servo mechanism?",
+"qK": "CNC 서보 기구의 종류가 아닌 것은?",
+"o": [
+"개방회로 (Open loop)",
+"반폐쇄회로 (Semi-closed loop)",
+"폐쇄회로 (Closed loop)",
+"단일회로 (Single loop)"
+],
+"a": 3,
+"eE": "According to the lecture, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
+"eK": "강의에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 시스템입니다. '단일회로'는 유효한 분류가 아닙니다."
+},
+{
+"qE": "In an NC servo mechanism, which system detects speed or position from the servo motor and the machine's table, and feeds it back to the control circuit?",
+"qK": "NC 서보 기구에서 서보 모터와 기계의 테이블에서 속도나 위치를 검출하여 제어회로에 피드백(feedback) 시키는 시스템은 어느 것인가?",
+"o": [
+"개회로 시스템 (open loop system)",
+"반폐쇄회로 시스템 (semi closed loop system)",
+"폐쇄회로 시스템 (closed loop system)",
+"하이브리드 서보 시스템 (hybrid servo system)"
+],
+"a": 2,
+"eE": "The closed loop system detects position directly from the machine's table (using a linear scale) and speed from the servo motor, feeding this precise data back to the control circuit. In contrast, the semi-closed loop detects both directly from the motor.",
+"eK": "폐쇄회로 시스템은 기계의 테이블(직선자 사용)에서 위치를 직접 검출하고 서보 모터에서 속도를 검출하여 이 정밀한 데이터를 제어 회로로 피드백합니다. 반면, 반폐쇄회로는 두 가지 모두 모터에서 직접 검출합니다."
+},
+{
+"qE": "In an NC servo mechanism, which system is a compromise/combination of the semi-closed loop system and the closed loop system?",
+"qK": "NC 서보 기구에서 반폐쇄회로방식과 폐쇄회로방식을 절충한 시스템은 어느 것인가?",
+"o": [
+"개회로 시스템 (open loop system)",
+"반폐쇄회로 시스템 (semi closed loop system)",
+"폐쇄회로 시스템 (closed loop system)",
+"하이브리드 서보 시스템 (hybrid servo system)"
+],
+"a": 3,
+"eE": "The hybrid servo system is defined as a compromise or blend of the semi-closed loop and closed loop systems. It is primarily used for heavy machine tools where increasing the machine's physical stiffness is difficult.",
+"eK": "하이브리드 서보 방식은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 정의됩니다. 주로 기계의 물리적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
+},
+{
+"qE": "Which of the following is NOT a characteristic of NC machine tools?",
+"qK": "NC 공작기계의 특징 중 거리가 가장 먼 것은?",
+"o": [
+"다품종 소량 생산가공에 적합하다. (Suitable for high-mix, low-volume production.)",
+"가공조건을 일정하게 유지할 수 있다. (Machining conditions can be kept constant.)",
+"공구가 표준화되어 공구수를 증가시킬 수 있다. (Tools are standardized, allowing for an increase in the number of tools.)",
+"복잡한 형상의 부품가공 능률화가 가능하다. (Enables efficient machining of parts with complex shapes.)"
+],
+"a": 2,
+"eE": "NC machine tools are excellent for high-mix/low-volume production, maintaining constant conditions, and machining complex shapes. However, while tool standardization is a feature, its purpose is to streamline processes and reduce the need for specialized jigs, not to arbitrarily increase the number of tools.",
+"eK": "NC 공작기계는 다품종 소량 생산, 일정한 가공 조건 유지 및 복잡한 형상 가공에 매우 적합합니다. 공구 표준화가 특징이긴 하지만, 그 목적은 특수 지그의 필요성을 줄이고 공정을 간소화하는 것이지, 임의로 공구 수를 늘리는 것이 아닙니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "What indicates the end of a block during NC machining?",
+"qK": "NC 가공 중 block이 끝나는 것을 나타내는 것은?",
+"o": [
+"EOB",
+"PEND",
+"AEND",
+"JOG"
+],
+"a": 0,
+"eE": "In NC programming, an instruction block is completed with an EOB (End of Block) character, typically represented by a semicolon (;) on the screen.",
+"eK": "NC 프로그래밍에서 지령절(block)은 EOB(End of Block) 기호로 완료되며, 화면에서는 일반적으로 세미콜론(;)으로 표시됩니다."
+},
+{
+"qE": "Among NC (numerical control) terms, which address corresponds to the auxiliary (miscellaneous) function?",
+"qK": "NC(수치제어)용어 중에서 보조기능에 해당되는 어드레스는?",
+"o": [
+"F",
+"M",
+"S",
+"T"
+],
+"a": 1,
+"eE": "The 'M' address is used for auxiliary (miscellaneous) functions. 'F' is for feed rate, 'S' is for spindle speed, and 'T' is for tool function.",
+"eK": "'M' 어드레스는 보조(Miscellaneous) 기능을 위해 사용됩니다. 'F'는 이송 기능(Feed rate), 'S'는 주축 기능(Spindle speed), 'T'는 공구 기능(Tool function)을 나타냅니다."
+},
+{
+"qE": "Which of the following is an incorrect statement about down milling?",
+"qK": "하향절삭을 설명한 것 중 옳지 않은 것은? (단, 밀링에서)",
+"o": [
+"가공할 면을 잘 볼 수 있다. (The surface to be machined can be seen clearly.)",
+"기계에 무리를 주고 동력소비가 많다. (It puts strain on the machine and consumes a lot of power.)",
+"백 래시 제거장치가 필요하다. (A backlash eliminator is required.)",
+"절삭날의 마멸이 많다. (There is significant wear on the cutting edge.)"
+],
+"a": 1,
+"eE": "Down milling actually causes less wear on the cutter and consumes LESS power ('동력 소비가 작다'). The option stating it puts strain on the machine and consumes a lot of power is incorrect.",
+"eK": "하향절삭은 실제로 커터의 마모가 적고 동력 소비가 작습니다. 기계에 무리를 주고 동력 소비가 많다고 명시한 옵션이 틀린 설명입니다."
+},
+{
+"qE": "With a cutting speed of 100m/min, a milling cutter with 15 teeth, a diameter of 80mm, and a feed of 0.1mm per tooth, what is the table feed per minute?",
+"qK": "절삭속도 100m/min, 밀링커터의 날수 15, 지름을 80mm, 날하나당 이송 0.1mm, 테이블 1분당 이송은?",
+"o": [
+"398",
+"597",
+"5500",
+"3900"
+],
+"a": 1,
+"eE": "First, find RPM (n): n = (1000 * v) / (π * D) = (1000 * 100) / (3.14159 * 80) ≈ 397.89 rpm. Next, calculate feed per minute (f): f = f_z * Z * n = 0.1 * 15 * 397.89 ≈ 596.8 mm/min, which rounds to 597.",
+"eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = f_z * Z * n = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다."
+}
+]
+}
+}
+}
