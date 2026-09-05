@@ -12,8 +12,8 @@
 "단일회로 (Single loop)"
 ],
 "a": 3,
-"eE": "According to the lecture, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
-"eK": "강의에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 시스템입니다. '단일회로'는 유효한 분류가 아닙니다."
+"eE": "According to the lecture slides and transcript, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
+"eK": "강의 자료와 스크립트에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 방식입니다. '단일회로'는 유효한 분류가 아닙니다."
 },
 {
 "qE": "In an NC servo mechanism, which system detects speed or position from the servo motor and the machine's table, and feeds it back to the control circuit?",
@@ -25,8 +25,8 @@
 "하이브리드 서보 시스템 (hybrid servo system)"
 ],
 "a": 2,
-"eE": "The closed loop system detects position directly from the machine's table (using a linear scale) and speed from the servo motor, feeding this precise data back to the control circuit. In contrast, the semi-closed loop detects both directly from the motor.",
-"eK": "폐쇄회로 시스템은 기계의 테이블(직선자 사용)에서 위치를 직접 검출하고 서보 모터에서 속도를 검출하여 이 정밀한 데이터를 제어 회로로 피드백합니다. 반면, 반폐쇄회로는 두 가지 모두 모터에서 직접 검출합니다."
+"eE": "The closed loop system specifically uses a linear scale attached to the machine's table to detect precise position and feeds this back, along with speed from the motor, to the control circuit.",
+"eK": "폐쇄회로 시스템은 기계의 테이블에 직선자를 부착하여 정밀한 위치를 검출하고, 모터의 속도와 함께 이 정보를 제어 회로로 피드백합니다."
 },
 {
 "qE": "In an NC servo mechanism, which system is a compromise/combination of the semi-closed loop system and the closed loop system?",
@@ -38,8 +38,8 @@
 "하이브리드 서보 시스템 (hybrid servo system)"
 ],
 "a": 3,
-"eE": "The hybrid servo system is defined as a compromise or blend of the semi-closed loop and closed loop systems. It is primarily used for heavy machine tools where increasing the machine's physical stiffness is difficult.",
-"eK": "하이브리드 서보 방식은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 정의됩니다. 주로 기계의 물리적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
+"eE": "The hybrid servo system is explicitly defined as a compromise between the semi-closed and closed loop systems, often used for heavy machine tools where increasing structural stiffness is difficult.",
+"eK": "하이브리드 서보 시스템은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 명시되어 있으며, 주로 구조적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
 },
 {
 "qE": "Which of the following is NOT a characteristic of NC machine tools?",
@@ -51,8 +51,8 @@
 "복잡한 형상의 부품가공 능률화가 가능하다. (Enables efficient machining of parts with complex shapes.)"
 ],
 "a": 2,
-"eE": "NC machine tools are excellent for high-mix/low-volume production, maintaining constant conditions, and machining complex shapes. However, while tool standardization is a feature, its purpose is to streamline processes and reduce the need for specialized jigs, not to arbitrarily increase the number of tools.",
-"eK": "NC 공작기계는 다품종 소량 생산, 일정한 가공 조건 유지 및 복잡한 형상 가공에 매우 적합합니다. 공구 표준화가 특징이긴 하지만, 그 목적은 특수 지그의 필요성을 줄이고 공정을 간소화하는 것이지, 임의로 공구 수를 늘리는 것이 아닙니다."
+"eE": "NC machines use standardized tools to streamline the process and reduce the reliance on custom jigs. The goal is efficiency, not to arbitrarily increase the number of tools.",
+"eK": "NC 기계는 공정을 간소화하고 특수 지그에 대한 의존도를 줄이기 위해 표준화된 공구를 사용합니다. 목표는 효율성이지, 공구 수를 임의로 늘리는 것이 아닙니다."
 }
 ],
 "Lesson 2": [
@@ -92,7 +92,7 @@
 "절삭날의 마멸이 많다. (There is significant wear on the cutting edge.)"
 ],
 "a": 1,
-"eE": "Down milling actually causes less wear on the cutter and consumes LESS power ('동력 소비가 작다'). The option stating it puts strain on the machine and consumes a lot of power is incorrect.",
+"eE": "Down milling actually causes less wear on the cutter and consumes LESS power. The option stating it puts strain on the machine and consumes a lot of power is the incorrect statement.",
 "eK": "하향절삭은 실제로 커터의 마모가 적고 동력 소비가 작습니다. 기계에 무리를 주고 동력 소비가 많다고 명시한 옵션이 틀린 설명입니다."
 },
 {
@@ -105,8 +105,779 @@
 "3900"
 ],
 "a": 1,
-"eE": "First, find RPM (n): n = (1000 * v) / (π * D) = (1000 * 100) / (3.14159 * 80) ≈ 397.89 rpm. Next, calculate feed per minute (f): f = f_z * Z * n = 0.1 * 15 * 397.89 ≈ 596.8 mm/min, which rounds to 597.",
-"eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = f_z * Z * n = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다."
+"eE": "First, find RPM (n): n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. Next, calculate feed per minute (f): f = 0.1 * 15 * 397.89 ≈ 596.8 mm/min, which rounds to 597.",
+"eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다."
+}
+]
+},
+"Week 2": {
+"Lesson 1": [
+{
+"qE": "Which of the following is NOT a method for commanding the tool's movement position in a CNC machine tool?",
+"qK": "CNC 공작기계에서 공구의 이동위치를 지령하는 방식이 아닌 것은?",
+"o": [
+"중심지령 방식 (Center command method)",
+"증분지령 방식 (Incremental command method)",
+"절대지령 방식 (Absolute command method)"
+],
+"a": 0,
+"eE": "The two primary methods for commanding a tool's movement position are the Absolute command method (G90) and the Incremental command method (G91). There is no standard 'Center command method'.",
+"eK": "공구의 이동 위치를 지령하는 두 가지 주요 방식은 절대지령(G90)과 증분지령(G91)입니다. '중심지령 방식'이라는 표준 방법은 없습니다."
+},
+{
+"qE": "Which of the following is NOT a cutting control method in CNC?",
+"qK": "CNC의 절삭 제어 방식이 아닌 것은?",
+"o": [
+"위치결정 제어 (Positioning control)",
+"직선절삭 제어 (Straight cutting control)",
+"윤곽절삭 제어 (Contouring control)",
+"디지털 제어 (Digital control)"
+],
+"a": 3,
+"eE": "The three basic tool movement/cutting control methods are Positioning, Straight Cutting, and Contouring. While CNC systems operate digitally, 'Digital control' is a broad technological term, not a specific tool path control method.",
+"eK": "CNC의 3가지 기본 제어 방식은 위치결정, 직선절삭, 윤곽절삭입니다. '디지털 제어'는 광범위한 기술 용어이지 특정한 공구 경로 제어 방식이 아닙니다."
+},
+{
+"qE": "What is the linear interpolation code in a CNC program?",
+"qK": "CNC프로그램상에서 직선보간 코드는?",
+"o": [
+"G01",
+"G02",
+"G03",
+"G04"
+],
+"a": 0,
+"eE": "G01 is the preparatory function code for linear interpolation. It instructs the machine tool to cut in a straight line at a specified feed rate (F).",
+"eK": "G01은 직선보간을 위한 준비 기능 코드입니다. 지정된 이송 속도(F)로 직선으로 절삭하도록 공작 기계에 지시합니다."
+},
+{
+"qE": "Which servo mechanism method detects position through the rotation angle of the servo motor shaft or ball screw, and is the most widely used in general CNC machine tools?",
+"qK": "서보기구에서 위치의 검출을 서보모터 축이나 볼 나사의 회전 각도로 검출하는 방식으로 일반 CNC공작기계에서 가장 많이 사용하는 것은?",
+"o": [
+"반폐쇄회로 방식 (Semi-closed loop system)",
+"위치결정 방식 (Positioning system)",
+"개방회로 방식 (Open loop system)",
+"폐쇄회로 방식 (Closed loop system)"
+],
+"a": 0,
+"eE": "The Semi-closed loop system detects speed and position directly from the rotation of the motor or ball screw. Because of its reliability and cost-effectiveness, it is the most widely used system in modern CNC machines.",
+"eK": "반폐쇄회로 방식은 모터나 볼 나사의 회전에서 직접 속도와 위치를 검출합니다. 신뢰성과 비용 효율성 때문에 현대 CNC 기계에서 가장 널리 사용되는 시스템입니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "Which control method does not detect position and speed from the servo motor and provide feedback?",
+"qK": "서보모터에서 위치 및 속도를 검출하여 피드백(feed back)하지 않는 제어방식은?",
+"o": [
+"개방회로 방식 (Open loop system)",
+"폐쇄회로 방식 (Closed loop system)",
+"반폐쇄회로 방식 (Semi-closed loop system)",
+"복합회로 서보방식 (Hybrid servo system)"
+],
+"a": 0,
+"eE": "An open loop system operates entirely without a feedback mechanism. It simply sends command pulses to the motor without verifying if the exact position or speed was achieved.",
+"eK": "개방회로 방식은 피드백 메커니즘 없이 완전히 작동합니다. 정확한 위치나 속도에 도달했는지 확인하지 않고 단순히 모터에 명령 펄스만 보냅니다."
+},
+{
+"qE": "Which address corresponds to the auxiliary (miscellaneous) function in a CNC program?",
+"qK": "CNC프로그램에서 보조기능에 해당하는 어드레스는?",
+"o": [
+"F",
+"M",
+"S",
+"T"
+],
+"a": 1,
+"eE": "In CNC programming, the 'M' address stands for miscellaneous or auxiliary functions (like coolant on/off or tool changes). 'F' is feed rate, 'S' is spindle speed, and 'T' is for tool selection.",
+"eK": "CNC 프로그래밍에서 'M' 어드레스는 보조(Miscellaneous) 기능을 의미합니다. 'F'는 이송 속도, 'S'는 주축 속도, 'T'는 공구 선택을 나타냅니다."
+},
+{
+"qE": "Among the following CNC control methods, which one can control the movement of multiple axes simultaneously, allowing for free continuous cutting along any path such as diagonal or circular paths, and is used for 2D or 3D control?",
+"qK": "다음 CNC의 제어 방식 중 여러 축의 움직임을 동시에 제어할 수 있기 때문에 대각선 경로, 원형 경로 등 어떠한 경로라도 자유자재로 연속 절삭할 수 있는 방식이며, 2차원 또는 3차원 이상의 제어에 사용되는 것은?",
+"o": [
+"윤곽절삭 제어방식 (Contouring control system)",
+"직선절삭 제어방식 (Straight cutting control system)",
+"위치결정 제어방식 (Positioning control system)",
+"절대좌표 제어방식 (Absolute coordinate control system)"
+],
+"a": 0,
+"eE": "Contouring control (or continuous path control) synchronizes the movement of two or more axes at the exact same time. This is what allows the machine to process complex profiles, arcs, and 3D curved surfaces.",
+"eK": "윤곽절삭 제어(또는 연속 경로 제어)는 두 개 이상의 축 이동을 동시에 동기화합니다. 이를 통해 기계가 복잡한 프로파일, 원호 및 3D 곡면을 가공할 수 있습니다."
+},
+{
+"qE": "Which of the following is an incorrect statement about the characteristics of CNC machine tools?",
+"qK": "CNC 공작기계의 특징에 대한 설명으로 옳지 않은 것은?",
+"o": [
+"생산 능률 증대 (Increases production efficiency)",
+"균일한 품질 관리가 용이 (Easy to maintain uniform quality control)",
+"작업 시간 단축, 생산성 향상 (Reduces working time and improves productivity)",
+"특수 공구가 많이 사용되어 관리비 상승 (Increases maintenance costs due to the heavy use of special tools)"
+],
+"a": 3,
+"eE": "One of the major advantages of CNC machining is the standardization of tools. This reduces the reliance on expensive, specialized custom tools, thereby lowering maintenance and tooling costs, not increasing them.",
+"eK": "CNC 가공의 주요 장점 중 하나는 공구의 표준화입니다. 이는 비싸고 특수한 맞춤형 공구에 대한 의존도를 줄여 결과적으로 관리비와 공구 비용을 상승시키는 것이 아니라 낮춥니다."
+}
+]
+}
+},
+"3D CAD Practice": {
+"Week 9": {
+"Lesson 1": [
+{
+"qE": "When generating a drawing view, executing Layout > General View places an isometric view of the part and creates a drawing view window. Which of the following is NOT a method for selecting the orientation of the drawing view?",
+"qK": "드로잉 뷰를 생성할 때 레이아웃 > 일반 뷰를 실행하면 부품의 등각 투상도가 배치되며 드로잉 보기 창이 생성됩니다. 드로잉 보기의 방향을 선택할 때 방법이 아닌 것은 무엇입니까?",
+"o": [
+"모델의 보기 이름 (Model View Name)",
+"형상 참조 (Geometry Reference)",
+"보기 상태 (View State)",
+"각도 (Angle)"
+],
+"a": 2,
+"eE": "View State is not a standard method for defining the orientation of a drawing view. Orientation is typically defined by Model View Names, Geometry References, or specific Angles.",
+"eK": "뷰 상태는 드로잉 뷰의 방향을 정의하는 표준 방법이 아닙니다. 방향은 일반적으로 모델의 보기 이름, 형상 참조 또는 특정 각도로 정의됩니다."
+},
+{
+"qE": "Which of the following cannot be displayed under the View Visibility options within the Visible Area category?",
+"qK": "표시 영역 범주의 뷰 가시성 옵션 내 보기 가시도에서 나타낼 수 없는 형태는 무엇입니까?",
+"o": [
+"2D 횡단면 보기 (2D Cross-section view)",
+"전체 보기 (Full view)",
+"부분 보기 (Partial view)",
+"반 단면 보기 (Half-section view)"
+],
+"a": 0,
+"eE": "2D Cross-section views are typically managed under Sectioning options, not directly under the standard Visible Area boundaries which handle Full, Partial, and Half views.",
+"eK": "2차원 단면 뷰는 일반적으로 전체, 부분 및 반단면 뷰를 처리하는 표준 가시 영역 경계 아래가 아닌 단면 옵션에서 관리됩니다."
+},
+{
+"qE": "When displaying a half-section view in a drawing, how should the symmetry line standard and the arrow direction of the retained surface be represented (as shown in the reference image)?",
+"qK": "드로잉 보기에서 반 단면도 나타낼 때 대칭선 표준의 형태와 유지면의 화살표 방향은 어떻게 나타내어야 합니까?",
+"o": [
+"실선 - 왼쪽 방향 (Solid line - Left direction)",
+"실선 - 오른쪽 방향 (Solid line - Right direction)",
+"대칭 선 ISO - 왼쪽 방향 (Symmetry Line ISO - Left direction)",
+"대칭 선 ISO - 오른쪽 방향 (Symmetry Line ISO - Right direction)"
+],
+"a": 2,
+"eE": "To properly denote a half-section view showing the left side, the symmetry line standard must be set to the "Symmetry Line ISO" standard, and the arrow direction must point to the left. This perfectly conforms to ISO drafting standards to visually indicate which quarter of the object was conceptually removed.",
+"eK": "왼쪽을 보여주는 반단면 뷰를 올바르게 나타내려면 대칭선 표준을 "대칭 선 ISO" 표준으로 설정하고, 화살표 방향은 왼쪽을 가리켜야 합니다. 이는 물체의 4분의 1이 개념적으로 제거되었음을 시각적으로 표시하기 위한 국제 표준화 기구 제도 표준을 완벽히 준수합니다."
+},
+{
+"qE": "To display the drawing view in solid line format by selecting 'No Hidden' lines and Tangent Edges 'None', which category must you select?",
+"qK": "은선 제거 및 탄젠트 모서리 유형을 없음으로 선택하여 드로잉보기를 도면의 실선 형태로 나타내려면 드로잉보기 카테고리에서 어떤 항목을 선택 하여야 합니까?",
+"o": [
+"보기 유형 (View Type)",
+"표시 영역 (Visible Area / Display Area)",
+"보기 상태 (View State)",
+"보기 디스플레이 (View Display)"
+],
+"a": 3,
+"eE": "The View Display category allows you to control the style of lines, such as hiding hidden lines and turning off tangent edges to present a clean, solid line format.",
+"eK": "보기 디스플레이 범주는 모델의 선이 도면 시트에 표현되는 방식을 제어하는 주 제어 장치입니다. 지저분한 은선을 제거하고 탄젠트 모서리를 제거하여 제조 도면이 깔끔하고 읽기 쉬운 실선으로 구성되도록 설정하는 곳입니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "Among the drawing options, which option defines the 3rd Angle Projection method?",
+"qK": "드로잉 옵션 중 제 3각법을 정의하는 옵션은 무엇입니까?",
+"o": [
+"Projection Type",
+"Text Orientation",
+"Tol Display",
+"Drawing_Units"
+],
+"a": 0,
+"eE": "The drawing property option that officially configures the software to use the 3rd angle projection method is projection_type.",
+"eK": "프로그램에서 제 3각법을 공식적으로 사용하도록 구성하는 도면 환경 옵션은 투영 유형입니다."
+},
+{
+"qE": "Which of the following is an incorrect statement about representing 2D cross-sections in a projection view?",
+"qK": "투영 보기에서 2D 횡단면을 나타내는 설명이 틀린 것은 무엇입니까?",
+"o": [
+"2D cross-sections can express complex internal shapes of parts or reveal areas that cannot be seen in a standard projection view.",
+"It is more convenient to create 2D cross-sections in the modeling file than in the drawing file.",
+"It is more convenient to create 2D cross-sections in the drawing file than in the modeling file.",
+"2D cross-sections utilize the View Manager > Section function within the modeling file."
+],
+"a": 2,
+"eE": "It is far more convenient and accurate to create 2D cross-sections directly inside the 3D modeling file first (utilizing the View Manager). Trying to manually generate a cross-section solely within the 2D drawing file is highly inefficient.",
+"eK": "3차원 모델링 파일 내부에서 직접 보기 관리자 단면 기능을 활용하여 단면을 먼저 생성하는 것이 훨씬 더 편리하고 정확합니다. 2차원 드로잉 파일 자체에서만 단면을 수동으로 만드는 것은 비효율적입니다."
+},
+{
+"qE": "To create a 2D cross-section of a stepped section within the modeling file, which function is used within View Manager > Sections?",
+"qK": "모델링 파일 내에서 계단 단면의 2D 횡단면을 생성하기 위하여 보기 관리자>단면 내에서 사용하는 기능은 무엇입니까?",
+"o": [
+"전체 (Full)",
+"반단면 (Half-section)",
+"오프셋 (Offset)",
+"영역 (Area)"
+],
+"a": 2,
+"eE": "To generate a stepped 2D cross-section within the 3D modeling file, the specific function used inside the View Manager > Sections menu is the "Offset" function.",
+"eK": "내부 형상(엇갈린 구멍 등)이 일직선상에 정렬되지 않은 경우 계단 단면이 필요합니다. 이러한 형상들을 모두 잘라 보여주기 위해 계단형 절단 평면을 생성하려면 보기 관리자의 단면 도구 내에서 오프셋 기능을 사용해야 합니다."
+},
+{
+"qE": "In a drawing view, what must be selected in the 2D cross-section area conditions to display a section for a separate, specific localized area?",
+"qK": "드로잉 보기에서 별도 영역에 대한 단면의 표시를 하기위해 2D 횡단면 조건의 영역에서 무엇을 선택해야 하는가?",
+"o": [
+"전체 (Full)",
+"로컬 (Local)",
+"스플라인 (Spline)",
+"경계 (Boundary)"
+],
+"a": 1,
+"eE": "To display a section for a specific, isolated area on the drawing view, you must select "Local" in the 2D cross-section area conditions.",
+"eK": "전체 뷰를 단면 처리하지 않고 부품의 아주 작고 특정한 영역(예: 하나의 키 홈이나 다웰 핀 구멍)만 부분적으로 단면을 노출하고자 할 때는 로컬 옵션을 선택합니다."
+}
+]
+},
+"Week 10": {
+"Lesson 1": [
+{
+"qE": "What view displays a portion of an existing view at a larger scale to make shapes and dimensions easier to see?",
+"qK": "드로잉 보기에서 형상과 치수를 보다 쉽게 볼 수 있도록 기존 보기의 일부를 좀 더 큰 배율로 표시하는 보기는 무엇인가?",
+"o": [
+"투영 보기 (Projection View)",
+"일반 보기 (General View)",
+"세부 보기 (Detail View)",
+"보조 보기 (Auxiliary View)"
+],
+"a": 2,
+"eE": "A Detail View zooms in on intricate features that are too small to dimension clearly at the standard drawing scale.",
+"eK": "3D 모델의 특정 형상이 표준 1:1 축척으로 나타내기에 너무 작거나 복잡하여 명확한 치수 기입이 어려울 때 세부 보기를 사용합니다."
+},
+{
+"qE": "Which of the following is an incorrect statement about the detail view?",
+"qK": "드로잉 보기에서 세부 보기에 대한 설명 중 틀린 것은 무엇인가?",
+"o": [
+"You specify the center of the view and then sketch a spline around the display area.",
+"The detail view is connected to its parent drawing view.",
+"It is impossible to move the detail view to a desired position independently of the parent view.",
+"The detail view displays a magnified portion of the model in another view."
+],
+"a": 2,
+"eE": "The detail view is completely independent in terms of its placement on your drawing sheet. You can freely click and drag it to any empty space.",
+"eK": "세부 보기를 생성하더라도, 결과로 나타나는 확대 뷰는 도면 시트의 배치 측면에서 완전히 독립적입니다. 깨끗하고 정리된 레이아웃을 구성하기 위해 도면의 빈 공간으로 자유롭게 드래그하여 이동할 수 있습니다."
+},
+{
+"qE": "In a drawing view, what view is projected perpendicular to a selected surface or axis to represent an inclined section?",
+"qK": "드로잉 보기에서 경사진 단면을 나타내기 위하여 선택한 Surface나 축에 직각으로 투영하는 보기는 무엇인가?",
+"o": [
+"투영 보기 (Projection View)",
+"일반 보기 (General View)",
+"세부 보기 (Detail View)",
+"보조 보기 (Auxiliary View)"
+],
+"a": 3,
+"eE": "An Auxiliary View projects your line of sight strictly perpendicular (at a 90-degree angle) to that specific slanted surface.",
+"eK": "3D 모델에 경사지거나 비스듬한 형상(기울어진 리브나 경사면)이 있는 경우, 일반적인 정면도나 평면도로 투영하면 실제 모양이 왜곡되어 정확한 치수를 입력할 수 없습니다. 보조 보기는 해당 경사면에 완전히 수직으로 투영하여 실제 왜곡되지 않은 형상을 보여줍니다."
+},
+{
+"qE": "Which of the following is an incorrect statement about the auxiliary view?",
+"qK": "드로잉 보기에서 보조 보기에 대한 설명 중 틀린 것은 무엇인가?",
+"o": [
+"The surface selected in the parent view must not be perpendicular to the screen plane.",
+"If an edge is selected as a reference, the edge will be parallel to the computer screen while displaying the surface it belongs to.",
+"If a reference plane is selected, the view displays the reference plane parallel to the computer screen.",
+"If a reference axis is selected, the view is displayed along the reference axis."
+],
+"a": 0,
+"eE": "To successfully generate an auxiliary view by unfolding it from the parent view, the reference edge or surface you select must be perpendicular to your screen plane.",
+"eK": "부모 보기에서 펼쳐 보조 보기를 성공적으로 생성하려면, 선택한 참조 모서리나 표면이 화면 평면에 수직이어야 합니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "Which of the following is NOT related to adjusting the scale in a drawing view?",
+"qK": "드로잉 보기에서 척도(Scale) 조정에 관한 내용이 아닌 것은 무엇인가?",
+"o": [
+"Select the Scale category in the drawing view.",
+"Generally, the reference scale is set to the sheet's default scale of 1.0.",
+"Adjust and use the scale in the modeling file.",
+"Enter a custom scale adjustment in the drawing view dialog box under Scale > Custom Scale."
+],
+"a": 2,
+"eE": "Scale adjustments are exclusively handled inside the 2D drawing file, never in the 3D modeling file.",
+"eK": "용지에 모델이 얼마나 크거나 작게 표시될지 결정하는 축척 조정은 오직 2차원 드로잉 파일 내에서만 처리되며, 3D 모델링 파일 내에서는 결코 처리되지 않습니다."
+},
+{
+"qE": "What does not appear in the sheet tab area at the bottom left of the drawing file?",
+"qK": "드로잉 파일의 도면에서 왼쪽 하단부 시트에 나타나지 않은 것은 무엇인가?",
+"o": [
+"시트의 번호 (Sheet number)",
+"용지의 크기 (Paper size)",
+"시트 전체 배율(척도) (Overall sheet scale)",
+"부품 및 조립도 구분 (Classification of part and assembly drawings)"
+],
+"a": 3,
+"eE": "The bottom left of your drawing layout shows the sheet number, overall sheet scale, and the paper size, but does not classify whether the drawing is a part or an assembly drawing.",
+"eK": "도면 레이아웃 왼쪽 하단에 표시되는 자동 텍스트는 시트 번호, 전체 축척, 용지 크기 등을 알려주지만 도면이 구체적으로 부품 도면인지 조립 도면인지를 분류하여 알려주지 않습니다."
+},
+{
+"qE": "To display a new part and assembly view in a drawing view, after selecting Layout > Drawing Model, what function should be selected in the menu manager?",
+"qK": "드로잉 보기에서 새로운 부품 및 조립품 보기를 나타내려고 하면 레이아웃>드로잉 모델을 선택하고 메뉴 관리자에서 어떤 기능을 선택하여야 하는가?",
+"o": [
+"모델 추가 (Add model)",
+"모델 삭제 (Delete model)",
+"모델 지정 (Set model)",
+"모델 편집 (Edit model)"
+],
+"a": 0,
+"eE": "Use the "Add model" function in the menu manager to introduce additional components into the active drawing workspace.",
+"eK": "새 3D 파일을 드로잉 작업 영역에 연동하여 일반 및 투영 뷰를 불러오려면 메뉴 관리자에서 모델 추가 기능을 활용해야 합니다."
+},
+{
+"qE": "Which is not a function used when sheet movement or insertion is needed due to a lack of drawing space?",
+"qK": "도면의 공간이 부족하여 Sheet의 이동이나 삽입이 필요 할 때 사용하는 기능이 아닌 것은?",
+"o": [
+"Select the '+' to the left of Sheet 1 at the bottom left of the drawing.",
+"Select the move sheet icon in the layout window.",
+"Right-click the sheet name and select delete.",
+"Select the copy sheet icon in the layout window."
+],
+"a": 3,
+"eE": "Creo does not have a direct "Copy sheet" icon within the standard layout tools.",
+"eK": "시트를 추가하거나 이동하고, 필요 없는 시트를 삭제하는 도구는 기본 제공되나, 레이아웃 창 도구 내에 직접 시트를 복제하는 명령 아이콘은 존재하지 않습니다."
+}
+]
+},
+"Week 11": {
+"Lesson 1": [
+{
+"qE": "Which of the following is NOT a type of view direction (orientation) in a drawing view?",
+"qK": "드로잉 보기에서 보기 방향의 종류가 아닌 것은 무엇인가?",
+"o": [
+"투영 보기 (Projection View)",
+"모델의 보기 이름 (Model view name)",
+"형상 참조 (Geometry reference)",
+"각도 (Angle)"
+],
+"a": 0,
+"eE": "Model view names, geometry references, and angles are standard orientation methods. "Projection View" is a derived view layout, not an initial viewing direction method.",
+"eK": "드로잉 뷰 속성에서 최초 방향을 정할 때 쓸 수 있는 방법은 모델 보기 이름, 형상 참조, 각도입니다. 투영 보기는 기존 다른 뷰를 기준으로 전개하는 레이아웃 유형입니다."
+},
+{
+"qE": "In the drawing view category, which function can adjust the shaded form to "No Hidden" lines (hidden line removal)?",
+"qK": "드로잉 보기의 카테고리에서 음영 처리 형태에서 은선 제거로 조정 할 수 있는 기능은 무엇인가?",
+"o": [
+"보기 유형 (View Type)",
+"보기 디스플레이 (View Display)",
+"척도 (Scale)",
+"보기 상태 (View State)"
+],
+"a": 1,
+"eE": "The View Display category controls line rendering style, including hidden line removal.",
+"eK": "도면 시트에 투상되는 선들의 은선을 제거하고 투영할지 등 그래픽 디스플레이 스타일을 설정하는 항목은 보기 디스플레이입니다."
+},
+{
+"qE": "In a drawing, which option controls the arrow style for all drafting board items including dimension extension lines, geometric tolerances, symbols, and balloons?",
+"qK": "드로잉에서 치수 보조선, 형상 공차, 기호, 풍선 등 화살표를 포함하는 모든 제도판 항목의 화살표 유형을 제어하는 옵션은 무엇인가?",
+"o": [
+"Crossec_arrow_length",
+"Crossec_arrow_style",
+"Crossec_text_place",
+"arrow_style"
+],
+"a": 3,
+"eE": "The arrow_style configuration option controls the visual terminal styles of leaders and dimension lines across the drawing sheet.",
+"eK": "도면 전체 시트에서 사용되는 치수선 끝 및 인출선 지시 화살표의 형태를 채워진 형태 등으로 변경 제어하는 전역 환경 설정명은 arrow_style입니다."
+},
+{
+"qE": "Which drawing option must be defined when changing the unit from inches to mm in a drawing?",
+"qK": "드로잉에서 단위를 inch에서 mm로 변경하고자 할 때 정의되어야 하는 드로잉 옵션은 무엇인가?",
+"o": [
+"modeling_mm",
+"modeling_units",
+"drawing_units",
+"drawing_mm"
+],
+"a": 2,
+"eE": "The drawing_units configuration option dictates the primary measurement system (mm vs. inch) for your drawing environment.",
+"eK": "도면 시트 공간에서 계산과 표시 단위 체계(밀리미터 대 인치)를 정하는 드로잉 환경 파일 옵션은 drawing_units입니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "To display a partial view in a drawing, which function should be used in the drawing view category?",
+"qK": "드로잉에서 부분 보기를 나타내려고 하면 드로잉 보기 카테고리에서 어떤 기능을 사용해야 하는가?",
+"o": [
+"보기 유형 (View Type)",
+"표시 영역 (Visible Area / Display Area)",
+"보기 상태 (View State)",
+"보기 디스플레이 (View Display)"
+],
+"a": 1,
+"eE": "The Visible Area category defines view constraints, allowing you to establish a partial view bounds.",
+"eK": "드로잉 뷰 속성 중 표시 영역 카테고리를 편집하여 국부적인 부분만 도면상 가시적으로 드러나도록 범위를 제한할 수 있습니다."
+},
+{
+"qE": "In the drawing view category, which function can adjust the shaded form to 'No Hidden' lines (hidden line removal)?",
+"qK": "드로잉 보기의 카테고리에서 음영 처리 형태에서 은선 제거로 조정 할 수 있는 기능은 무엇인가?",
+"o": [
+"보기 유형 (View Type)",
+"보기 디스플레이 (View Display)",
+"척도 (Scale)",
+"보기 상태 (View State)"
+],
+"a": 1,
+"eE": "Line render settings, including shaded-to-wireframe and hidden line removal styles, are controlled in View Display.",
+"eK": "도면 시트에 투상된 선들이 은선을 제거하고 깨끗한 실선 위주로 노출되도록 스타일을 제어하는 항목은 보기 디스플레이입니다."
+},
+{
+"qE": "To display a half-section view in a drawing, which function should be used in the drawing view category?",
+"qK": "드로잉에서 반단면 보기를 나타내려고 하면 드로잉 보기의 카테고리에서 어떤 기능을 사용해야 하는가?",
+"o": [
+"보기 유형 (View Type)",
+"표시 영역 (Visible Area / Display Area)",
+"보기 상태 (View State)",
+"보기 디스플레이 (View Display)"
+],
+"a": 1,
+"eE": "A half-section view limits the rendered boundaries. Setting this is handled in the Visible Area properties.",
+"eK": "부분 보기나 반단면 보기처럼 부품의 시각적 노출 범위를 일정한 대칭선을 기준으로 규정 제어하는 속성은 표시 영역입니다."
+},
+{
+"qE": "When displaying a symmetry line in a Half Section View (under View > Visible Area > View Visibility), what is mainly used as the symmetry line standard for the drawing?",
+"qK": "드로잉 보기>표시영역 옵션>보기 가시도>반단면 보기에서 대칭선을 나타낼 때 도면의 대칭선 표준은 주로 무엇으로 사용하는가?",
+"o": [
+"실선 (Solid line)",
+"일점 쇄선 (Dash-dot line)",
+"이점 쇄선 (Double dash-dot line)",
+"대칭선 ISO (Symmetry line ISO)"
+],
+"a": 3,
+"eE": "The central symmetry line demarcating outer shape and internal sectional view conforms to the "Symmetry Line ISO" drawing standard.",
+"eK": "반단면 뷰 투상 시 외형부와 단면 처리부를 가르는 대칭 정렬 중심 기준선 제도는 보통 대칭선 ISO 표준 형식을 지정하여 사용합니다."
+}
+]
+},
+"Week 12": {
+"Lesson 1": [
+{
+"qE": "What is the name of the icon used to call up (extract) the dimension information of the shape modeling into the drawing?",
+"qK": "형상 모델링의 치수 정보를 드로잉에서 불러오려고 할때 사용하는 아이콘이름은 무엇인가?",
+"o": [
+"모델 주석 표시 (Show Model Annotations)",
+"치수 (Dimension)",
+"기호 (Symbol)",
+"기하공차 (Geometric Tolerance)"
+],
+"a": 0,
+"eE": "Show Model Annotations automatically pulls the parametric dimensions you already defined during 3D modeling directly onto the drawing sheet.",
+"eK": "3D 캐드 도면 작업의 핵심은 수작업 치수 작성을 배제하고, 모델링 과정에서 완성했던 구동 치수들을 모델 주석 표시 아이콘 명령으로 도면에 연계 호출하는 것입니다."
+},
+{
+"qE": "What function is used to move a dimension displayed in one drawing view to another drawing view?",
+"qK": "드로잉 보기에서 표현된 치수를 다른 드로잉 보기로 치수이동을 할때 사용되는 기능은 무엇인가?",
+"o": [
+"삭제 (Delete)",
+"보기로 이동 (Move to View)",
+"치수 보조선 클립 (Witness Line Clip)",
+"화살표 대칭 이동 (Arrow Symmetric Move)"
+],
+"a": 1,
+"eE": "To clean up cluttered auto-extracted annotations, use "Move to View" to cleanly transfer a selected dimension to an adjacent projected view.",
+"eK": "모델 주석을 불러와 복잡하게 배치된 치수들을 가리켜 마우스 오른쪽 버튼을 누르고 보기로 이동을 실행하면 깔끔하게 인접한 투영 뷰로 치수를 정렬 이송할 수 있습니다."
+},
+{
+"qE": "What drawing option sets the default text orientation for linear dimensions (except when configured on a center leader line)?",
+"qK": "드로잉에 중심 지시선 구성에 있는 경우를 제외하고 선형 치수에 대한 기본 텍스트 방향을 설정하는 옵션은 무엇인가?",
+"o": [
+"default_angdim_text_orientation",
+"default_lindim_text_orientation",
+"default_diadim_text_orientation",
+"default_clddim_text_orientation"
+],
+"a": 1,
+"eE": "The default_lindim_text_orientation property formats the text orientation of linear dimensions relative to their leader lines.",
+"eK": "선형 치수 표기값의 지시 배치 텍스트 정렬각이 중심 지선 각도에 조화되도록 제어하는 도면 전역 설정은 default_lindim_text_orientation입니다."
+},
+{
+"qE": "What drawing option must be set to display a vertical axis of rotation on the screen for a radial pattern feature in order to indicate reference axes and centerlines?",
+"qK": "드로잉에서 기준 축 및 중심선을 나타내기 위하여 레이디얼 패턴 피쳐 화면에 수직 회전축 디스플레이모드 설정하는 드로잉 옵션은 무엇인가?",
+"o": [
+"circle_axis_offset",
+"gtol_datums",
+"projection_type",
+"radial_pattern_axis_circle"
+],
+"a": 3,
+"eE": "Enable radial_pattern_axis_circle to yes to render the circular centerline axes for radially pattern-spaced cylindrical hole features.",
+"eK": "방사형 어셈블 구멍의 중심들이 이루는 가상의 피치 기준원(PCD) 축 중심선을 도면에 생성해 내려면, 해당 드로잉 세부 설정 옵션을 yes로 켜 주어야 합니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "When cleaning up dimensions in a drawing view, what function/option is used to input the distance value between the shape's geometry and the very first dimension placed?",
+"qK": "드로잉 보기에서 치수 정리를 할 때 형상과 처음 기입하는 치수의 떨어진 값을 입력하는 옵션은 무엇인가?",
+"o": [
+"오프셋 (Offset)",
+"증분 (Increment)",
+"스냅선 생성 (Create Snap Line)",
+"치수보조선 브레이크 (Witness line break)"
+],
+"a": 0,
+"eE": "Offset value dictates the exact spacing from the geometry edge to the primary closest dimension line, while Increment manages subsequent gaps.",
+"eK": "도면 정렬 스냅선을 적용할 때 최초 외곽 기준 모서리로부터 첫 번째 치수선이 격리될 간격 제어 설정은 오프셋입니다. 그 이후 치수선들의 보조 정렬 격차는 증분으로 적용합니다."
+},
+{
+"qE": "The drawing option that controls the arrow style for all drafting board items containing arrows is arrow_style. What is the value for the commonly used standard arrow?",
+"qK": "치수 보조선, 주석, 3d 주석, 형상 공차, 기호, 풍선 등 화살표포함하는 모든 제도판 항목의 화살표 유형을 제어하는 옵션은 arrow_style인데 일반적으로 사용되는 화살표의 값은 무엇인가?",
+"o": [
+"Closed",
+"Open",
+"Filled",
+"None"
+],
+"a": 2,
+"eE": "Setting arrow_style to Filled enforces completely filled, darkened solid arrow heads complying with international drafting regulations.",
+"eK": "도면 지시 화살표 기호 끝단을 기계 설계 제도 표준 규격인 속이 꽉 찬 화살표 형태로 변환 제어하기 위해 Filled 값 설정을 지정하여 사용합니다."
+},
+{
+"qE": "What drawing option sets the default text orientation for diameter dimensions?",
+"qK": "드로잉 치수에서 지름 치수에 대한 기본 텍스트 방향을 설정하는 옵션은 무엇인가?",
+"o": [
+"default_angdim_text_orientation",
+"default_lindim_text_orientation",
+"default_diadim_text_orientation",
+"default_clddim_text_orientation"
+],
+"a": 2,
+"eE": "The default_diadim_text_orientation property defines the text rotation and orientation formatting specifically for diameter dimensions.",
+"eK": "각도(angdim), 선형(lindim)과 마찬가지로, 도면 시트에서 표현될 지름 원통 치수 지시선 문자의 회전 배치를 규제하는 단독 옵션명은 default_diadim_text_orientation입니다."
+},
+{
+"qE": "When creating a half-section of a bilaterally symmetrical shape, the clip_dim_arrow_style option is used to change the arrow shape of the dimension line. What is the commonly set value?",
+"qK": "좌우 대칭 형상의 반단면 제작 시에 치수 제어 옵션에서 clip_dim_arrow_style을 활용하여 화살표 형태를 변경한다. 일반적으로 사용 설정되는 값은 무엇인가?",
+"o": [
+"double_arrow",
+"single_arrow",
+"none",
+"dot"
+],
+"a": 2,
+"eE": "Setting clip_dim_arrow_style to none removes the unnecessary secondary arrow head on the cutaway end of a halved symmetrical dimension line.",
+"eK": "대칭인 반단면 도면 투영 시 대칭 중심축을 초과하는 연장 연계 치수선에서 불필요하게 가리키는 한쪽 끝의 화살표 형태를 제거하려면 설정값을 none으로 정정합니다."
+}
+]
+},
+"Week 13": {
+"Lesson 1": [
+{
+"qE": "What is NOT an advantage of using geometric (form) tolerances?",
+"qK": "형상(기하)공차의 사용 장점이 아닌 것은 무엇인가?",
+"o": [
+"효율적인 생산성 증가 (Increase efficient productivity)",
+"생산 원가는 증가 (Increase in production cost)",
+"정밀도 증가 (Increase in precision)",
+"효율적인 검사 측정 용이 (Facilitates efficient inspection and measurement)"
+],
+"a": 1,
+"eE": "Geometric Dimensioning and Tolerancing (GD&T) actually reduces overall manufacturing costs by clarifying acceptable variations and streamlining inspections.",
+"eK": "기하 공차를 효과적으로 지정하면 치수 규제 영역이 합리화되어 조립 호환성이 강화되고 효율적인 정밀 한계 검사가 가능하므로 생산 원가가 절감됩니다."
+},
+{
+"qE": "Which dimensional tolerance type displays the tolerance value as negative/positive values next to the nominal value in a drawing?",
+"qK": "드로잉에서 공차 값이 명목상 값의 음수/양수 값으로 표시하는 치수공차유형은 무엇인가?",
+"o": [
+"플러스-마이너스(Plus-Minus)",
+"대칭(Symmetric)",
+"제한(Limits)",
+"명목상(Nominal)"
+],
+"a": 0,
+"eE": "Plus-Minus allows distinct positive and negative limits of variation relative to the target nominal size.",
+"eK": "도면에서 정밀한 가공 허용치를 전달하고자 할 때 명목상 기준 치수 수치 옆에 음수 및 양수의 허용 범위 한계를 다르게 명기하는 공차 방식은 플러스-마이너스입니다."
+},
+{
+"qE": "Which drawing option controls the display of dimensional tolerances?",
+"qK": "드로잉 옵션에서 치수 공차 디스플레이 제어하는 옵션은 무엇인가?",
+"o": [
+"tol_display",
+"gtol_datums",
+"tol_text_height_factor",
+"tol_text_width_factor"
+],
+"a": 0,
+"eE": "The tol_display option acts as the primary master toggle for displaying or hiding dimensional tolerance values on drawings.",
+"eK": "도면 환경 설정 옵션 중 시트에 기록되는 치수값들의 정교한 가공 한계 공차값 표출을 허용(yes)하거나 보이지 않게 막는 옵션은 tol_display입니다."
+},
+{
+"qE": "Which option sets the drafting standard used to display reference datums in a drawing, affecting the display of axes, datum planes, and reference part datums?",
+"qK": "드로잉 내에 참조 데이텀을 표시하기 위해 사용되는 제도 표준을 설정하는 옵션으로 축, 데이텀 평면 및 참조 부품 데이텀의 디스플레이에 영향을 미치는 조건은 무엇인가?",
+"o": [
+"symbol",
+"tol_display",
+"stacked_gtol_align",
+"gtol_datums"
+],
+"a": 3,
+"eE": "The gtol_datums option selects whether standard ISO/JIS format or ANSI drafting symbols represent the visual datum frame labels.",
+"eK": "기하공차 적용의 핵심 기준인 데이텀 기호 형태와 화살 표식 정렬 양식을 표준화된 규격 형태(예: std_iso_jis)에 일치시키도록 형태를 다듬는 제어 설정명은 gtol_datums입니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "Which function (icon) is used in the Annotate menu to create surface roughness symbols?",
+"qK": "표면 거칠기를 생성하기 위하여 주석 달기 메뉴에서 사용하는 기능(아이콘)은 무엇인가?",
+"o": [
+"메모 (Note)",
+"기준 피처 기호 (Datum Feature Symbol)",
+"서피스 마무리 (Surface Finish)",
+"기호 (Symbol)"
+],
+"a": 2,
+"eE": "The Surface Finish icon allows engineers to easily add standard triangle surface roughness annotations directly onto component faces.",
+"eK": "가공 처리 부품 서피스 단면이 완성해야 할 마무리 질감 규격인 삼각 거칠기 표식을 기입할 때는 주석 달기 메뉴에서 서피스 마무리를 사용합니다."
+},
+{
+"qE": "Which of the following is NOT a type of surface roughness measurement method?",
+"qK": "다음 중 표면거칠기 측정방법의 종류가 아닌것은 ?",
+"o": [
+"중심선 평균거칠기(Ra)",
+"최대높이거칠기(Rmax)",
+"최소높이거칠기(Rmin)",
+"10점 평균거칠기(Rz)"
+],
+"a": 2,
+"eE": "Rmin is not a valid standard or existing calculation parameter within typical mechanical engineering drafting rules.",
+"eK": "최소높이거칠기(Rmin)는 기계 제품 마무리를 제어하는 공식 규정 기호나 계산법에 존재하지 않는 인위적으로 명기된 기호입니다."
+},
+{
+"qE": "To write a note in a drawing, which function (icon) is used in the Annotate menu?",
+"qK": "드로잉에서 주기(주서)를 작성하기 위해서는 주석 달기 메뉴에서 사용하는 기능(아이콘)은 무엇인가?",
+"o": [
+"메모 (Note)",
+"기준 피처 기호 (Datum Feature Symbol)",
+"서피스 마무리 (Surface Finish)",
+"기호 (Symbol)"
+],
+"a": 0,
+"eE": "Note allows designers to document general engineering details and standard guidelines that numeric annotations cannot convey.",
+"eK": "도면의 수치적인 기호 외에 일괄적 가공 규정이나 규격 기준(예: 지시 없는 가공 둥글기는 R1) 등을 서술할 수 있는 주서 표시는 메모를 사용합니다."
+},
+{
+"qE": "What is the file extension created when saving a copy or exporting a drawing file to a 2D AutoCAD file in Creo Parametric 3D CAD?",
+"qK": "Creo Parametric 프로그램 3D CAD에서 드로잉 파일을 2D Auto CAD 파일로 복사본 저장 및 내보내기를 실행할때 생기는 파일의 확장자는 무엇인가?",
+"o": [
+".dwg",
+".drw",
+".prt",
+".asm"
+],
+"a": 0,
+"eE": "Exporting native .drw drawings converts parametric layouts into flat AutoCAD 2D files saved as vector .dwg formats.",
+"eK": "기존 파라메트릭 정보가 담긴 3D CAD 전용 드로잉 파일(.drw)을 이차원 범용 설계 도구 호환용 가공 파일로 전달할 때 산출 확장자명은 *.dwg입니다."
+}
+]
+},
+"Week 14": {
+"Lesson 1": [
+{
+"qE": "Which of the following is an incorrect statement about creating an assembly drawing file using an assembly model?",
+"qK": "어셈블리 파일을 활용하여 조립도 파일 생성에 대한 설명이 아닌 것은 무엇인가?",
+"o": [
+"Connect the assembly modeling in the new drawing dialog box.",
+"Select ONLY the "Empty with format" template option in the template designation.",
+"The format file is identical to the sketch function of the drawing file.",
+"The format file can be modified to suit the working environment."
+],
+"a": 1,
+"eE": "You are not restricted to "Empty with format"; depending on the requirements, "Use template" or "Empty" are also completely valid.",
+"eK": "새 조립 드로잉 도면을 만들 때, 드로잉 대화 상자에서는 형식있는 빈 템플릿(Empty with format)뿐만 아니라 비어있음이나 기본 템플릿도 선택하여 전개할 수 있습니다."
+},
+{
+"qE": "To accurately represent the assembled shape of parts in an assembly drawing, what type of View Manager > Section > New is used to create a cross-section referencing a sketch, like a stepped section shape?",
+"qK": "어셈블리 드로잉에서 부품의 조립된 형상을 정확히 나타내기 위하여 계단 단면의 형상처럼 스케치를 참조하여 횡단면을 생성하는 보기 관리자>단면>새로 만들기의 유형은 무엇인가?",
+"o": [
+"X평면 (X-Plane)",
+"Y평면 (Y-Plane)",
+"오프셋 (Offset)",
+"영역 (Area)"
+],
+"a": 2,
+"eE": "In complex assemblies, select "Offset" in the View Manager to generate a custom staggered cut path that traces multiple non-collinear features.",
+"eK": "동시에 여러 부품의 정렬되지 않은 내부 구성을 관통하여 단면을 스케치 경로로 꺾어 표현하는 정밀 계단 단면 제도는 오프셋 방식을 지정합니다."
+},
+{
+"qE": "When showing a cross-section in an assembly drawing, which of the following part sections does NOT have its hatching omitted? (Meaning: Which part MUST be hatched?)",
+"qK": "조립 도면에서 단면도를 나타낼 때 해칭을 나타내지 않는 부품 단면이 아닌 것은 무엇인가?",
+"o": [
+"축 단면 (Shaft section)",
+"베어링의 구 단면 (Bearing ball section)",
+"풀리의 암 단면 (Pulley arm section)",
+"커버의 단면 (Cover section)"
+],
+"a": 3,
+"eE": "Standard mechanical guidelines state that structural shell casings, like the Cover, must be hatched when sliced open to explicitly signify material thickness.",
+"eK": "기계 제도 표준 규정에 의해 축, 핀, 볼트, 풀리 암 등은 길이 방향으로 잘라 표현할 때 해칭을 제외해야 합니다. 하지만 제품 외형 커버 하우징 두께 단면은 반드시 해칭해야 합니다."
+},
+{
+"qE": "In an assembly drawing made of assembled parts, which of the following is NOT part of the process to remove (exclude) the hatching of a specific part's cross-section?",
+"qK": "부품의 조립으로 이루어진 조립 도면에서 부품의 단면의 해칭을 없애주는 과정이 아닌 것은 무엇인가?",
+"o": [
+"Double-click the drawing view of the assembly drawing.",
+"Select Next or Previous in the menu manager to select the cross-section of the specific part.",
+"Select "Erase" after selecting the part's cross-section.",
+"Select "Finish/Done" after selecting the part's cross-section."
+],
+"a": 3,
+"eE": "Simply hitting "Finish" without explicitly selecting the "Erase" command will fail to remove the hatch pattern of the selected component.",
+"eK": "조립도 횡단면 처리 과정에서 원치 않는 회전축 해칭 등을 배제하려면, 메뉴 관리자 조작으로 해당 부품 영역을 지정한 후 지우기(Erase) 처리를 확실히 완수해야 도면상 해칭이 차단 소거됩니다."
+}
+],
+"Lesson 2": [
+{
+"qE": "Where MUST you save the disassembled state of an assembly to ensure it can be permanently linked and used in an exploded drawing view?",
+"qK": "어셈블리의 분해된 상태를 분해도에서 영구적으로 연결하고 사용할 수 있도록 하려면 어디에 저장해야 합니까?",
+"o": [
+"Detail Options (세부 옵션)",
+"The Explode Tab in the View Manager (보기 관리자의 분해 탭)",
+"Layer Tree (레이어 트리)",
+"Color Palette (색상 팔레트)"
+],
+"a": 1,
+"eE": "The exploded position state must be explicitly saved inside the View Manager's Explode tab, or else all disassemble changes are lost upon closing.",
+"eK": "공들여 정립한 어셈블리의 부품 분해 축 정렬 상태는 나중에 도면과 연동되도록 보기 관리자의 분해 탭을 통해 확실하게 그 상태 이름을 보관해 주어야 합니다."
+},
+{
+"qE": "What overarching paradigm does mastering 3D modeling and 2D drawing generation align with in modern engineering?",
+"qK": "3D 모델링 및 2D 도면 생성 마스터링은 현대 엔지니어링의 어떤 포괄적인 패러다임과 일치합니까?",
+"o": [
+"Hand-drafting paradigm (수작업 제도 패러다임)",
+"Digital Twin paradigm (디지털 트윈 패러다임)",
+"Abstract Art paradigm (추상 미술 패러다임)",
+"1D simulation paradigm (1D 시뮬레이션 패러다임)"
+],
+"a": 1,
+"eE": "Parametric modeling linked directly with 2D associative drafting forms the basis of the modern Digital Twin model-based enterprise design pattern.",
+"eK": "3D 연계 설계 모델링 기법과 2D 정보 도면 산출을 마스터하고 이를 구조 CAE 해석까지 엮어 관리하는 기법은 현대 디지털 트윈 설계 패러다임의 초석입니다."
+},
+{
+"qE": "When the exploded view is closed in the 3D model space, what state does the model return to?",
+"qK": "3D 모델 공간에서 분해도를 닫으면 모델은 어떤 상태로 돌아갑니까?",
+"o": [
+"A wireframe state (와이어프레임 상태)",
+"A typical, fully constrained assembly environment (일반적이고 완전히 구속된 어셈블리 환경)",
+"A deleted state (삭제된 상태)",
+"A 2D sketch state (2D 스케치 상태)"
+],
+"a": 1,
+"eE": "Closing the exploded view configuration snaps the active solid viewport back to the original tightly constrained assembled state.",
+"eK": "작업 중이던 어셈블리 모델 공간에서 분해 보기 옵션을 끄면, 부품들은 조립 구속 조건에 의해 완벽하게 결합되어 있던 원상태의 표준 조립 환경으로 회귀합니다."
+},
+{
+"qE": "What must you create to visually indicate how the disassembled parts fit back into the main assembly?",
+"qK": "분해된 부품이 주 어셈블리에 어떻게 다시 맞춰지는지 시각적으로 나타내기 위해 생성해야 하는 것은 무엇입니까?",
+"o": [
+"Hatching lines (해칭 선)",
+"Explode lines / Offset lines (분해선 / 오프셋 선)",
+"Fillets (필렛)",
+"Tangent blends (탄젠트 블렌드)"
+],
+"a": 1,
+"eE": "You utilize cosmetic explosion line offsets to dynamically connect axes to receiving holes, visualizing the path of mechanical assembly.",
+"eK": "어셈블리 분해도의 조립 정렬 중심 관계를 작업 도면상에서 나타내 주기 위해서는 지시 인출 중심 궤적인 분해선 또는 오프셋 선을 모델상에서 매핑해야 합니다."
 }
 ]
 }
