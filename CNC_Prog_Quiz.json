@@ -12,8 +12,8 @@
 "단일회로 (Single loop)"
 ],
 "a": 3,
-"eE": "According to the lecture slides and transcript, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
-"eK": "강의 자료와 스크립트에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 방식입니다. '단일회로'는 유효한 분류가 아닙니다."
+"eE": "According to the lecture, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
+"eK": "강의에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 시스템입니다. '단일회로'는 유효한 분류가 아닙니다."
 },
 {
 "qE": "In an NC servo mechanism, which system detects speed or position from the servo motor and the machine's table, and feeds it back to the control circuit?",
@@ -25,8 +25,8 @@
 "하이브리드 서보 시스템 (hybrid servo system)"
 ],
 "a": 2,
-"eE": "The closed loop system specifically uses a linear scale attached to the machine's table to detect precise position and feeds this back, along with speed from the motor, to the control circuit.",
-"eK": "폐쇄회로 시스템은 기계의 테이블에 직선자를 부착하여 정밀한 위치를 검출하고, 모터의 속도와 함께 이 정보를 제어 회로로 피드백합니다."
+"eE": "The closed loop system detects position directly from the machine's table (using a linear scale) and speed from the servo motor, feeding this precise data back to the control circuit. In contrast, the semi-closed loop detects both directly from the motor.",
+"eK": "폐쇄회로 시스템은 기계의 테이블(직선자 사용)에서 위치를 직접 검출하고 서보 모터에서 속도를 검출하여 이 정밀한 데이터를 제어 회로로 피드백합니다. 반면, 반폐쇄회로는 두 가지 모두 모터에서 직접 검출합니다."
 },
 {
 "qE": "In an NC servo mechanism, which system is a compromise/combination of the semi-closed loop system and the closed loop system?",
@@ -38,8 +38,8 @@
 "하이브리드 서보 시스템 (hybrid servo system)"
 ],
 "a": 3,
-"eE": "The hybrid servo system is explicitly defined as a compromise between the semi-closed and closed loop systems, often used for heavy machine tools where increasing structural stiffness is difficult.",
-"eK": "하이브리드 서보 시스템은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 명시되어 있으며, 주로 구조적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
+"eE": "The hybrid servo system is defined as a compromise or blend of the semi-closed loop and closed loop systems. It is primarily used for heavy machine tools where increasing the machine's physical stiffness is difficult.",
+"eK": "하이브리드 서보 방식은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 정의됩니다. 주로 기계의 물리적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
 },
 {
 "qE": "Which of the following is NOT a characteristic of NC machine tools?",
@@ -51,8 +51,8 @@
 "복잡한 형상의 부품가공 능률화가 가능하다. (Enables efficient machining of parts with complex shapes.)"
 ],
 "a": 2,
-"eE": "NC machines use standardized tools to streamline the process and reduce the reliance on custom jigs. The goal is efficiency, not to arbitrarily increase the number of tools.",
-"eK": "NC 기계는 공정을 간소화하고 특수 지그에 대한 의존도를 줄이기 위해 표준화된 공구를 사용합니다. 목표는 효율성이지, 공구 수를 임의로 늘리는 것이 아닙니다."
+"eE": "NC machine tools are excellent for high-mix/low-volume production, maintaining constant conditions, and machining complex shapes. However, while tool standardization is a feature, its purpose is to streamline processes and reduce the need for specialized jigs, not to arbitrarily increase the number of tools.",
+"eK": "NC 공작기계는 다품종 소량 생산, 일정한 가공 조건 유지 및 복잡한 형상 가공에 매우 적합합니다. 공구 표준화가 특징이긴 하지만, 그 목적은 특수 지그의 필요성을 줄이고 공정을 간소화하는 것이지, 임의로 공구 수를 늘리는 것이 아닙니다."
 }
 ],
 "Lesson 2": [
@@ -92,7 +92,7 @@
 "절삭날의 마멸이 많다. (There is significant wear on the cutting edge.)"
 ],
 "a": 1,
-"eE": "Down milling actually causes less wear on the cutter and consumes LESS power. The option stating it puts strain on the machine and consumes a lot of power is the incorrect statement.",
+"eE": "Down milling actually causes less wear on the cutter and consumes LESS power. The option stating it puts strain on the machine and consumes a lot of power is incorrect.",
 "eK": "하향절삭은 실제로 커터의 마모가 적고 동력 소비가 작습니다. 기계에 무리를 주고 동력 소비가 많다고 명시한 옵션이 틀린 설명입니다."
 },
 {
@@ -118,7 +118,8 @@
 "o": [
 "중심지령 방식 (Center command method)",
 "증분지령 방식 (Incremental command method)",
-"절대지령 방식 (Absolute command method)"
+"절대지령 방식 (Absolute command method)",
+"기타 지령 (Other commands)"
 ],
 "a": 0,
 "eE": "The two primary methods for commanding a tool's movement position are the Absolute command method (G90) and the Incremental command method (G91). There is no standard 'Center command method'.",
@@ -214,8 +215,8 @@
 "특수 공구가 많이 사용되어 관리비 상승 (Increases maintenance costs due to the heavy use of special tools)"
 ],
 "a": 3,
-"eE": "One of the major advantages of CNC machining is the standardization of tools. This reduces the reliance on expensive, specialized custom tools, thereby lowering maintenance and tooling costs, not increasing them.",
-"eK": "CNC 가공의 주요 장점 중 하나는 공구의 표준화입니다. 이는 비싸고 특수한 맞춤형 공구에 대한 의존도를 줄여 결과적으로 관리비와 공구 비용을 상승시키는 것이 아니라 낮춥니다."
+"eE": "One of the major advantages of CNC machining is the standardization of tools. This actually reduces the reliance on expensive, specialized jigs and custom tools, thereby lowering maintenance and tooling costs.",
+"eK": "CNC 가공의 주요 장점 중 하나는 공구의 표준화입니다. 이는 비싸고 특수한 맞춤형 지그나 공구에 대한 의존도를 줄여 결과적으로 관리비와 공구 비용을 낮춥니다."
 }
 ]
 }
@@ -823,7 +824,7 @@
 ],
 "a": 3,
 "eE": "Simply hitting "Finish" without explicitly selecting the "Erase" command will fail to remove the hatch pattern of the selected component.",
-"eK": "조립도 횡단면 처리 과정에서 원치 않는 회전축 해칭 등을 배제하려면, 메뉴 관리자 조작으로 해당 부품 영역을 지정한 후 지우기(Erase) 처리를 확실히 완수해야 도면상 해칭이 차단 소거됩니다."
+"eK": "조립도 횡단면 처리 과정에서 원치 않는 회전축 해칭 등을 배제하려면, 메뉴 관리자 조작으로 해당 부품 영역 지정한 후 지우기(Erase) 처리를 확실히 완수해야 도면상 해칭이 차단 소거됩니다."
 }
 ],
 "Lesson 2": [
