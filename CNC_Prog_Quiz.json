@@ -109,6 +109,61 @@
 "eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = f_z * Z * n = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다."
 }
 ]
+},
+"Week 2": {
+"Lesson 1": [
+{
+"qE": "Which of the following is NOT a method for commanding the tool's movement position in a CNC machine tool?",
+"qK": "CNC 공작기계에서 공구의 이동위치를 지령하는 방식이 아닌 것은?",
+"o": [
+"중심지령 방식 (Center command method)",
+"증분지령 방식 (Incremental command method)",
+"절대지령 방식 (Absolute command method)"
+],
+"a": 0,
+"eE": "According to the lecture slides (Pages 4 and 5) and the transcript, the two primary methods for commanding a tool's movement position are the Absolute command method (G90) and the Incremental command method (G91). There is no standard 'Center command method' for basic positional coordinates.",
+"eK": "강의 자료(4, 5페이지)와 스크립트에 따르면 공구의 이동 위치를 지령하는 두 가지 주요 방식은 절대지령(G90)과 증분지령(G91)입니다. 기본 위치 좌표를 지정하기 위한 '중심지령 방식'이라는 표준 방법은 없습니다."
+},
+{
+"qE": "Which of the following is NOT a cutting control method in CNC?",
+"qK": "CNC의 절삭 제어 방식이 아닌 것은?",
+"o": [
+"위치결정 제어 (Positioning control)",
+"직선절삭 제어 (Straight cutting control)",
+"윤곽절삭 제어 (Contouring control)",
+"디지털 제어 (Digital control)"
+],
+"a": 3,
+"eE": "Based on foundational CNC principles, the three basic tool movement/cutting control methods are Positioning, Straight Cutting, and Contouring. While CNC systems operate digitally, 'Digital control' is a broad technological term, not a specific tool path cutting control method.",
+"eK": "CNC의 기본 원리에 기반한 3가지 기본 공구 이동/절삭 제어 방식은 위치결정, 직선절삭, 윤곽절삭입니다. CNC 시스템이 디지털로 작동하긴 하지만, '디지털 제어'는 광범위한 기술 용어이지 특정한 공구 경로 절삭 제어 방식이 아닙니다."
+},
+{
+"qE": "What is the linear interpolation code in a CNC program?",
+"qK": "CNC프로그램상에서 직선보간 코드는?",
+"o": [
+"G01",
+"G02",
+"G03",
+"G04"
+],
+"a": 0,
+"eE": "As stated on Slide 10 and heavily emphasized in the transcript examples, G01 is the preparatory function code for linear interpolation. It instructs the machine tool to cut in a straight line at a specified feed rate (F).",
+"eK": "슬라이드 10과 스크립트의 여러 예제에서 강조되었듯이, G01은 직선보간을 위한 준비 기능 코드입니다. 지정된 이송 속도(F)로 직선으로 절삭하도록 공작 기계에 지시합니다."
+},
+{
+"qE": "Which servo mechanism method detects position through the rotation angle of the servo motor shaft or ball screw, and is the most widely used in general CNC machine tools?",
+"qK": "서보기구에서 위치의 검출을 서보모터 축이나 볼 나사의 회전 각도로 검출하는 방식으로 일반 CNC공작기계에서 가장 많이 사용하는 것은?",
+"o": [
+"반폐쇄회로 방식 (Semi-closed loop system)",
+"위치결정 방식 (Positioning system)",
+"개방회로 방식 (Open loop system)",
+"폐쇄회로 방식 (Closed loop system)"
+],
+"a": 0,
+"eE": "The Semi-closed loop system detects speed and position directly from the rotation of the motor or ball screw (rather than from a linear scale on the table like a closed-loop system). Because of its reliability and cost-effectiveness, it is the most widely used system in modern CNC machines.",
+"eK": "반폐쇄회로 방식은 (폐쇄회로 방식처럼 테이블의 직선자에서 검출하는 것이 아니라) 모터나 볼 나사의 회전에서 직접 속도와 위치를 검출합니다. 신뢰성과 비용 효율성 때문에 현대 CNC 기계에서 가장 널리 사용되는 시스템입니다."
+}
+]
 }
 }
 }
