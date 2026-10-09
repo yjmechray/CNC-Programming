@@ -274,6 +274,60 @@
 "eE": "The Comparison Circuit (비교회로) is responsible for receiving the real-time feedback from the position detector (like an encoder or linear scale) and comparing it with the commanded target position to determine the necessary compensation adjustments.",
 "eK": "비교회로는 위치 검출기(인코더나 직선자 등)로부터 실시간 피드백을 받아 지령된 목표 위치와 비교하여 필요한 보정 조정량을 결정하는 역할을 합니다."
 }
+],
+"Lesson 2": [
+{
+"qE": "Which of the following is a correct description of DNC (Direct Numerical Control)?",
+"qK": "DNC(Direct Numerical Control)의 설명으로 옳은 것은?",
+"o": [
+"여러 대의 NC기계를 한 대의 컴퓨터에 연결시켜 제어 (Controlling multiple NC machines connected to a single computer)",
+"NC 공작기계 내에 저장되어 있는 표준부프로그램 (Standard subroutine stored inside an NC machine tool)",
+"컴퓨터(마이크로프로세서)를 내장한 NC공작기계 (An NC machine tool with a built-in computer/microprocessor)",
+"컴퓨터의 핵심기능을 수행하는 중앙 연산 처리장치 (Central processing unit performing core computer functions)"
+],
+"a": 0,
+"eE": "DNC (Direct / Distributed Numerical Control) refers to a system architecture where a single central computer connects to and controls multiple NC/CNC machine tools simultaneously.",
+"eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터에 여러 대의 NC/CNC 공작기계를 연결하여 동시에 총괄 제어하는 시스템을 의미합니다. 컴퓨터를 내장한 공작기계는 CNC이며, 중앙 연산 처리장치는 CPU를 가리킵니다."
+},
+{
+"qE": "Which of the following is difficult for a part programmer to directly verify visually through standard tool path simulation?",
+"qK": "다음 중 일반적인 공구경로 시뮬레이션을 통해 파트 프로그래머가 직접 시각적으로 확인하기 어려운 것은?",
+"o": [
+"공구가 공작물의 필요한 부분까지 제거하는지의 여부 (Whether the tool removes the necessary portion of the workpiece)",
+"공구가 어떤 클램프나 고정구와 충돌하는지의 여부 (Whether the tool collides with clamps or fixtures)",
+"공구가 포켓의 바닥이나 측면, 리브를 관통하여 지나가는지의 여부 (Whether the tool passes through/gouges pocket floors, walls, or ribs)",
+"공구에 어떤 힘이 가해지며, 공구경로가 공구수명에 효율적인지의 여부 (What forces are applied to the tool and whether the tool path is efficient for tool life)"
+],
+"a": 3,
+"eE": "Standard geometric tool path simulations allow programmers to visually check workpiece removal, fixture collisions, and surface gouging. However, physical cutting forces and dynamic tool-life wear parameters cannot be directly observed through visual graphic tool path verification alone.",
+"eK": "일반적인 기하학적 공구 경로 시뮬레이션을 통해서는 가공 여부, 클램프/고정구와의 간섭 및 충돌, 포켓 벽면이나 리브 관통(과절삭) 여부 등을 시각적으로 쉽게 검증할 수 있습니다. 하지만 실제 절삭력의 크기나 공구 수명에 미치는 동적 부하는 단순 시각적 그래픽 시뮬레이션만으로 직접 확인하기 어렵습니다."
+},
+{
+"qE": "Which program block correctly commands the machining of the arc from point A to point B in the given diagram?",
+"qK": "다음 그림의 A 점에서 B 점까지 가공하는 프로그램으로 옳은 것은?",
+"o": [
+"G91 G03 X-30. I10. ;",
+"G91 G03 X-40. I-20. ;",
+"G91 G03 X10. Y5. J-20. ;",
+"G91 G03 X10. Y5. J-10. ;"
+],
+"a": 1,
+"eE": "Moving along the arc from A(50, 5) to B(10, 5) follows a counterclockwise (CCW) trajectory, requiring G03. Under incremental mode (G91), the relative endpoint displacement is X = 10 - 50 = -40 (with Y remaining 0). The center of the circle is at (30, 5), so the incremental vector I from start point A to the center is 30 - 50 = -20 (J = 0). Thus, the correct block is G91 G03 X-40. I-20. ;",
+"eK": "A점(50, 5)에서 B점(10, 5)으로 호를 따라 이동하는 경로는 반시계방향(CCW)이므로 G03을 사용합니다. 증분지령(G91)에서 종점 B까지의 상대 거리는 X = 10 - 50 = -40(Y 변화 없음)입니다. 원호의 중심은 (30, 5)에 위치하므로, 시점 A에서 중심까지의 증분 벡터 I = 30 - 50 = -20(J = 0)이 됩니다. 따라서 올바른 지령절은 'G91 G03 X-40. I-20. ;' 입니다."
+},
+{
+"qE": "Which of the following does NOT correspond to an auxiliary (miscellaneous) function in a CNC program?",
+"qK": "CNC 프로그램의 보조기능에 해당되지 않는 것은?",
+"o": [
+"절삭유 공급 여부 (Coolant supply on/off)",
+"프로그램 시작지령 (Program start command)",
+"주축회전 방향 결정 (Determining spindle rotation direction)",
+"보조프로그램 호출 (Subprogram call)"
+],
+"a": 1,
+"eE": "Auxiliary functions (M codes) handle machine control operations like coolant on/off (M08/M09), spindle CW/CCW direction (M03/M04), subprogram calls (M98), and program stops/ends (M00/M02/M30). Starting a program is handled by the program address (O) and preparatory functions (G), not an auxiliary M function.",
+"eK": "보조기능(M 기능)은 절삭유 온/오프(M08/M09), 주축 정/역회전(M03/M04), 보조프로그램 호출(M98), 프로그램 정지 및 종료(M00/M02/M30) 등을 담당합니다. 프로그램 번호 부여나 시작은 O 어드레스 및 준비기능(G코드) 좌표 설정에 의해 이루어지며 '프로그램 시작지령'이라는 보조기능은 없습니다."
+}
 ]
 }
 }
