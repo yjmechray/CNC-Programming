@@ -1,0 +1,398 @@
+{
+"week1": [
+{
+"type": "header",
+"text": "Tool Selection & Change"
+},
+{
+"code": "T01 M06 ;",
+"explanation": "Selects tool number 1 and executes the automatic tool change. (1번 공구를 선택하고 자동 공구 교환을 실행합니다.)",
+"breakdown": [
+{
+"part": "T01",
+"desc": "Tool number 1 (1번 공구)"
+},
+{
+"part": "M06",
+"desc": "Automatic tool change command (자동 공구 교환 명령)"
+}
+]
+},
+{
+"type": "header",
+"text": "Rapid Motion"
+},
+{
+"code": "G00 G90 X15. Y25. ;",
+"explanation": "Moves the tool rapidly to absolute coordinates X15, Y25 without cutting. (절단 없이 절대 좌표 X15, Y25로 공구를 급속 이송합니다.)",
+"breakdown": [
+{
+"part": "G00",
+"desc": "Rapid positioning (급속 위치 결정)"
+},
+{
+"part": "G90",
+"desc": "Absolute programming (절대 지령)"
+},
+{
+"part": "X15. Y25.",
+"desc": "Target coordinates (목표 좌표)"
+}
+]
+},
+{
+"type": "header",
+"text": "Linear Cut"
+},
+{
+"code": "G01 X10. Y10. F100 ;",
+"explanation": "Performs a linear cut to X10, Y10 at a feed rate of 100 mm/min. (이송 속도 100으로 X10, Y10까지 직선 가공을 수행합니다.)",
+"breakdown": [
+{
+"part": "G01",
+"desc": "Linear interpolation (직선 보간)"
+},
+{
+"part": "F100",
+"desc": "Feed rate 100 mm/min (이송 속도 100)"
+}
+]
+}
+],
+"week2": [
+{
+"type": "header",
+"text": "Triangle Path (Absolute Mode)"
+},
+{
+"code": "G90 G00 X40. Y20. ;",
+"explanation": "Sets to absolute mode and rapidly moves to the starting point of the triangle. (절대 지령 모드로 설정하고 삼각형의 시작점으로 급속 이송합니다.)",
+"breakdown": [
+{
+"part": "G90",
+"desc": "Absolute mode (절대 지령)"
+}
+]
+},
+{
+"code": "G01 X-10. Y50. F200 ;",
+"explanation": "Performs a linear cut to the next vertex using absolute coordinates. (절대 좌표를 사용하여 다음 꼭짓점까지 직선 가공을 수행합니다.)",
+"breakdown": [
+{
+"part": "G01",
+"desc": "Linear interpolation (직선 보간)"
+},
+{
+"part": "F200",
+"desc": "Feed rate 200 mm/min (이송 속도 200)"
+}
+]
+},
+{
+"type": "header",
+"text": "Triangle Path (Incremental Mode)"
+},
+{
+"code": "G91 G00 X40. Y20. ;",
+"explanation": "Sets to incremental mode and rapidly moves from the current position. (증분 지령 모드로 설정하고 현재 위치에서 급속 이송합니다.)",
+"breakdown": [
+{
+"part": "G91",
+"desc": "Incremental mode (증분 지령)"
+}
+]
+},
+{
+"code": "G01 X-50. Y30. F200 ;",
+"explanation": "Performs a linear cut by moving -50 in X and +30 in Y from the previous point. (이전 지점에서 X로 -50, Y로 +30만큼 이동하여 직선 가공을 수행합니다.)",
+"breakdown": [
+{
+"part": "X-50.",
+"desc": "Distance to move in X (X축 이동 거리)"
+},
+{
+"part": "Y30.",
+"desc": "Distance to move in Y (Y축 이동 거리)"
+}
+]
+}
+],
+"week3": [
+{
+"type": "header",
+"text": "Circular Interpolation (Radius R)"
+},
+{
+"code": "G02 X55. Y55. R15. ;",
+"explanation": "Clockwise circular interpolation to X55, Y55 using a defined radius of 15. (반경 15를 사용하여 X55, Y55까지 시계 방향 원호 보간을 수행합니다.)",
+"breakdown": [
+{
+"part": "G02",
+"desc": "Circular interpolation clockwise (원호 보간 시계방향)"
+},
+{
+"part": "R15.",
+"desc": "Arc radius 15 (원호 반경 15)"
+}
+]
+},
+{
+"code": "G03 X98. Y68. R12. ;",
+"explanation": "Counterclockwise circular interpolation to X98, Y68 with a radius of 12. (반경 12를 사용하여 X98, Y68까지 반시계 방향 원호 보간을 수행합니다.)",
+"breakdown": [
+{
+"part": "G03",
+"desc": "Circular interpolation counterclockwise (원호 보간 반시계방향)"
+},
+{
+"part": "R12.",
+"desc": "Arc radius 12 (원호 반경 12)"
+}
+]
+},
+{
+"type": "header",
+"text": "Circular Interpolation (Center Vector J)"
+},
+{
+"code": "G02 X55. Y55. J15. ;",
+"explanation": "Clockwise circular interpolation using the Y-axis distance from the start point to the center. (시작점에서 중심까지의 Y축 거리를 사용하여 시계 방향 원호 보간을 수행합니다.)",
+"breakdown": [
+{
+"part": "G02",
+"desc": "Circular interpolation clockwise (원호 보간 시계방향)"
+},
+{
+"part": "J15.",
+"desc": "Distance to arc center in Y-axis (Y축 중심점 거리)"
+}
+]
+}
+],
+"week4": [
+{
+"type": "header",
+"text": "Program Setup & Home Return"
+},
+{
+"code": "O3456 ;",
+"explanation": "Defines the program number. (프로그램 번호를 정의합니다.)",
+"breakdown": [
+{
+"part": "O3456",
+"desc": "Program Name/Number (프로그램 번호)"
+}
+]
+},
+{
+"code": "G17 G40 G80 ;",
+"explanation": "Safety block: Sets XY plane, cancels cutter radius compensation, and cancels canned cycles. (안전 블록: XY 평면 설정, 공구 반경 보정 취소, 고정 사이클 취소.)",
+"breakdown": [
+{
+"part": "G17",
+"desc": "XY Plane selection (XY 평면 지정)"
+},
+{
+"part": "G40",
+"desc": "Cutter compensation cancel (공구 반경 보정 취소)"
+},
+{
+"part": "G80",
+"desc": "Canned cycle cancel (고정 사이클 취소)"
+}
+]
+},
+{
+"code": "G91 G28 Z0. ;",
+"explanation": "Returns the Z-axis safely to the machine reference point in incremental mode. (증분 지령 모드에서 Z축을 기계 원점으로 안전하게 복귀시킵니다.)",
+"breakdown": [
+{
+"part": "G28",
+"desc": "Return to reference point (기계 원점 복귀)"
+},
+{
+"part": "Z0.",
+"desc": "Z-axis zero point (Z축 원점)"
+}
+]
+},
+{
+"type": "header",
+"text": "Work Coordinate & Spindle Start"
+},
+{
+"code": "G54 G90 G00 X0. Y0. S1500 M03 ;",
+"explanation": "Selects work coordinate system 1, moves rapidly to origin, and starts spindle clockwise at 1500 RPM. (공작물 좌표계 1을 선택하고, 원점으로 급속 이송하며, 1500 RPM으로 주축을 정회전시킵니다.)",
+"breakdown": [
+{
+"part": "G54",
+"desc": "Work coordinate system 1 (공작물 좌표계 1)"
+},
+{
+"part": "S1500",
+"desc": "Spindle speed 1500 RPM (주축 회전수 1500)"
+},
+{
+"part": "M03",
+"desc": "Spindle forward/clockwise (주축 정회전)"
+}
+]
+},
+{
+"code": "G43 Z5. H02 M08 ;",
+"explanation": "Applies tool length compensation, safely lowers to Z5, and turns on coolant. (공구 길이 보정을 적용하고 Z5로 안전하게 하강하며 절삭유를 켭니다.)",
+"breakdown": [
+{
+"part": "G43",
+"desc": "Tool length compensation + (공구 길이 보정 +)"
+},
+{
+"part": "H02",
+"desc": "Tool length offset register 2 (공구 길이 보정 번호 2)"
+},
+{
+"part": "M08",
+"desc": "Coolant ON (절삭유 켬)"
+}
+]
+},
+{
+"type": "header",
+"text": "Program Termination"
+},
+{
+"code": "M30 ;",
+"explanation": "Ends the program and rewinds the memory to the beginning. (프로그램을 종료하고 처음으로 되감습니다.)",
+"breakdown": [
+{
+"part": "M30",
+"desc": "End of program (프로그램 종료)"
+}
+]
+}
+],
+"week5": [
+{
+"type": "header",
+"text": "Cutter Radius Compensation"
+},
+{
+"code": "G41 X... Y... D01 F200 ;",
+"explanation": "Applies left-side cutter radius compensation using offset register 1. (보정 번호 1을 사용하여 좌측 공구 반경 보정을 적용합니다.)",
+"breakdown": [
+{
+"part": "G41",
+"desc": "Cutter radius compensation left (공구 반경 보정 좌측)"
+},
+{
+"part": "D01",
+"desc": "Radius offset register 1 (반경 보정 번호 1)"
+}
+]
+},
+{
+"code": "G42 Y6. D01 F200 ;",
+"explanation": "Applies right-side cutter radius compensation using offset register 1. (보정 번호 1을 사용하여 우측 공구 반경 보정을 적용합니다.)",
+"breakdown": [
+{
+"part": "G42",
+"desc": "Cutter radius compensation right (공구 반경 보정 우측)"
+},
+{
+"part": "D01",
+"desc": "Radius offset register 1 (반경 보정 번호 1)"
+}
+]
+},
+{
+"code": "G40 G01 X0. ;",
+"explanation": "Cancels cutter radius compensation and returns to a linear cutting path. (공구 반경 보정을 취소하고 직선 가공 경로로 돌아갑니다.)",
+"breakdown": [
+{
+"part": "G40",
+"desc": "Cutter compensation cancel (공구 반경 보정 취소)"
+}
+]
+}
+],
+"week6": [
+{
+"type": "header",
+"text": "Tapping Cycle (Fixed Cycle)"
+},
+{
+"code": "G84 G98 Z-23. R3. F250 ;",
+"explanation": "Executes a tapping cycle to a depth of Z-23, returning to the initial level (G98) with an R-plane of 3. (R점 3을 사용하여 Z-23 깊이까지 태핑 사이클을 실행하고 초기점(G98)으로 복귀합니다.)",
+"breakdown": [
+{
+"part": "G84",
+"desc": "Tapping cycle (태핑 사이클)"
+},
+{
+"part": "G98",
+"desc": "Return to initial level (초기점 복귀)"
+},
+{
+"part": "Z-23.",
+"desc": "Target hole depth (목표 구멍 깊이)"
+},
+{
+"part": "R3.",
+"desc": "Retract/Reference plane (R점/복귀 평면)"
+}
+]
+},
+{
+"code": "G49 G80 G00 Z100. M09 ;",
+"explanation": "Cancels tool length compensation and fixed cycles, safely retracts, and turns off coolant. (공구 길이 보정 및 고정 사이클을 취소하고, 안전하게 후퇴시키며 절삭유를 끕니다.)",
+"breakdown": [
+{
+"part": "G49",
+"desc": "Tool length compensation cancel (공구 길이 보정 취소)"
+},
+{
+"part": "G80",
+"desc": "Fixed cycle cancel (고정 사이클 취소)"
+},
+{
+"part": "M09",
+"desc": "Coolant OFF (절삭유 끔)"
+}
+]
+}
+],
+"week7": [
+{
+"type": "header",
+"text": "Manual Profile Contour (Excerpt)"
+},
+{
+"code": "G54 G90 G00 X-10. Y-10. S1000 M03 ;",
+"explanation": "Starts the contour program from a safe off-part approach point (X-10, Y-10). (안전한 외부 접근점(X-10, Y-10)에서 윤곽 프로그램을 시작합니다.)",
+"breakdown": [
+{
+"part": "X-10. Y-10.",
+"desc": "Off-part approach point (외부 접근점)"
+}
+]
+},
+{
+"code": "G42 Y6. D01 F200 ;",
+"explanation": "Applies right-side cutter radius compensation using offset register 1 while moving to Y6. (Y6으로 이동하는 동안 보정 번호 1을 사용하여 우측 공구 반경 보정을 적용합니다.)",
+"breakdown": [
+{
+"part": "G42",
+"desc": "Cutter radius compensation right (공구 반경 보정 우측)"
+},
+{
+"part": "D01",
+"desc": "Radius offset register 1 (반경 보정 번호 1)"
+},
+{
+"part": "F200",
+"desc": "Feed rate 200 (이송 속도 200)"
+}
+]
+}
+]
+}
