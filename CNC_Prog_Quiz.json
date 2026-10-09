@@ -494,6 +494,60 @@
           "eE": "Helical interpolation involves simultaneous movement along three axes (typically circular movement in the X and Y axes while continuously moving linearly along the Z axis, like cutting a screw thread). A 2-axis CNC machine can only control two axes simultaneously, making helical interpolation impossible.",
           "eK": "헬리컬 보간은 세 축을 따라 동시에 이동하는 것을 포함합니다(일반적으로 나사산을 깎는 것처럼 X 및 Y 축에서 원형으로 이동하면서 동시에 Z 축을 따라 선형으로 이동). 2축 CNC 기계는 두 축만 동시에 제어할 수 있으므로 헬리컬 보간이 불가능합니다."
         }
+      ],
+      "Lesson 2": [
+        {
+          "qE": "Which of the following is NOT a control method for performing operations in a CNC machine tool?",
+          "qK": "CNC공작기계에서 작업을 수행하기 위한 제어방식 중 틀린 것은?",
+          "o": [
+            "위치결정 제어 (Positioning control)",
+            "직선절삭 제어 (Straight cutting control)",
+            "평면절삭 제어 (Plane cutting control)",
+            "윤곽절삭(연속절삭) 제어 (Contouring/Continuous cutting control)"
+          ],
+          "a": 2,
+          "eE": "The fundamental control methods in CNC programming are positioning, straight cutting, and contouring (continuous) control. 'Plane cutting control' is not recognized as a distinct primary control category.",
+          "eK": "CNC 프로그래밍의 기본 제어 방식은 위치결정, 직선절삭, 그리고 윤곽(연속)절삭 제어입니다. '평면절삭 제어'는 구별되는 기본 제어 범주로 인식되지 않습니다."
+        },
+        {
+          "qE": "Which auxiliary function commands the normal (forward/clockwise) rotation of the spindle in a CNC machine tool part program?",
+          "qK": "CNC공작기계의 가공용 프로그램에서 주축 정회전을 지령하는 보조기능은?",
+          "o": [
+            "M02",
+            "M03",
+            "M04",
+            "M05"
+          ],
+          "a": 1,
+          "eE": "The M03 command is used to start the spindle rotating in the normal (forward or clockwise) direction. M04 is for reverse (counterclockwise) rotation, and M05 commands the spindle to stop.",
+          "eK": "M03 지령은 주축을 정방향(정회전 또는 시계 방향)으로 회전시키기 시작할 때 사용됩니다. M04는 역방향(반시계 방향) 회전용이며, M05는 주축을 정지시킵니다."
+        },
+        {
+          "qE": "Which function is used to call a subprogram?",
+          "qK": "보조 프로그램을 호출 할수 있는 기능은?",
+          "o": [
+            "G30",
+            "G98",
+            "M98",
+            "M99"
+          ],
+          "a": 2,
+          "eE": "The auxiliary command M98 is utilized specifically to call and execute a subprogram. M99 is subsequently used within the subprogram to indicate its end and return control back to the main program.",
+          "eK": "보조 기능 M98은 보조 프로그램을 호출하고 실행하는 데 특별히 사용됩니다. M99는 이후 보조 프로그램 내에서 프로그램 종료를 나타내고 메인 프로그램으로 제어를 반환하는 데 사용됩니다."
+        },
+        {
+          "qE": "When specifying the movement in the diagram below using the absolute command method, which is correct?",
+          "qK": "아래 그림에서 절대지령 방식에 의한 이동을 지령하고자 할 때, 옳은 것은?",
+          "o": [
+            "G90 G01 X15.0 Y20.0 F100;",
+            "G90 G01 X-15.0 Y10.0 F100;",
+            "G91 G01 X15.0 Y20.0 F100;",
+            "G91 G01 X-15.0 Y10.0 F100;"
+          ],
+          "a": 0,
+          "eE": "The tool is moving from the Start Point (X30, Y10) to the End Point (X15, Y20). The Absolute command method (G90) requires the coordinate values of the final destination, regardless of the starting point. Therefore, the command is simply the end point coordinates: G90 G01 X15.0 Y20.0.",
+          "eK": "공구가 시점(X30, Y10)에서 종점(X15, Y20)으로 이동하고 있습니다. 절대지령 방식(G90)은 시작점과 상관없이 최종 목적지의 좌표값을 요구합니다. 따라서 지령은 종점 좌표인 G90 G01 X15.0 Y20.0이 됩니다."
+        }
       ]
     }
   }
