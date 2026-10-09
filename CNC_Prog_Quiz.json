@@ -436,7 +436,7 @@
           ],
           "a": 0,
           "eE": "G17 is the preparatory command used to define the XY plane for machining operations, such as circular interpolation and cutter compensation. G18 defines the ZX plane, and G19 defines the YZ plane.",
-          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면을 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
+          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
         }
       ]
     },
@@ -657,6 +657,62 @@
           "a": 0,
           "eE": "In fixed cycle commands (like G82 or G89 for drilling/boring), the 'P' address specifies the Dwell time (pause) at the bottom of the hole in milliseconds. This ensures a clean, flat finish at the bottom of the cut.",
           "eK": "고정 사이클 지령(드릴링/보링을 위한 G82 또는 G89 등)에서 'P' 어드레스는 구멍 바닥에서의 휴지(일시 정지) 시간을 밀리초 단위로 지정합니다. 이는 절삭 바닥면을 깨끗하고 평평하게 마무리하기 위함입니다."
+        }
+      ]
+    },
+    "Week 7": {
+      "Lesson 1": [
+        {
+          "qE": "Which mechanism directly affects backlash in a CNC machine tool?",
+          "qK": "CNC공작 기계에서 백 래시(Back Lash)에 직접적인 영향을 미치는 기구는?",
+          "o": [
+            "모터 (Motor)",
+            "베어링 (Bearing)",
+            "커플링 (Coupling)",
+            "볼 스크류 (Ball screw)"
+          ],
+          "a": 3,
+          "eE": "Backlash is the mechanical play or lost motion caused by clearance between the threads of the lead screw and the nut. CNC machines typically use recirculating ball screws to directly minimize this backlash compared to conventional lead screws.",
+          "eK": "백 래시는 리드 스크루와 너트의 나사산 사이의 간극으로 인해 발생하는 기계적 유격 또는 잃어버린 움직임입니다. CNC 기계는 일반적으로 기존의 리드 스크루에 비해 이 백 래시를 직접적으로 최소화하기 위해 볼 스크루를 사용합니다."
+        },
+        {
+          "qE": "Which of the following is an incorrect explanation of the sequence number in a CNC program?",
+          "qK": "CNC프로그램 중 전개번호에 대한 설명으로 틀린 것은?",
+          "o": [
+            "특정 블록을 탐색할 때 편리하다. (Convenient when searching for a specific block.)",
+            "특별히 중요한 지령절에만 부여해도 상관없다. (It does not matter if it is assigned only to particularly important instruction blocks.)",
+            "프로그램들을 서로 구별 시키기 위해서 붙인다. (It is attached to distinguish programs from each other.)",
+            "지령절의 첫머리에 어드레스 N과 숫자를 부여한다. (The address N and a number are assigned to the beginning of the instruction block.)"
+          ],
+          "a": 2,
+          "eE": "Program numbers (address O) are used to distinguish different programs from each other. Sequence numbers (address N) are used for labeling specific blocks inside a program for searching or restarting, and do not distinguish the programs themselves.",
+          "eK": "서로 다른 프로그램을 구별하는 데에는 프로그램 번호(어드레스 O)가 사용됩니다. 전개번호(어드레스 N)는 검색이나 재시작을 위해 프로그램 내부의 특정 블록에 레이블을 지정하는 데 사용되며 프로그램 자체를 구별하지는 않습니다."
+        },
+        {
+          "qE": "Which of the following is a correct explanation for G80 in the N10 block of the following machining center program?\n[ N10 G40 G49 G80 ; ]",
+          "qK": "다음 머시닝센터 프로그램에서 N10블록의 G80에 대한 설명중 옳은 것은?\n[ N10 G40 G49 G80 ; ]",
+          "o": [
+            "공구경 우측보정 (Tool radius right compensation)",
+            "고정 사이클 취소 (Canned cycle cancel)",
+            "공구경 보정 해제 (Tool radius compensation cancel)",
+            "공구길이 보정 해제 (Tool length compensation cancel)"
+          ],
+          "a": 1,
+          "eE": "In the initialization block 'N10 G40 G49 G80 ;', G40 cancels tool radius compensation, G49 cancels tool length compensation, and G80 is the standard G-code for canceling fixed/canned cycles.",
+          "eK": "초기화 블록 'N10 G40 G49 G80 ;'에서 G40은 공구경 보정 취소, G49는 공구길이 보정 취소이며, G80은 고정 사이클을 취소하는 표준 G-코드입니다."
+        },
+        {
+          "qE": "Which system uses a pulse motor as the drive motor, moves by the number of pulses input to the controller, has a simple structure because there is no detector or feedback circuit, and is directly affected by the rotational precision of the pulse motor and the precision of the ball screw?",
+          "qK": "구동 전동기로 펄스 전동기를 이용하며 제어장치로 입력된 펄스 수만큼 움직이고 검출기나 피드백 회로가 없으므로 구조가 간단하며, 펄스 전동기의 회전 정밀도와 볼 나사의 정밀도에 직접적인 영향을 받는 방식은?",
+          "o": [
+            "폐쇄 회로 방식 (Closed loop system)",
+            "반폐쇄 회로 방식 (Semi-closed loop system)",
+            "개방 회로 방식 (Open loop system)",
+            "하이브리드 서보 방식 (Hybrid servo system)"
+          ],
+          "a": 2,
+          "eE": "An Open Loop System sends pulses to a stepping/pulse motor without using any feedback mechanisms (detectors/scales) to verify the actual position. Therefore, its accuracy relies entirely on the mechanical precision of the motor and the ball screw.",
+          "eK": "개방 회로 방식은 실제 위치를 확인하기 위한 피드백 메커니즘(검출기/스케일)을 사용하지 않고 스테핑/펄스 모터에 펄스를 보냅니다. 따라서 그 정확도는 전적으로 모터와 볼 스크루의 기계적 정밀도에 의존합니다."
         }
       ]
     }
