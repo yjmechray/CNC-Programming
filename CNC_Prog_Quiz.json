@@ -385,6 +385,62 @@
 "eK": "ATC는 자동 공구 교환 장치(Automatic Tool Changer)를 의미합니다. 기계가 사람의 개입 없이 여러 절삭 공구를 원활하게 교체할 수 있도록 하여 표준 CNC 밀링 머신을 '머시닝 센터'로 업그레이드하는 핵심 장치입니다."
 }
 ]
+},
+"Week 4": {
+"Lesson 2": [
+{
+"qE": "What is the process of using NC data to check the tool's position, overcuts, and undercuts on a computer before actual machining?",
+"qK": "NC 데이터를 이용하여 실제 가공 전에 컴퓨터상에서 공구의 위치, 과절삭, 미절삭 등을 확인하는 과정은?",
+"o": [
+"전처리 (Pre-processing)",
+"후처리 (Post-processing)",
+"공구경로 검증 (Tool path verification)",
+"NC 데이터 전송 (NC data transmission)"
+],
+"a": 2,
+"eE": "Tool path verification is a critical simulation step in CAM workflows. It allows programmers to visually confirm the tool's movements on a computer, checking for collisions, overcuts (gouging), and undercuts before any physical material is cut on the CNC machine.",
+"eK": "공구 경로 검증은 CAM 작업 흐름에서 중요한 시뮬레이션 단계입니다. 프로그래머가 실제 CNC 기계에서 재료를 절삭하기 전에 컴퓨터에서 공구의 움직임을 시각적으로 확인하여 충돌, 과절삭 및 미절삭을 점검할 수 있게 해줍니다."
+},
+{
+"qE": "In the following CNC milling program, which block will cause an error?\nN005 S1000 M03;\nN006 G91 G01 Z-5. F80 M08;\nN007 X20.;\nN008 G02 X10. I5.;\nN009 G03 X15. R5.;\nN010 G01 Y20.;",
+"qK": "다음 CNC 밀링 프로그램에서 오류가 발생되는 블록은?\nN005 S1000 M03;\nN006 G91 G01 Z-5. F80 M08;\nN007 X20.;\nN008 G02 X10. I5.;\nN009 G03 X15. R5.;\nN010 G01 Y20.;",
+"o": [
+"N006",
+"N007",
+"N008",
+"N009"
+],
+"a": 3,
+"eE": "Block N009 will cause a geometry error. In incremental mode (G91), block N009 commands the tool to travel a relative distance of X=15. However, the specified radius is R=5, which means the maximum possible diameter (straight-line distance across the circle) is only 10. A circle with a diameter of 10 cannot span a distance of 15.",
+"eK": "블록 N009에서 기하학적 오류가 발생합니다. 증분 모드(G91)에서 N009 블록은 공구에 X=15의 상대 거리를 이동하도록 지시합니다. 하지만 지정된 반지름이 R=5이므로 가능한 최대 지름(원통을 가로지르는 직선 거리)은 10입니다. 지름이 10인 원호로는 15의 거리를 이동할 수 없습니다."
+},
+{
+"qE": "Which NC servo mechanism controls position using a stepping motor without a feedback device?",
+"qK": "피드백 장치 없이 스태핑 모터를 사용해서 위치를 제어하는 NC 서보기구 방식은?",
+"o": [
+"개방회로 방식 (Open loop system)",
+"복합회로 방식 (Hybrid loop system)",
+"폐쇄회로 방식 (Closed loop system)",
+"반 폐쇄회로 방식 (Semi-closed loop system)"
+],
+"a": 0,
+"eE": "An open loop system uses stepping motors and operates without any feedback mechanism. It simply sends command pulses to the motor, assuming the motor moves the exact commanded distance without verifying its actual position.",
+"eK": "개방회로 방식은 스테핑 모터를 사용하며 피드백 장치 없이 작동합니다. 실제 위치를 확인하지 않고 모터가 명령된 거리만큼 정확하게 이동한다고 가정하고 모터에 명령 펄스만 보냅니다."
+},
+{
+"qE": "What is the code used to set the XY plane in a machining center?",
+"qK": "머시닝센터에서 XY 평면을 설정하는 코드는?",
+"o": [
+"G17",
+"G18",
+"G19",
+"G20"
+],
+"a": 0,
+"eE": "G17 is the preparatory command used to define the XY plane for machining operations, such as circular interpolation and cutter compensation. G18 defines the ZX plane, and G19 defines the YZ plane.",
+"eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면을 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
+}
+]
 }
 }
 }
