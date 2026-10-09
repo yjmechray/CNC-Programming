@@ -287,7 +287,7 @@
 ],
 "a": 0,
 "eE": "DNC (Direct / Distributed Numerical Control) refers to a system architecture where a single central computer connects to and controls multiple NC/CNC machine tools simultaneously.",
-"eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터에 여러 대의 NC/CNC 공작기계를 연결하여 동시에 총괄 제어하는 시스템을 의미합니다. 컴퓨터를 내장한 공작기계는 CNC이며, 중앙 연산 처리장치는 CPU를 가리킵니다."
+"eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터에 여러 대의 NC/CNC 공작기계를 연결하여 동시에 총괄 제어하는 시스템을 의미합니다. 컴퓨터를 내장한 공작기계는 CNC이며, 중앙 연산 처리장치는 CPU 가리킵니다."
 },
 {
 "qE": "Which of the following is difficult for a part programmer to directly verify visually through standard tool path simulation?",
@@ -327,6 +327,62 @@
 "a": 1,
 "eE": "Auxiliary functions (M codes) handle machine control operations like coolant on/off (M08/M09), spindle CW/CCW direction (M03/M04), subprogram calls (M98), and program stops/ends (M00/M02/M30). Starting a program is handled by the program address (O) and preparatory functions (G), not an auxiliary M function.",
 "eK": "보조기능(M 기능)은 절삭유 온/오프(M08/M09), 주축 정/역회전(M03/M04), 보조프로그램 호출(M98), 프로그램 정지 및 종료(M00/M02/M30) 등을 담당합니다. 프로그램 번호 부여나 시작은 O 어드레스 및 준비기능(G코드) 좌표 설정에 의해 이루어지며 '프로그램 시작지령'이라는 보조기능은 없습니다."
+}
+]
+},
+"Week 4": {
+"Lesson 1": [
+{
+"qE": "Among the following CNC machine tool components, which one replaces the manual operation performed directly by a person in a conventional machine tool?",
+"qK": "다음 CNC 공작기계 구성 중 범용공작기계에서 사람이 직접 수동조작으로 하던 일을 대신하는 구성요소는?",
+"o": [
+"서보기구 (Servo mechanism)",
+"볼 스크루 (Ball screw)",
+"정보처리 회로 (Information processing circuit)",
+"테이블 및 컬럼 (Table and column)"
+],
+"a": 0,
+"eE": "In a CNC system, the servo mechanism acts as the 'hands and feet' of the machine. It replaces the human operator's manual turning of handwheels by physically driving the table and spindle according to the computerized commands.",
+"eK": "CNC 시스템에서 서보 기구는 기계의 '손과 발' 역할을 합니다. 작업자가 수동으로 핸들을 돌리는 것을 대신하여 컴퓨터 지령에 따라 테이블과 주축을 물리적으로 구동시킵니다."
+},
+{
+"qE": "Among the circuit methods used in servo mechanisms, which one is used when high precision is required in a machine with poor compensation conditions (e.g., poor rigidity)?",
+"qK": "서보기구에 사용되는 회로방식 중 보정조건이 좋지 않은 기계에서 고정밀도를 요구할 때 사용되는 것은?",
+"o": [
+"개방회로방식 (Open loop system)",
+"반개방회로방식 (Semi-open loop system)",
+"반폐쇄회로방식 (Semi-closed loop system)",
+"하이브리드 서보방식 (Hybrid servo system)"
+],
+"a": 3,
+"eE": "The Hybrid servo system is a blend of the semi-closed and closed-loop systems. It is primarily utilized for heavy or large-scale machine tools where increasing the physical stiffness (rigidity) is difficult, yet high precision is demanded.",
+"eK": "하이브리드 서보 방식은 반폐쇄회로와 폐쇄회로 방식을 절충한 시스템입니다. 주로 물리적 강성을 높이기 어렵지만 높은 정밀도가 요구되는 무겁거나 대형인 공작기계에 활용됩니다."
+},
+{
+"qE": "When machining with a 2-flute end mill in a machining center at a feed rate (G94) of F100, what is the feed distance per tooth of the end mill in mm? (Assume the spindle speed is 500 rpm.)",
+"qK": "머시닝센터에서 2날 엔드밀을 사용하여 이송속도(G94) F100으로 가공할때 엔드밀의 날 하나당 이송거리는 몇 mm 인가? (단, 주축의 회전수는 500 rpm 이다.)",
+"o": [
+"0.05",
+"0.1",
+"0.2",
+"0.25"
+],
+"a": 1,
+"eE": "The formula for table feed rate is F = f_z * Z * n (Feed = Feed per tooth * Number of teeth * RPM). Given F = 100, Z = 2, and n = 500, the equation is 100 = f_z * 2 * 500. Solving this gives 100 = f_z * 1000, so f_z = 0.1 mm/tooth.",
+"eK": "테이블 이송 속도 공식은 F = f_z * Z * n (이송속도 = 날당 이송 * 날 수 * 회전수)입니다. F = 100, Z = 2, n = 500이 주어졌으므로 방정식은 100 = f_z * 2 * 500이 됩니다. 이를 풀면 100 = f_z * 1000이 되어 f_z = 0.1 mm/tooth가 됩니다."
+},
+{
+"qE": "What is the device that automatically changes tools in a machining center?",
+"qK": "머시닝 센터에서 자동으로 공구를 교환해 주는 장치는?",
+"o": [
+"APC",
+"APT",
+"ATC",
+"TURRET"
+],
+"a": 2,
+"eE": "ATC stands for Automatic Tool Changer. It is the defining mechanism that upgrades a standard CNC milling machine into a 'Machining Center' by allowing the machine to seamlessly swap between multiple cutting tools without human intervention.",
+"eK": "ATC는 자동 공구 교환 장치(Automatic Tool Changer)를 의미합니다. 기계가 사람의 개입 없이 여러 절삭 공구를 원활하게 교체할 수 있도록 하여 표준 CNC 밀링 머신을 '머시닝 센터'로 업그레이드하는 핵심 장치입니다."
 }
 ]
 }
