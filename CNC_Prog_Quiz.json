@@ -436,7 +436,63 @@
           ],
           "a": 0,
           "eE": "G17 is the preparatory command used to define the XY plane for machining operations, such as circular interpolation and cutter compensation. G18 defines the ZX plane, and G19 defines the YZ plane.",
-          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면을 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
+          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
+        }
+      ]
+    },
+    "Week 5": {
+      "Lesson 1": [
+        {
+          "qE": "What is the correct sequence of a standard CAD/CAM workflow?\n(A) Definition of machining process\n(B) C/L (Cutter Location) data generation\n(C) Machining using NC data\n(D) Shape modeling\n(E) Post-processing",
+          "qK": "일반적인 CAD/CAM작업의 순서로 옳은 것은?\n(ㄱ) 가공공정 정의\n(ㄴ) C/L 데이터 생성\n(ㄷ) NC 데이터를 이용한 가공\n(ㄹ) 형상 모델링\n(ㅁ) 포스트 프로세싱",
+          "o": [
+            "(ㄱ) → (ㄴ) → (ㄷ) → (ㄹ) → (ㅁ) (A → B → C → D → E)",
+            "(ㄹ) → (ㄴ) → (ㄷ) → (ㄱ) → (ㅁ) (D → B → C → A → E)",
+            "(ㄱ) → (ㄹ) → (ㅁ) → (ㄴ) → (ㄷ) (A → D → E → B → C)",
+            "(ㄹ) → (ㄱ) → (ㄴ) → (ㅁ) → (ㄷ) (D → A → B → E → C)"
+          ],
+          "a": 3,
+          "eE": "The standard CAD/CAM workflow begins with shape modeling (D). Next, the machining process is defined (A), followed by generating the Cutter Location (C/L) data (B). This data is then post-processed into machine-specific NC code (E). Finally, the actual machining is performed using this NC data (C).",
+          "eK": "표준 CAD/CAM 작업 흐름은 형상 모델링(ㄹ)으로 시작합니다. 다음으로 가공 공정을 정의(ㄱ)하고 커터 위치(C/L) 데이터를 생성(ㄴ)합니다. 그런 다음 이 데이터를 기계별 NC 코드로 포스트 프로세싱(ㅁ)합니다. 마지막으로 이 NC 데이터를 사용하여 실제 가공(ㄷ)을 수행합니다."
+        },
+        {
+          "qE": "Which of the following is NOT considered a hardware component of a machine tool?",
+          "qK": "공작기계 하드웨어의 구성요소를 볼 수 없는 것은?",
+          "o": [
+            "파트 프로그램 (Part program)",
+            "제어 루프 장치 (Control Loop Unit; CLU)",
+            "기계 제어 장치 (Machine Control Unit; MCU)",
+            "데이터 처리 장치 (Data Processing Unit; DPU)"
+          ],
+          "a": 0,
+          "eE": "A part program is a set of coded instructions (software/data) that tells the machine what to do. The MCU, CLU, and DPU are all physical hardware control units that process and execute those instructions.",
+          "eK": "파트 프로그램은 기계에 수행할 작업을 알려주는 코드화된 명령어 세트(소프트웨어/데이터)입니다. MCU, CLU 및 DPU는 모두 이러한 명령을 처리하고 실행하는 물리적 하드웨어 제어 장치입니다."
+        },
+        {
+          "qE": "What information is NOT included in a part program used in numerical control?",
+          "qK": "수치제어에서 사용되는 파트 프로그램에 들어있지 않은 정보는?",
+          "o": [
+            "공구 교환 (Tool change)",
+            "절삭유 공급/중지 (Coolant supply on/off)",
+            "절삭공구의 동작 정보 (Motion information of the cutting tool)",
+            "파트 프로그램에 사용된 곡선의 종류 (Types of curves used in the part program)"
+          ],
+          "a": 3,
+          "eE": "Part programs (NC code) contain direct machine commands like tool changes (M06), coolant toggles (M08/M09), and tool paths (G01, G02, G03). They do not contain abstract design metadata like the mathematical 'type of curves' (e.g., splines or NURBS) used during the CAD phase, as these are already converted into simple linear or circular interpolations by the CAM software.",
+          "eK": "파트 프로그램(NC 코드)에는 공구 교환(M06), 절삭유 온/오프(M08/M09) 및 공구 경로(G01, G02, G03)와 같은 직접적인 기계 명령이 포함됩니다. 이러한 정보는 CAM 소프트웨어에 의해 이미 단순한 선형 또는 원호 보간으로 변환되었기 때문에 CAD 단계에서 사용된 수학적 '곡선의 종류'(예: 스플라인 또는 NURBS)와 같은 추상적인 설계 메타데이터는 포함하지 않습니다."
+        },
+        {
+          "qE": "Which control cannot be performed by a 2-axis control CNC machine tool?",
+          "qK": "2축 제어방식 CNC공작기계로 할 수 없는 제어는?",
+          "o": [
+            "위치 결정 (Positioning)",
+            "원호 보간 (Circular interpolation)",
+            "직선 보간 (Linear interpolation)",
+            "헬리컬 보간 (Helical interpolation)"
+          ],
+          "a": 3,
+          "eE": "Helical interpolation involves simultaneous movement along three axes (typically circular movement in the X and Y axes while continuously moving linearly along the Z axis, like cutting a screw thread). A 2-axis CNC machine can only control two axes simultaneously, making helical interpolation impossible.",
+          "eK": "헬리컬 보간은 세 축을 따라 동시에 이동하는 것을 포함합니다(일반적으로 나사산을 깎는 것처럼 X 및 Y 축에서 원형으로 이동하면서 동시에 Z 축을 따라 선형으로 이동). 2축 CNC 기계는 두 축만 동시에 제어할 수 있으므로 헬리컬 보간이 불가능합니다."
         }
       ]
     }
