@@ -13,7 +13,8 @@
           ],
           "a": 3,
           "eE": "According to the lecture, the four standard types of servo mechanisms used in machine tools are the open loop, semi-closed loop, closed loop, and hybrid servo systems. 'Single loop' is not a valid classification.",
-          "eK": "강의에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 시스템입니다. '단일회로'는 유효한 분류가 아닙니다."
+          "eK": "강의에 따르면 공작기계에 사용되는 서보 기구의 4가지 표준 유형은 개방회로, 반폐쇄회로, 폐쇄회로 및 하이브리드 서보 시스템입니다. '단일회로'는 유효한 분류가 아닙니다.",
+          "mT": "🛠️ Maia's Memory Tool: Open, Closed, Semi-Closed, Hybrid. There is NO 'Single' loop!"
         },
         {
           "qE": "In an NC servo mechanism, which system detects speed or position from the servo motor and the machine's table, and feeds it back to the control circuit?",
@@ -26,7 +27,8 @@
           ],
           "a": 2,
           "eE": "The closed loop system detects position directly from the machine's table (using a linear scale) and speed from the servo motor, feeding this precise data back to the control circuit. In contrast, the semi-closed loop detects both directly from the motor.",
-          "eK": "폐쇄회로 시스템은 기계의 테이블(직선자 사용)에서 위치를 직접 검출하고 서보 모터에서 속도를 검출하여 이 정밀한 데이터를 제어 회로로 피드백합니다. 반면, 반폐쇄회로는 두 가지 모두 모터에서 직접 검출합니다."
+          "eK": "폐쇄회로 시스템은 기계의 테이블(직선자 사용)에서 위치를 직접 검출하고 서보 모터에서 속도를 검출하여 이 정밀한 데이터를 제어 회로로 피드백합니다. 반면, 반폐쇄회로는 두 가지 모두 모터에서 직접 검출합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Closed Loop = Sensor on the TABLE (closing the whole loop). Semi-closed = Sensor on the MOTOR."
         },
         {
           "qE": "In an NC servo mechanism, which system is a compromise/combination of the semi-closed loop system and the closed loop system?",
@@ -39,7 +41,8 @@
           ],
           "a": 3,
           "eE": "The hybrid servo system is defined as a compromise or blend of the semi-closed loop and closed loop systems. It is primarily used for heavy machine tools where increasing the machine's physical stiffness is difficult.",
-          "eK": "하이브리드 서보 방식은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 정의됩니다. 주로 기계의 물리적 강성을 높이기 어려운 대형 공작기계에 사용됩니다."
+          "eK": "하이브리드 서보 방식은 반폐쇄회로방식과 폐쇄회로방식을 절충한 것으로 정의됩니다. 주로 기계의 물리적 강성을 높이기 어려운 대형 공작기계에 사용됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: Hybrid cars combine gas and electric. Hybrid servos combine Semi-closed and Closed loops!"
         },
         {
           "qE": "Which of the following is NOT a characteristic of NC machine tools?",
@@ -52,7 +55,8 @@
           ],
           "a": 2,
           "eE": "NC machine tools are excellent for high-mix/low-volume production, maintaining constant conditions, and machining complex shapes. However, while tool standardization is a feature, its purpose is to streamline processes and reduce the need for specialized jigs, not to arbitrarily increase the number of tools.",
-          "eK": "NC 공작기계는 다품종 소량 생산, 일정한 가공 조건 유지 및 복잡한 형상 가공에 매우 적합합니다. 공구 표준화가 특징이긴 하지만, 그 목적은 특수 지그의 필요성을 줄이고 공정을 간소화하는 것이지, 임의로 공구 수를 늘리는 것이 아닙니다."
+          "eK": "NC 공작기계는 다품종 소량 생산, 일정한 가공 조건 유지 및 복잡한 형상 가공에 매우 적합합니다. 공구 표준화가 특징이긴 하지만, 그 목적은 특수 지그의 필요성을 줄이고 공정을 간소화하는 것이지, 임의로 공구 수를 늘리는 것이 아닙니다.",
+          "mT": "🛠️ Maia's Memory Tool: CNC standardizes tools. Standard = FEWER custom tools needed = cheaper maintenance!"
         }
       ],
       "Lesson 2": [
@@ -67,7 +71,8 @@
           ],
           "a": 0,
           "eE": "In NC programming, an instruction block is completed with an EOB (End of Block) character, typically represented by a semicolon (;) on the screen.",
-          "eK": "NC 프로그래밍에서 지령절(block)은 EOB(End of Block) 기호로 완료되며, 화면에서는 일반적으로 세미콜론(;)으로 표시됩니다."
+          "eK": "NC 프로그래밍에서 지령절(block)은 EOB(End of Block) 기호로 완료되며, 화면에서는 일반적으로 세미콜론(;)으로 표시됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: EOB = End Of Block (;). Just like a period ends a sentence."
         },
         {
           "qE": "Among NC (numerical control) terms, which address corresponds to the auxiliary (miscellaneous) function?",
@@ -80,7 +85,8 @@
           ],
           "a": 1,
           "eE": "The 'M' address is used for auxiliary (miscellaneous) functions. 'F' is for feed rate, 'S' is for spindle speed, and 'T' is for tool function.",
-          "eK": "'M' 어드레스는 보조(Miscellaneous) 기능을 위해 사용됩니다. 'F'는 이송 기능(Feed rate), 'S'는 주축 기능(Spindle speed), 'T'는 공구 기능(Tool function)을 나타냅니다."
+          "eK": "'M' 어드레스는 보조(Miscellaneous) 기능을 위해 사용됩니다. 'F'는 이송 기능(Feed rate), 'S'는 주축 기능(Spindle speed), 'T'는 공구 기능(Tool function)을 나타냅니다.",
+          "mT": "🛠️ Maia's Memory Tool: M = Miscellaneous/Machine hardware (like coolant or spindle switches). G = Geometry/Movement."
         },
         {
           "qE": "Which of the following is an incorrect statement about down milling?",
@@ -93,7 +99,8 @@
           ],
           "a": 1,
           "eE": "Down milling actually causes less wear on the cutter and consumes LESS power ('동력 소비가 작다'). The option stating it puts strain on the machine and consumes a lot of power is incorrect.",
-          "eK": "하향절삭은 실제로 커터의 마모가 적고 동력 소비가 작습니다. 기계에 무리를 주고 동력 소비가 많다고 명시한 옵션이 틀린 설명입니다."
+          "eK": "하향절삭은 실제로 커터의 마모가 적고 동력 소비가 작습니다. 기계에 무리를 주고 동력 소비가 많다고 명시한 옵션이 틀린 설명입니다.",
+          "mT": "🛠️ Maia's Memory Tool: Down Milling = Pushes the metal DOWN safely, making power consumption go DOWN."
         },
         {
           "qE": "With a cutting speed of 100m/min, a milling cutter with 15 teeth, a diameter of 80mm, and a feed of 0.1mm per tooth, what is the table feed per minute?",
@@ -106,7 +113,8 @@
           ],
           "a": 1,
           "eE": "First, find RPM (n): n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. Next, calculate feed per minute (f): f = 0.1 * 15 * 397.89 ≈ 596.8 mm/min, which rounds to 597.",
-          "eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다."
+          "eK": "먼저 회전수(n)를 구합니다: n = (1000 * 100) / (π * 80) ≈ 397.89 rpm. 다음으로 1분간의 이송량(f)을 계산합니다: f = 0.1 * 15 * 397.89 ≈ 596.8 mm/min. 반올림하면 597이 됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: Formula: F = f_z * Z * n. (Feed = feed per tooth * teeth * RPM)."
         }
       ]
     },
@@ -123,7 +131,8 @@
           ],
           "a": 0,
           "eE": "The two primary methods for commanding a tool's movement position are the Absolute command method (G90) and the Incremental command method (G91). There is no standard 'Center command method'.",
-          "eK": "공구의 이동 위치를 지령하는 두 가지 주요 방식은 절대지령(G90)과 증분지령(G91)입니다. '중심지령 방식'이라는 표준 방법은 없습니다."
+          "eK": "공구의 이동 위치를 지령하는 두 가지 주요 방식은 절대지령(G90)과 증분지령(G91)입니다. '중심지령 방식'이라는 표준 방법은 없습니다.",
+          "mT": "🛠️ Maia's Memory Tool: Absolute (G90) is Anchored to origin. Incremental (G91) is an Inchworm from the current spot."
         },
         {
           "qE": "Which of the following is NOT a cutting control method in CNC?",
@@ -136,7 +145,8 @@
           ],
           "a": 3,
           "eE": "The three basic tool movement/cutting control methods are Positioning, Straight Cutting, and Contouring. While CNC systems operate digitally, 'Digital control' is a broad technological term, not a specific tool path control method.",
-          "eK": "CNC의 3가지 기본 제어 방식은 위치결정, 직선절삭, 윤곽절삭입니다. '디지털 제어'는 광범위한 기술 용어이지 특정한 공구 경로 제어 방식이 아닙니다."
+          "eK": "CNC의 3가지 기본 제어 방식은 위치결정, 직선절삭, 윤곽절삭입니다. '디지털 제어'는 광범위한 기술 용어이지 특정한 공구 경로 제어 방식이 아닙니다.",
+          "mT": "🛠️ Maia's Memory Tool: Digital control is the whole machine's brain, not a geometric cutting path!"
         },
         {
           "qE": "What is the linear interpolation code in a CNC program?",
@@ -149,7 +159,8 @@
           ],
           "a": 0,
           "eE": "G01 is the preparatory function code for linear interpolation. It instructs the machine tool to cut in a straight line at a specified feed rate (F).",
-          "eK": "G01은 직선보간을 위한 준비 기능 코드입니다. 지정된 이송 속도(F)로 직선으로 절삭하도록 공작 기계에 지시합니다."
+          "eK": "G01은 직선보간을 위한 준비 기능 코드입니다. 지정된 이송 속도(F)로 직선으로 절삭하도록 공작 기계에 지시합니다.",
+          "mT": "🛠️ Maia's Memory Tool: G00 = Rapid (air). G01 = Linear (straight cut). G02/G03 = Arcs."
         },
         {
           "qE": "Which servo mechanism method detects position through the rotation angle of the servo motor shaft or ball screw, and is the most widely used in general CNC machine tools?",
@@ -162,7 +173,8 @@
           ],
           "a": 0,
           "eE": "The Semi-closed loop system detects speed and position directly from the rotation of the motor or ball screw. Because of its reliability and cost-effectiveness, it is the most widely used system in modern CNC machines.",
-          "eK": "반폐쇄회로 방식은 모터나 볼 나사의 회전에서 직접 속도와 위치를 검출합니다. 신뢰성과 비용 효율성 때문에 현대 CNC 기계에서 가장 널리 사용되는 시스템입니다."
+          "eK": "반폐쇄회로 방식은 모터나 볼 나사의 회전에서 직접 속도와 위치를 검출합니다. 신뢰성과 비용 효율성 때문에 현대 CNC 기계에서 가장 널리 사용되는 시스템입니다.",
+          "mT": "🛠️ Maia's Memory Tool: Semi-closed is the gold standard. Sensor is halfway down (on the motor), not all the way on the table."
         }
       ],
       "Lesson 2": [
@@ -177,7 +189,8 @@
           ],
           "a": 0,
           "eE": "An open loop system operates entirely without a feedback mechanism. It simply sends command pulses to the motor without verifying if the exact position or speed was achieved.",
-          "eK": "개방회로 방식은 피드백 메커니즘 없이 완전히 작동합니다. 정확한 위치나 속도에 도달했는지 확인하지 않고 단순히 모터에 명령 펄스만 보냅니다."
+          "eK": "개방회로 방식은 피드백 메커니즘 없이 완전히 작동합니다. 정확한 위치나 속도에 도달했는지 확인하지 않고 단순히 모터에 명령 펄스만 보냅니다.",
+          "mT": "🛠️ Maia's Memory Tool: Open loop is blind. It sends a signal and hopes for the best."
         },
         {
           "qE": "Which address corresponds to the auxiliary (miscellaneous) function in a CNC program?",
@@ -190,7 +203,8 @@
           ],
           "a": 1,
           "eE": "In CNC programming, the 'M' address stands for miscellaneous or auxiliary functions (like coolant on/off or tool changes). 'F' is feed rate, 'S' is spindle speed, and 'T' is for tool selection.",
-          "eK": "CNC 프로그래밍에서 'M' 어드레스는 보조(Miscellaneous) 기능을 의미합니다. 'F'는 이송 속도, 'S'는 주축 속도, 'T'는 공구 선택을 나타냅니다."
+          "eK": "CNC 프로그래밍에서 'M' 어드레스는 보조(Miscellaneous) 기능을 의미합니다. 'F'는 이송 속도, 'S'는 주축 속도, 'T'는 공구 선택을 나타냅니다.",
+          "mT": "🛠️ Maia's Memory Tool: M = Machine functions (spin it, squirt coolant). T = Tool choice."
         },
         {
           "qE": "Among the following CNC control methods, which one can control the movement of multiple axes simultaneously, allowing for free continuous cutting along any path such as diagonal or circular paths, and is used for 2D or 3D control?",
@@ -203,7 +217,8 @@
           ],
           "a": 0,
           "eE": "Contouring control (or continuous path control) synchronizes the movement of two or more axes at the exact same time. This is what allows the machine to process complex profiles, arcs, and 3D curved surfaces.",
-          "eK": "윤곽절삭 제어(또는 연속 경로 제어)는 두 개 이상의 축 이동을 동시에 동기화합니다. 이를 통해 기계가 복잡한 프로파일, 원호 및 3D 곡면을 가공할 수 있습니다."
+          "eK": "윤곽절삭 제어(또는 연속 경로 제어)는 두 개 이상의 축 이동을 동시에 동기화합니다. 이를 통해 기계가 복잡한 프로파일, 원호 및 3D 곡면을 가공할 수 있습니다.",
+          "mT": "🛠️ Maia's Memory Tool: Contouring = Continuous 3D Curves."
         },
         {
           "qE": "Which of the following is an incorrect statement about the characteristics of CNC machine tools?",
@@ -216,7 +231,8 @@
           ],
           "a": 3,
           "eE": "One of the major advantages of CNC machining is the standardization of tools. This actually reduces the reliance on expensive, specialized jigs and custom tools, thereby lowering maintenance and tooling costs.",
-          "eK": "CNC 가공의 주요 장점 중 하나는 공구의 표준화입니다. 이는 비싸고 특수한 맞춤형 지그나 공구에 대한 의존도를 줄여 결과적으로 관리비와 공구 비용을 낮춥니다."
+          "eK": "CNC 가공의 주요 장점 중 하나는 공구의 표준화입니다. 이는 비싸고 특수한 맞춤형 지그나 공구에 대한 의존도를 줄여 결과적으로 관리비와 공구 비용을 낮춥니다.",
+          "mT": "🛠️ Maia's Memory Tool: CNC standardizes everything! Less custom tools = Less money spent."
         }
       ]
     },
@@ -233,7 +249,8 @@
           ],
           "a": 2,
           "eE": "CAM systems are used to efficiently process and generate complex tool paths for intricate 2D and 3D shapes. They do not 'simplify' the physical shape of the design; rather, they enable the accurate machining of complex geometries without changing the design itself.",
-          "eK": "CAM 시스템은 복잡한 2D 및 3D 형상을 위한 정교한 공구 경로를 효율적으로 생성하고 가공하기 위해 사용됩니다. 부품의 물리적 설계 형상을 '단순화'하는 것이 아니라, 설계 변경 없이 복잡한 기하학적 구조를 정확하게 가공할 수 있게 해줍니다."
+          "eK": "CAM 시스템은 복잡한 2D 및 3D 형상을 위한 정교한 공구 경로를 효율적으로 생성하고 가공하기 위해 사용됩니다. 부품의 물리적 설계 형상을 '단순화'하는 것이 아니라, 설계 변경 없이 복잡한 기하학적 구조를 정확하게 가공할 수 있게 해줍니다.",
+          "mT": "🛠️ Maia's Memory Tool: CAM automates the path, it doesn't change the actual blueprint geometry."
         },
         {
           "qE": "What is the system that controls multiple NC machine tools connected to a single computer?",
@@ -246,7 +263,8 @@
           ],
           "a": 0,
           "eE": "DNC (Direct/Distributed Numerical Control) refers to a system architecture where a single main computer is connected to and controls multiple CNC machine tools simultaneously.",
-          "eK": "DNC(Direct Numerical Control)는 한 대의 메인 컴퓨터가 여러 대의 CNC 공작기계에 연결되어 동시에 제어하는 시스템 아키텍처를 의미합니다."
+          "eK": "DNC(Direct Numerical Control)는 한 대의 메인 컴퓨터가 여러 대의 CNC 공작기계를 연결하여 동시에 제어하는 시스템 아키텍처를 의미합니다.",
+          "mT": "🛠️ Maia's Memory Tool: DNC = Director of Numerical Control. 1 computer directing MANY machines."
         },
         {
           "qE": "When performing tool length compensation using G43 in a machining center, what is the correct compensation value in mm (based on the provided diagram where the compensation tool is 21.3mm longer than the reference tool)?",
@@ -259,7 +277,8 @@
           ],
           "a": 0,
           "eE": "G43 is the positive tool length compensation command. Because the compensation tool is exactly 21.3mm longer than the reference tool, you must apply a positive offset value of 21.3mm. This ensures the machine's spindle stops 21.3mm higher, keeping the tool tip at the correct programmed position.",
-          "eK": "G43은 공구 길이 +방향 보정 지령입니다. 보정 공구가 기준 공구보다 정확히 21.3mm 더 길기 때문에, 주축이 21.3mm 더 높이 멈추도록 하여 올바른 공구 끝 위치를 유지하려면 21.3mm의 양(+)의 보정 값을 적용해야 합니다."
+          "eK": "G43은 공구 길이 +방향 보정 지령입니다. 보정 공구가 기준 공구보다 정확히 21.3mm 더 길기 때문에, 주축이 21.3mm 더 높이 멈추도록 하여 올바른 공구 끝 위치를 유지하려면 21.3mm의 양(+)의 보정 값을 적용해야 합니다.",
+          "mT": "🛠️ Maia's Memory Tool: G43 = Positive offset. If the tool is longer, offset it UP (+) so it doesn't crash!"
         },
         {
           "qE": "In a servo motor system, which circuit receives the detected position feedback and compensates for it by calculating the error?",
@@ -272,7 +291,8 @@
           ],
           "a": 2,
           "eE": "The Comparison Circuit (비교회로) is responsible for receiving the real-time feedback from the position detector (like an encoder or linear scale) and comparing it with the commanded target position to determine the necessary compensation adjustments.",
-          "eK": "비교회로는 위치 검출기(인코더나 직선자 등)로부터 실시간 피드백을 받아 지령된 목표 위치와 비교하여 필요한 보정 조정량을 결정하는 역할을 합니다."
+          "eK": "비교회로는 위치 검출기(인코더나 직선자 등)로부터 실시간 피드백을 받아 지령된 목표 위치와 비교하여 필요한 보정 조정량을 결정하는 역할을 합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Comparison Circuit = The Accountant. It constantly compares where you ARE vs where you SHOULD be."
         }
       ],
       "Lesson 2": [
@@ -287,7 +307,8 @@
           ],
           "a": 0,
           "eE": "DNC (Direct / Distributed Numerical Control) refers to a system architecture where a single central computer connects to and controls multiple NC/CNC machine tools simultaneously.",
-          "eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터에 여러 대의 NC/CNC 공작기계를 연결하여 동시에 총괄 제어하는 시스템을 의미합니다. 컴퓨터를 내장한 공작기계는 CNC이며, 중앙 연산 처리장치는 CPU 가리킵니다."
+          "eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터에 여러 대의 NC/CNC 공작기계를 연결하여 동시에 총괄 제어하는 시스템을 의미합니다. 컴퓨터를 내장한 공작기계는 CNC이며, 중앙 연산 처리장치는 CPU 가리킵니다.",
+          "mT": "🛠️ Maia's Memory Tool: DNC = Director of Numerical Control. 1 brain, many robots."
         },
         {
           "qE": "Which of the following is difficult for a part programmer to directly verify visually through standard tool path simulation?",
@@ -300,7 +321,8 @@
           ],
           "a": 3,
           "eE": "Standard geometric tool path simulations allow programmers to visually check workpiece removal, fixture collisions, and surface gouging. However, physical cutting forces and dynamic tool-life wear parameters cannot be directly observed through visual graphic tool path verification alone.",
-          "eK": "일반적인 기하학적 공구 경로 시뮬레이션을 통해서는 가공 여부, 클램프/고정구와의 간섭 및 충돌, 포켓 벽면이나 리브 관통(과절삭) 여부 등을 시각적으로 쉽게 검증할 수 있습니다. 하지만 실제 절삭력의 크기나 공구 수명에 미치는 동적 부하는 단순 시각적 그래픽 시뮬레이션만으로 직접 확인하기 어렵습니다."
+          "eK": "일반적인 기하학적 공구 경로 시뮬레이션을 통해서는 가공 여부, 클램프/고정구와의 간섭 및 충돌, 포켓 벽면이나 리브 관통(과절삭) 여부 등을 시각적으로 쉽게 검증할 수 있습니다. 하지만 실제 절삭력의 크기나 공구 수명에 미치는 동적 부하는 단순 시각적 그래픽 시뮬레이션만으로 직접 확인하기 어렵습니다.",
+          "mT": "🛠️ Maia's Memory Tool: Simulation is a video game. It shows graphics (crashes), but can't feel physical physics (tool wear, forces)."
         },
         {
           "qE": "Which program block correctly commands the machining of the arc from point A to point B in the given diagram?",
@@ -313,7 +335,8 @@
           ],
           "a": 1,
           "eE": "Moving along the arc from A(50, 5) to B(10, 5) follows a counterclockwise (CCW) trajectory, requiring G03. Under incremental mode (G91), the relative endpoint displacement is X = 10 - 50 = -40 (with Y remaining 0). The center of the circle is at (30, 5), so the incremental vector I from start point A to the center is 30 - 50 = -20 (J = 0). Thus, the correct block is G91 G03 X-40. I-20. ;",
-          "eK": "A점(50, 5)에서 B점(10, 5)으로 호를 따라 이동하는 경로는 반시계방향(CCW)이므로 G03을 사용합니다. 증분지령(G91)에서 종점 B까지의 상대 거리는 X = 10 - 50 = -40(Y 변화 없음)입니다. 원호의 중심은 (30, 5)에 위치하므로, 시점 A에서 중심까지의 증분 벡터 I = 30 - 50 = -20(J = 0)이 됩니다. 따라서 올바른 지령절은 'G91 G03 X-40. I-20. ;' 입니다."
+          "eK": "A점(50, 5)에서 B점(10, 5)으로 호를 따라 이동하는 경로는 반시계방향(CCW)이므로 G03을 사용합니다. 증분지령(G91)에서 종점 B까지의 상대 거리는 X = 10 - 50 = -40(Y 변화 없음)입니다. 원호의 중심은 (30, 5)에 위치하므로, 시점 A에서 중심까지의 증분 벡터 I = 30 - 50 = -20(J = 0)이 됩니다. 따라서 올바른 지령절은 'G91 G03 X-40. I-20. ;' 입니다.",
+          "mT": "🛠️ Maia's Memory Tool: G91 = math from where you stand! End point (10) - Start point (50) = X-40."
         },
         {
           "qE": "Which of the following does NOT correspond to an auxiliary (miscellaneous) function in a CNC program?",
@@ -326,7 +349,8 @@
           ],
           "a": 1,
           "eE": "Auxiliary functions (M codes) handle machine control operations like coolant on/off (M08/M09), spindle CW/CCW direction (M03/M04), subprogram calls (M98), and program stops/ends (M00/M02/M30). Starting a program is handled by the program address (O) and preparatory functions (G), not an auxiliary M function.",
-          "eK": "보조기능(M 기능)은 절삭유 온/오프(M08/M09), 주축 정/역회전(M03/M04), 보조프로그램 호출(M98), 프로그램 정지 및 종료(M00/M02/M30) 등을 담당합니다. 프로그램 번호 부여나 시작은 O 어드레스 및 준비기능(G코드) 좌표 설정에 의해 이루어지며 '프로그램 시작지령'이라는 보조기능은 없습니다."
+          "eK": "보조기능(M 기능)은 절삭유 온/오프(M08/M09), 주축 정/역회전(M03/M04), 보조프로그램 호출(M98), 프로그램 정지 및 종료(M00/M02/M30) 등을 담당합니다. 프로그램 번호 부여나 시작은 O 어드레스 및 준비기능(G코드) 좌표 설정에 의해 이루어지며 '프로그램 시작지령'이라는 보조기능은 없습니다.",
+          "mT": "🛠️ Maia's Memory Tool: M-codes control hardware switches. You don't flip a hardware switch to 'start typing a program'."
         }
       ]
     },
@@ -343,7 +367,8 @@
           ],
           "a": 0,
           "eE": "In a CNC system, the servo mechanism acts as the 'hands and feet' of the machine. It replaces the human operator's manual turning of handwheels by physically driving the table and spindle according to the computerized commands.",
-          "eK": "CNC 시스템에서 서보 기구는 기계의 '손과 발' 역할을 합니다. 작업자가 수동으로 핸들을 돌리는 것을 대신하여 컴퓨터 지령에 따라 테이블과 주축을 물리적으로 구동시킵니다."
+          "eK": "CNC 시스템에서 서보 기구는 기계의 '손과 발' 역할을 합니다. 작업자가 수동으로 핸들을 돌리는 것을 대신하여 컴퓨터 지령에 따라 테이블과 주축을 물리적으로 구동시킵니다.",
+          "mT": "🛠️ Maia's Memory Tool: Servos are the automated 'hands' that turn the wheels for you."
         },
         {
           "qE": "Among the circuit methods used in servo mechanisms, which one is used when high precision is required in a machine with poor compensation conditions (e.g., poor rigidity)?",
@@ -356,7 +381,8 @@
           ],
           "a": 3,
           "eE": "The Hybrid servo system is a blend of the semi-closed and closed-loop systems. It is primarily utilized for heavy or large-scale machine tools where increasing the physical stiffness (rigidity) is difficult, yet high precision is demanded.",
-          "eK": "하이브리드 서보 방식은 반폐쇄회로와 폐쇄회로 방식을 절충한 시스템입니다. 주로 물리적 강성을 높이기 어렵지만 높은 정밀도가 요구되는 무겁거나 대형인 공작기계에 활용됩니다."
+          "eK": "하이브리드 서보 방식은 반폐쇄회로와 폐쇄회로 방식을 절충한 시스템입니다. 주로 물리적 강성을 높이기 어렵지만 높은 정밀도가 요구되는 무겁거나 대형인 공작기계에 활용됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: Poor rigidity requires a strong compromise = Hybrid Servo!"
         },
         {
           "qE": "When machining with a 2-flute end mill in a machining center at a feed rate (G94) of F100, what is the feed distance per tooth of the end mill in mm? (Assume the spindle speed is 500 rpm.)",
@@ -369,7 +395,8 @@
           ],
           "a": 1,
           "eE": "The formula for table feed rate is F = f_z * Z * n (Feed = Feed per tooth * Number of teeth * RPM). Given F = 100, Z = 2, and n = 500, the equation is 100 = f_z * 2 * 500. Solving this gives 100 = f_z * 1000, so f_z = 0.1 mm/tooth.",
-          "eK": "테이블 이송 속도 공식은 F = f_z * Z * n (이송속도 = 날당 이송 * 날 수 * 회전수)입니다. F = 100, Z = 2, n = 500이 주어졌으므로 방정식은 100 = f_z * 2 * 500이 됩니다. 이를 풀면 100 = f_z * 1000이 되어 f_z = 0.1 mm/tooth가 됩니다."
+          "eK": "테이블 이송 속도 공식은 F = f_z * Z * n (이송속도 = 날당 이송 * 날 수 * 회전수)입니다. F = 100, Z = 2, n = 500이 주어졌으므로 방정식은 100 = f_z * 2 * 500이 됩니다. 이를 풀면 100 = f_z * 1000이 되어 f_z = 0.1 mm/tooth가 됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: F = f_z * Z * n. Just plug in the numbers: 100 = f_z * 2 * 500."
         },
         {
           "qE": "What is the device that automatically changes tools in a machining center?",
@@ -382,7 +409,8 @@
           ],
           "a": 2,
           "eE": "ATC stands for Automatic Tool Changer. It is the defining mechanism that upgrades a standard CNC milling machine into a 'Machining Center' by allowing the machine to seamlessly swap between multiple cutting tools without human intervention.",
-          "eK": "ATC는 자동 공구 교환 장치(Automatic Tool Changer)를 의미합니다. 기계가 사람의 개입 없이 여러 절삭 공구를 원활하게 교체할 수 있도록 하여 표준 CNC 밀링 머신을 '머시닝 센터'로 업그레이드하는 핵심 장치입니다."
+          "eK": "ATC는 자동 공구 교환 장치(Automatic Tool Changer)를 의미합니다. 기계가 사람의 개입 없이 여러 절삭 공구를 원활하게 교체할 수 있도록 하여 표준 CNC 밀링 머신을 '머시닝 센터'로 업그레이드하는 핵심 장치입니다.",
+          "mT": "🛠️ Maia's Memory Tool: ATC = Automatic Tool Changer. The T stands for Tool!"
         }
       ],
       "Lesson 2": [
@@ -397,7 +425,8 @@
           ],
           "a": 2,
           "eE": "Tool path verification is a critical simulation step in CAM workflows. It allows programmers to visually confirm the tool's movements on a computer, checking for collisions, overcuts (gouging), and undercuts before any physical material is cut on the CNC machine.",
-          "eK": "공구 경로 검증은 CAM 작업 흐름에서 중요한 시뮬레이션 단계입니다. 프로그래머가 실제 CNC 기계에서 재료를 절삭하기 전에 컴퓨터에서 공구의 움직임을 시각적으로 확인하여 충돌, 과절삭 및 미절삭을 점검할 수 있게 해줍니다."
+          "eK": "공구 경로 검증은 CAM 작업 흐름에서 중요한 시뮬레이션 단계입니다. 프로그래머가 실제 CNC 기계에서 재료를 절삭하기 전에 컴퓨터에서 공구의 움직임을 시각적으로 확인하여 충돌, 과절삭 및 미절삭을 점검할 수 있게 해줍니다.",
+          "mT": "🛠️ Maia's Memory Tool: Verification happens on the screen BEFORE you hit cycle start."
         },
         {
           "qE": "In the following CNC milling program, which block will cause an error?\nN005 S1000 M03;\nN006 G91 G01 Z-5. F80 M08;\nN007 X20.;\nN008 G02 X10. I5.;\nN009 G03 X15. R5.;\nN010 G01 Y20.;",
@@ -410,7 +439,8 @@
           ],
           "a": 3,
           "eE": "Block N009 will cause a geometry error. In incremental mode (G91), block N009 commands the tool to travel a relative distance of X=15. However, the specified radius is R=5, which means the maximum possible diameter (straight-line distance across the circle) is only 10. A circle with a diameter of 10 cannot span a distance of 15.",
-          "eK": "블록 N009에서 기하학적 오류가 발생합니다. 증분 모드(G91)에서 N009 블록은 공구에 X=15의 상대 거리를 이동하도록 지시합니다. 하지만 지정된 반지름이 R=5이므로 가능한 최대 지름(원통을 가로지르는 직선 거리)은 10입니다. 지름이 10인 원호로는 15의 거리를 이동할 수 없습니다."
+          "eK": "블록 N009에서 기하학적 오류가 발생합니다. 증분 모드(G91)에서 N009 블록은 공구에 X=15의 상대 거리를 이동하도록 지시합니다. 하지만 지정된 반지름이 R=5이므로 가능한 최대 지름(원통을 가로지르는 직선 거리)은 10입니다. 지름이 10인 원호로는 15의 거리를 이동할 수 없습니다.",
+          "mT": "🛠️ Maia's Memory Tool: A machine can't travel 15mm across a circle that is only 10mm wide (R5 = D10)!"
         },
         {
           "qE": "Which NC servo mechanism controls position using a stepping motor without a feedback device?",
@@ -423,7 +453,8 @@
           ],
           "a": 0,
           "eE": "An open loop system uses stepping motors and operates without any feedback mechanism. It simply sends command pulses to the motor, assuming the motor moves the exact commanded distance without verifying its actual position.",
-          "eK": "개방회로 방식은 스테핑 모터를 사용하며 피드백 장치 없이 작동합니다. 실제 위치를 확인하지 않고 모터가 명령된 거리만큼 정확하게 이동한다고 가정하고 모터에 명령 펄스만 보냅니다."
+          "eK": "개방회로 방식은 스테핑 모터를 사용하며 피드백 장치 없이 작동합니다. 실제 위치를 확인하지 않고 모터가 명령된 거리만큼 정확하게 이동한다고 가정하고 모터에 명령 펄스만 보냅니다.",
+          "mT": "🛠️ Maia's Memory Tool: Without feedback = Open loop."
         },
         {
           "qE": "What is the code used to set the XY plane in a machining center?",
@@ -436,7 +467,8 @@
           ],
           "a": 0,
           "eE": "G17 is the preparatory command used to define the XY plane for machining operations, such as circular interpolation and cutter compensation. G18 defines the ZX plane, and G19 defines the YZ plane.",
-          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다."
+          "eK": "G17은 원호 보간 및 공구경 보정 등 가공 작업을 위해 XY 평면 지정하는 준비 기능 코드입니다. G18은 ZX 평면을 정의하고, G19는 YZ 평면을 정의합니다.",
+          "mT": "🛠️ Maia's Memory Tool: G17 = X-Y Plane. We almost always machine on the G17 plane in basic milling."
         }
       ]
     },
@@ -453,7 +485,8 @@
           ],
           "a": 3,
           "eE": "The standard CAD/CAM workflow begins with shape modeling (D). Next, the machining process is defined (A), followed by generating the Cutter Location (C/L) data (B). This data is then post-processed into machine-specific NC code (E). Finally, the actual machining is performed using this NC data (C).",
-          "eK": "표준 CAD/CAM 작업 흐름은 형상 모델링(ㄹ)으로 시작합니다. 다음으로 가공 공정을 정의(ㄱ)하고 커터 위치(C/L) 데이터를 생성(ㄴ)합니다. 그런 다음 이 데이터를 기계별 NC 코드로 포스트 프로세싱(ㅁ)합니다. 마지막으로 이 NC 데이터를 사용하여 실제 가공(ㄷ)을 수행합니다."
+          "eK": "표준 CAD/CAM 작업 흐름은 형상 모델링(ㄹ)으로 시작합니다. 다음으로 가공 공정을 정의(ㄱ)하고 커터 위치(C/L) 데이터를 생성(ㄴ)합니다. 그런 다음 이 데이터를 기계별 NC 코드로 포스트 프로세싱(ㅁ)합니다. 마지막으로 이 NC 데이터를 사용하여 실제 가공(ㄷ)을 수행합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Model -> Define -> CL Data -> Post-Process -> Machine. (MDCPM)"
         },
         {
           "qE": "Which of the following is NOT considered a hardware component of a machine tool?",
@@ -466,7 +499,8 @@
           ],
           "a": 0,
           "eE": "A part program is a set of coded instructions (software/data) that tells the machine what to do. The MCU, CLU, and DPU are all physical hardware control units that process and execute those instructions.",
-          "eK": "파트 프로그램은 기계에 수행할 작업을 알려주는 코드화된 명령어 세트(소프트웨어/데이터)입니다. MCU, CLU 및 DPU는 모두 이러한 명령을 처리하고 실행하는 물리적 하드웨어 제어 장치입니다."
+          "eK": "파트 프로그램은 기계에 수행할 작업을 알려주는 코드화된 명령어 세트(소프트웨어/데이터)입니다. MCU, CLU 및 DPU는 모두 이러한 명령을 처리하고 실행하는 물리적 하드웨어 제어 장치입니다.",
+          "mT": "🛠️ Maia's Memory Tool: A program is software/data, not a physical hardware box."
         },
         {
           "qE": "What information is NOT included in a part program used in numerical control?",
@@ -479,7 +513,8 @@
           ],
           "a": 3,
           "eE": "Part programs (NC code) contain direct machine commands like tool changes (M06), coolant toggles (M08/M09), and tool paths (G01, G02, G03). They do not contain abstract design metadata like the mathematical 'type of curves' (e.g., splines or NURBS) used during the CAD phase, as these are already converted into simple linear or circular interpolations by the CAM software.",
-          "eK": "파트 프로그램(NC 코드)에는 공구 교환(M06), 절삭유 온/오프(M08/M09) 및 공구 경로(G01, G02, G03)와 같은 직접적인 기계 명령이 포함됩니다. 이러한 정보는 CAM 소프트웨어에 의해 이미 단순한 선형 또는 원호 보간으로 변환되었기 때문에 CAD 단계에서 사용된 수학적 '곡선의 종류'(예: 스플라인 또는 NURBS)와 같은 추상적인 설계 메타데이터는 포함하지 않습니다."
+          "eK": "파트 프로그램(NC 코드)에는 공구 교환(M06), 절삭유 온/오프(M08/M09) 및 공구 경로(G01, G02, G03)와 같은 직접적인 기계 명령이 포함됩니다. 이러한 정보는 CAM 소프트웨어에 의해 이미 단순한 선형 또는 원호 보간으로 변환되었기 때문에 CAD 단계에서 사용된 수학적 '곡선의 종류'(예: 스플라인 또는 NURBS)와 같은 추상적인 설계 메타데이터는 포함하지 않습니다.",
+          "mT": "🛠️ Maia's Memory Tool: By the time it reaches G-code, it's just coordinates. The machine doesn't care what CAD 'spline' you used."
         },
         {
           "qE": "Which control cannot be performed by a 2-axis control CNC machine tool?",
@@ -492,7 +527,8 @@
           ],
           "a": 3,
           "eE": "Helical interpolation involves simultaneous movement along three axes (typically circular movement in the X and Y axes while continuously moving linearly along the Z axis, like cutting a screw thread). A 2-axis CNC machine can only control two axes simultaneously, making helical interpolation impossible.",
-          "eK": "헬리컬 보간은 세 축을 따라 동시에 이동하는 것을 포함합니다(일반적으로 나사산을 깎는 것처럼 X 및 Y 축에서 원형으로 이동하면서 동시에 Z 축을 따라 선형으로 이동). 2축 CNC 기계는 두 축만 동시에 제어할 수 있으므로 헬리컬 보간이 불가능합니다."
+          "eK": "헬리컬 보간은 세 축을 따라 동시에 이동하는 것을 포함합니다(일반적으로 나사산을 깎는 것처럼 X 및 Y 축에서 원형으로 이동하면서 동시에 Z 축을 따라 선형으로 이동). 2축 CNC 기계는 두 축만 동시에 제어할 수 있으므로 헬리컬 보간이 불가능합니다.",
+          "mT": "🛠️ Maia's Memory Tool: A Helix (corkscrew) is 3D. A flat 2-axis machine physically cannot do it."
         }
       ],
       "Lesson 2": [
@@ -507,7 +543,8 @@
           ],
           "a": 2,
           "eE": "The fundamental control methods in CNC programming are positioning, straight cutting, and contouring (continuous) control. 'Plane cutting control' is not recognized as a distinct primary control category.",
-          "eK": "CNC 프로그래밍의 기본 제어 방식은 위치결정, 직선절삭, 그리고 윤곽(연속)절삭 제어입니다. '평면절삭 제어'는 구별되는 기본 제어 범주로 인식되지 않습니다."
+          "eK": "CNC 프로그래밍의 기본 제어 방식은 위치결정, 직선절삭, 그리고 윤곽(연속)절삭 제어입니다. '평면절삭 제어'는 구별되는 기본 제어 범주로 인식되지 않습니다.",
+          "mT": "🛠️ Maia's Memory Tool: Positioning, Straight, Contouring. 'Plane cutting' is a made-up distractor."
         },
         {
           "qE": "Which auxiliary function commands the normal (forward/clockwise) rotation of the spindle in a CNC machine tool part program?",
@@ -520,7 +557,8 @@
           ],
           "a": 1,
           "eE": "The M03 command is used to start the spindle rotating in the normal (forward or clockwise) direction. M04 is for reverse (counterclockwise) rotation, and M05 commands the spindle to stop.",
-          "eK": "M03 지령은 주축을 정방향(정회전 또는 시계 방향)으로 회전시키기 시작할 때 사용됩니다. M04는 역방향(반시계 방향) 회전용이며, M05는 주축을 정지시킵니다."
+          "eK": "M03 지령은 주축을 정방향(정회전 또는 시계 방향)으로 회전시키기 시작할 때 사용됩니다. M04는 역방향(반시계 방향) 회전용이며, M05는 주축을 정지시킵니다.",
+          "mT": "🛠️ Maia's Memory Tool: M03 = Spindle ON (Clockwise). M05 = Spindle Stop."
         },
         {
           "qE": "Which function is used to call a subprogram?",
@@ -533,7 +571,8 @@
           ],
           "a": 2,
           "eE": "The auxiliary command M98 is utilized specifically to call and execute a subprogram. M99 is subsequently used within the subprogram to indicate its end and return control back to the main program.",
-          "eK": "보조 기능 M98은 보조 프로그램을 호출하고 실행하는 데 특별히 사용됩니다. M99는 이후 보조 프로그램 내에서 프로그램 종료를 나타내고 메인 프로그램으로 제어를 반환하는 데 사용됩니다."
+          "eK": "보조 기능 M98은 보조 프로그램을 호출하고 실행하는 데 특별히 사용됩니다. M99는 이후 보조 프로그램 내에서 프로그램 종료를 나타내고 메인 프로그램으로 제어를 반환하는 데 사용됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: M98 = Call a mate (subprogram). M99 = Go back home."
         },
         {
           "qE": "When specifying the movement in the diagram below using the absolute command method, which is correct?",
@@ -546,7 +585,8 @@
           ],
           "a": 0,
           "eE": "The tool is moving from the Start Point (X30, Y10) to the End Point (X15, Y20). The Absolute command method (G90) requires the coordinate values of the final destination, regardless of the starting point. Therefore, the command is simply the end point coordinates: G90 G01 X15.0 Y20.0.",
-          "eK": "공구가 시점(X30, Y10)에서 종점(X15, Y20)으로 이동하고 있습니다. 절대지령 방식(G90)은 시작점과 상관없이 최종 목적지의 좌표값을 요구합니다. 따라서 지령은 종점 좌표인 G90 G01 X15.0 Y20.0이 됩니다."
+          "eK": "공구가 시점(X30, Y10)에서 종점(X15, Y20)으로 이동하고 있습니다. 절대지령 방식(G90)은 시작점과 상관없이 최종 목적지의 좌표값을 요구합니다. 따라서 지령은 종점 좌표인 G90 G01 X15.0 Y20.0이 됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: G90 is Absolute. Only look at the final destination coordinate, ignore where you came from!"
         }
       ]
     },
@@ -563,7 +603,8 @@
           ],
           "a": 1,
           "eE": "DNC (Direct/Distributed Numerical Control) refers to a system architecture where a single central computer connects to and simultaneously manages/controls multiple CNC machine tools on a factory floor.",
-          "eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터가 공장의 여러 CNC 공작기계를 연결하여 동시에 관리 및 제어하는 시스템 아키텍처를 의미합니다."
+          "eK": "DNC(Direct Numerical Control)는 한 대의 중앙 컴퓨터가 공장의 여러 CNC 공작기계를 연결하여 동시에 관리 및 제어하는 시스템 아키텍처를 의미합니다.",
+          "mT": "🛠️ Maia's Memory Tool: DNC = Directing many machines via network."
         },
         {
           "qE": "Which of the following is NOT a standard neutral file for exchanging design information between different CAD systems?",
@@ -576,7 +617,8 @@
           ],
           "a": 1,
           "eE": "DXF, IGES, and STEP are all standard neutral file formats used to exchange 2D/3D CAD data between different software platforms. GUI stands for Graphical User Interface, which is a visual way to interact with software, not a file format.",
-          "eK": "DXF, IGES, STEP은 모두 서로 다른 소프트웨어 플랫폼 간에 2D/3D CAD 데이터를 교환하는 데 사용되는 표준 중립 파일 형식입니다. GUI는 그래픽 사용자 인터페이스(Graphical User Interface)의 약자로, 파일 형식이 아니라 소프트웨어와 상호 작용하는 시각적 방법입니다."
+          "eK": "DXF, IGES, STEP은 모두 서로 다른 소프트웨어 플랫폼 간에 2D/3D CAD 데이터를 교환하는 데 사용되는 표준 중립 파일 형식입니다. GUI는 그래픽 사용자 인터페이스(Graphical User Interface)의 약자로, 파일 형식이 아니라 소프트웨어와 상호 작용하는 시각적 방법입니다.",
+          "mT": "🛠️ Maia's Memory Tool: GUI means buttons on a screen, it's not a file extension!"
         },
         {
           "qE": "What is the correct general workflow for CAD/CAM operations?",
@@ -589,7 +631,8 @@
           ],
           "a": 1,
           "eE": "The correct CAD/CAM sequence after modeling is: writing the part program (defining operations) → generating CL (Cutter Location) data → processing it through a post-processor → outputting the machine-specific NC code (G-code).",
-          "eK": "모델링 후의 올바른 CAD/CAM 순서는 파트 프로그램 작성(작업 정의) → CL(커터 위치) 데이터 생성 → 포스트 프로세서를 통한 처리 → 기계별 NC 코드(G 코드) 출력입니다."
+          "eK": "모델링 후의 올바른 CAD/CAM 순서는 파트 프로그램 작성(작업 정의) → CL(커터 위치) 데이터 생성 → 포스트 프로세서를 통한 처리 → 기계별 NC 코드(G 코드) 출력입니다.",
+          "mT": "🛠️ Maia's Memory Tool: The Post-Processor is the translator just before you get the final NC code."
         },
         {
           "qE": "Which of the following auxiliary functions for a machining center is incorrect?",
@@ -602,7 +645,8 @@
           ],
           "a": 2,
           "eE": "M09 is the auxiliary command to turn the coolant OFF. The command to turn the coolant ON is M08.",
-          "eK": "M09는 절삭유를 끄는(OFF) 보조 지령입니다. 절삭유를 켜는(ON) 지령은 M08입니다."
+          "eK": "M09는 절삭유를 끄는(OFF) 보조 지령입니다. 절삭유를 켜는(ON) 지령은 M08입니다.",
+          "mT": "🛠️ Maia's Memory Tool: M08 = Wait! Coolant ON. M09 = Nevermind! Coolant OFF."
         }
       ],
       "Lesson 2": [
@@ -617,7 +661,8 @@
           ],
           "a": 1,
           "eE": "The correct CAM workflow sequence is: Shape Modeling (가) → Definition of Machining Conditions/Operations (마) → Cutter Location (CL) Data Generation (나) → Tool Path Verification/Simulation (다) → Post-processing into machine-specific NC code (라).",
-          "eK": "올바른 CAM 작업 흐름 순서는 다음과 같습니다: 형상 모델링(가) → 가공 조건 정의(마) → CL(커터 위치) 데이터 생성(나) → 공구 경로 검증(다) → 기계별 NC 코드로 포스트 프로세싱(라)."
+          "eK": "올바른 CAM 작업 흐름 순서는 다음과 같습니다: 형상 모델링(가) → 가공 조건 정의(마) → CL(커터 위치) 데이터 생성(나) → 공구 경로 검증(다) → 기계별 NC 코드로 포스트 프로세싱(라).",
+          "mT": "🛠️ Maia's Memory Tool: Model -> Define -> CL Data -> Verify -> Post-Process."
         },
         {
           "qE": "Which of the following is an incorrect general description of the coordinate system of a machine tool?",
@@ -630,7 +675,8 @@
           ],
           "a": 3,
           "eE": "Machine tool coordinate systems are universally based on the 'Right-hand rule' (오른손 좌표계), not a left-handed coordinate system. Your thumb points to +X, index finger to +Y, and middle finger to +Z.",
-          "eK": "공작기계 좌표계는 보편적으로 왼손 좌표계가 아닌 '오른손 법칙'(Right-hand rule)을 따릅니다. 엄지손가락은 +X, 집게손가락은 +Y, 가운데 손가락은 +Z를 가리킵니다."
+          "eK": "공작기계 좌표계는 보편적으로 왼손 좌표계가 아닌 '오른손 법칙'(Right-hand rule)을 따릅니다. 엄지손가락은 +X, 집게손가락은 +Y, 가운데 손가락은 +Z를 가리킵니다.",
+          "mT": "🛠️ Maia's Memory Tool: Always the Right-Hand Rule. The Z-axis is always the spinning spindle."
         },
         {
           "qE": "Which CNC program address and its function are incorrectly matched?",
@@ -643,7 +689,8 @@
           ],
           "a": 3,
           "eE": "The 'T' address stands for the Tool function (공구기능), used to select tools. The Dwell (pause) function is handled by the preparatory command G04 (using addresses P or X for time).",
-          "eK": "'T' 어드레스는 공구를 선택하는 데 사용되는 공구기능(Tool function)을 나타냅니다. 휴지(일시 정지) 기능은 준비 기능인 G04(시간에 대한 어드레스 P 또는 X 사용)에 의해 처리됩니다."
+          "eK": "'T' 어드레스는 공구를 선택하는 데 사용되는 공구기능(Tool function)을 나타냅니다. 휴지(일시 정지) 기능은 준비 기능인 G04(시간에 대한 어드레스 P 또는 X 사용)에 의해 처리됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: T stands for Tool, not Time (Dwell)."
         },
         {
           "qE": "In the fixed cycle (canned cycle) hole machining mode command method for a machining center below, what does 'P' mean?\n[ G□□ X_ Y_ Z_ R_ Q_ P_ F_ L_ ; ]",
@@ -656,7 +703,8 @@
           ],
           "a": 0,
           "eE": "In fixed cycle commands (like G82 or G89 for drilling/boring), the 'P' address specifies the Dwell time (pause) at the bottom of the hole in milliseconds. This ensures a clean, flat finish at the bottom of the cut.",
-          "eK": "고정 사이클 지령(드릴링/보링을 위한 G82 또는 G89 등)에서 'P' 어드레스는 구멍 바닥에서의 휴지(일시 정지) 시간을 밀리초 단위로 지정합니다. 이는 절삭 바닥면을 깨끗하고 평평하게 마무리하기 위함입니다."
+          "eK": "고정 사이클 지령(드릴링/보링을 위한 G82 또는 G89 등)에서 'P' 어드레스는 구멍 바닥에서의 휴지(일시 정지) 시간을 밀리초 단위로 지정합니다. 이는 절삭 바닥면을 깨끗하고 평평하게 마무리하기 위함입니다.",
+          "mT": "🛠️ Maia's Memory Tool: P = Pause. It tells the drill to sit spinning at the bottom for a second."
         }
       ]
     },
@@ -673,7 +721,8 @@
           ],
           "a": 3,
           "eE": "Backlash is the mechanical play or lost motion caused by clearance between the threads of the lead screw and the nut. CNC machines typically use recirculating ball screws to directly minimize this backlash compared to conventional lead screws.",
-          "eK": "백 래시는 리드 스크루와 너트의 나사산 사이의 간극으로 인해 발생하는 기계적 유격 또는 잃어버린 움직임입니다. CNC 기계는 일반적으로 기존의 리드 스크루에 비해 이 백 래시를 직접적으로 최소화하기 위해 볼 스크루를 사용합니다."
+          "eK": "백 래시는 리드 스크루와 너트의 나사산 사이의 간극으로 인해 발생하는 기계적 유격 또는 잃어버린 움직임입니다. CNC 기계는 일반적으로 기존의 리드 스크루에 비해 이 백 래시를 직접적으로 최소화하기 위해 볼 스크루를 사용합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Ball screws use rolling steel balls to eliminate the 'play' (backlash) in standard threads."
         },
         {
           "qE": "Which of the following is an incorrect explanation of the sequence number in a CNC program?",
@@ -686,7 +735,8 @@
           ],
           "a": 2,
           "eE": "Program numbers (address O) are used to distinguish different programs from each other. Sequence numbers (address N) are used for labeling specific blocks inside a program for searching or restarting, and do not distinguish the programs themselves.",
-          "eK": "서로 다른 프로그램을 구별하는 데에는 프로그램 번호(어드레스 O)가 사용됩니다. 전개번호(어드레스 N)는 검색이나 재시작을 위해 프로그램 내부의 특정 블록에 레이블을 지정하는 데 사용되며 프로그램 자체를 구별하지는 않습니다."
+          "eK": "서로 다른 프로그램을 구별하는 데에는 프로그램 번호(어드레스 O)가 사용됩니다. 전개번호(어드레스 N)는 검색이나 재시작을 위해 프로그램 내부의 특정 블록에 레이블을 지정하는 데 사용되며 프로그램 자체를 구별하지는 않습니다.",
+          "mT": "🛠️ Maia's Memory Tool: O is the overall program ID. N is just the navigation marker inside the program."
         },
         {
           "qE": "Which of the following is a correct explanation for G80 in the N10 block of the following machining center program?\n[ N10 G40 G49 G80 ; ]",
@@ -699,7 +749,8 @@
           ],
           "a": 1,
           "eE": "In the initialization block 'N10 G40 G49 G80 ;', G40 cancels tool radius compensation, G49 cancels tool length compensation, and G80 is the standard G-code for canceling fixed/canned cycles.",
-          "eK": "초기화 블록 'N10 G40 G49 G80 ;'에서 G40은 공구경 보정 취소, G49는 공구길이 보정 취소이며, G80은 고정 사이클을 취소하는 표준 G-코드입니다."
+          "eK": "초기화 블록 'N10 G40 G49 G80 ;'에서 G40은 공구경 보정 취소, G49는 공구길이 보정 취소이며, G80은 고정 사이클을 취소하는 표준 G-코드입니다.",
+          "mT": "🛠️ Maia's Memory Tool: G80 = 86 (Eighty-six) the canned cycles! It cancels drilling loops."
         },
         {
           "qE": "Which system uses a pulse motor as the drive motor, moves by the number of pulses input to the controller, has a simple structure because there is no detector or feedback circuit, and is directly affected by the rotational precision of the pulse motor and the precision of the ball screw?",
@@ -712,7 +763,8 @@
           ],
           "a": 2,
           "eE": "An Open Loop System sends pulses to a stepping/pulse motor without using any feedback mechanisms (detectors/scales) to verify the actual position. Therefore, its accuracy relies entirely on the mechanical precision of the motor and the ball screw.",
-          "eK": "개방 회로 방식은 실제 위치를 확인하기 위한 피드백 메커니즘(검출기/스케일)을 사용하지 않고 스테핑/펄스 모터에 펄스를 보냅니다. 따라서 그 정확도는 전적으로 모터와 볼 스크루의 기계적 정밀도에 의존합니다."
+          "eK": "개방 회로 방식은 실제 위치를 확인하기 위한 피드백 메커니즘(검출기/스케일)을 사용하지 않고 스테핑/펄스 모터에 펄스를 보냅니다. 따라서 그 정확도는 전적으로 모터와 볼 스크루의 기계적 정밀도에 의존합니다.",
+          "mT": "🛠️ Maia's Memory Tool: No feedback circuit = Open loop."
         }
       ],
       "Lesson 2": [
@@ -727,7 +779,8 @@
           ],
           "a": 3,
           "eE": "The standard CNC control systems are Open Loop, Closed Loop, Semi-Closed Loop, and Hybrid. 'Semi-open loop' is a fabricated term and does not exist.",
-          "eK": "표준 CNC 제어 시스템은 개방회로, 폐쇄회로, 반폐쇄회로 및 하이브리드입니다. '반개방 제어방식'은 존재하지 않는 만들어진 용어입니다."
+          "eK": "표준 CNC 제어 시스템은 개방회로, 폐쇄회로, 반폐쇄회로 및 하이브리드입니다. '반개방 제어방식'은 존재하지 않는 만들어진 용어입니다.",
+          "mT": "🛠️ Maia's Memory Tool: There is no 'Semi-open' loop. It's either Open, Semi-closed, or Closed."
         },
         {
           "qE": "Which of the following is NOT a method for commanding coordinate values in a CNC program?",
@@ -740,7 +793,8 @@
           ],
           "a": 1,
           "eE": "In CNC programming, positions are commanded either absolutely (G90) or incrementally (G91), and they can be mixed. 'Machine Origin Command Method' is not a coordinate plotting method; returning to the machine origin (G28) is a specific action, not a continuous coordinate system.",
-          "eK": "CNC 프로그래밍에서 위치는 절대지령(G90) 또는 증분지령(G91)으로 명령되며, 혼합하여 사용할 수도 있습니다. '기계원점지령 방식'은 좌표 지정 방식이 아닙니다. 기계 원점 복귀(G28)는 특정 동작이지 연속적인 좌표계가 아닙니다."
+          "eK": "CNC 프로그래밍에서 위치는 절대지령(G90) 또는 증분지령(G91)으로 명령되며, 혼합하여 사용할 수도 있습니다. '기계원점지령 방식'은 좌표 지정 방식이 아닙니다. 기계 원점 복귀(G28)는 특정 동작이지 연속적인 좌표계가 아닙니다.",
+          "mT": "🛠️ Maia's Memory Tool: You plot paths in Absolute or Incremental. Returning to Origin (G28) is just a single shortcut action."
         },
         {
           "qE": "Which of the following is furthest from the machining plan established based on the part drawing before NC programming?",
@@ -753,7 +807,8 @@
           ],
           "a": 0,
           "eE": "Before programming, a CAM operator must determine the machining sequence, select tools, choose the specific CNC machine, and figure out how to clamp/fixture the workpiece. 'Selection of position detection method' is a hardware design choice (e.g., choosing between semi-closed or closed loop), decided by the machine manufacturer, not the programmer.",
-          "eK": "프로그래밍 전에 CAM 작업자는 가공 순서를 결정하고, 공구를 선택하고, 사용할 CNC 기계를 선택하고, 가공물 고정 방법을 파악해야 합니다. '위치 검출 방법의 선정'은 프로그래머가 아닌 기계 제조업체가 결정하는 하드웨어 설계 선택(예: 반폐쇄회로 또는 폐쇄회로)입니다."
+          "eK": "프로그래밍 전에 CAM 작업자는 가공 순서를 결정하고, 공구를 선택하고, 사용할 CNC 기계를 선택하고, 가공물 고정 방법을 파악해야 합니다. '위치 검출 방법의 선정'은 프로그래머가 아닌 기계 제조업체가 결정하는 하드웨어 설계 선택(예: 반폐쇄회로 또는 폐쇄회로)입니다.",
+          "mT": "🛠️ Maia's Memory Tool: Programmers don't buy the servo motors; the factory owners do!"
         },
         {
           "qE": "Which of the following is difficult to consider as an advantage of a general FMS (Flexible Manufacturing System)?",
@@ -766,7 +821,140 @@
           ],
           "a": 2,
           "eE": "Flexible Manufacturing Systems (FMS) are designed for adaptability. They reduce labor costs, simplify inventory, and easily handle process changes. However, they are fundamentally designed for 'High-mix, low/mid-volume production', not 'mass production of a single item'.",
-          "eK": "유연 생산 시스템(FMS)은 적응성을 위해 설계되었습니다. 인건비를 줄이고, 재고를 단순화하며, 공정 변화에 쉽게 대처할 수 있습니다. 그러나 기본적으로 '단품종 대량생산'이 아닌 '다품종 소량/중산 생산'을 위해 설계되었습니다."
+          "eK": "유연 생산 시스템(FMS)은 적응성을 위해 설계되었습니다. 인건비를 줄이고, 재고를 단순화하며, 공정 변화에 쉽게 대처할 수 있습니다. 그러나 기본적으로 '단품종 대량생산'이 아닌 '다품종 소량/중산 생산'을 위해 설계되었습니다.",
+          "mT": "🛠️ Maia's Memory Tool: FMS = Flexible! It is for high-mix/low-volume, NOT mass producing a single item."
+        }
+      ]
+    },
+    "Week 8": {
+      "Official Quiz": [
+        {
+          "qE": "Which of the following is a neutral file format (중립파일) created for exchanging shape data between different CAD/CAM systems?",
+          "qK": "서로 다른 CAD/CAM 시스템간에 형상 데이터를 교환하기 위해 만들어진 중립파일 형식은 어느 것인가?",
+          "o": [
+            "IGES",
+            "HTML",
+            "HWP",
+            "PDF"
+          ],
+          "a": 0,
+          "eE": "IGES (Initial Graphics Exchange Specification) is a standard neutral file format designed for 2D/3D CAD/CAM shape data exchange across different software platforms.",
+          "eK": "IGES는 서로 다른 소프트웨어 플랫폼 간에 2D/3D CAD/CAM 형상 데이터를 교환하도록 설계된 표준 중립 파일 형식입니다.",
+          "mT": "🛠️ Maia's Memory Tool: IGES = International Graphics Exchange. HTML/HWP/PDF are for documents and web pages, not 3D models!"
+        },
+        {
+          "qE": "What is the process of generating NC Data tailored to the CNC machine tool's control unit using CL (Cutter Location) Data called?",
+          "qK": "CL(Cutter Location) 데이터를 이용하여 CNC 공작기계의 제어장치에 맞는 NC 데이터를 생성하는 과정을 무엇이라 하는가?",
+          "o": [
+            "후처리 (Post-processing)",
+            "공구경로 검증 (Tool path verification)",
+            "CL Data 생성 (CL Data generation)",
+            "데이터 베이스 (Database)"
+          ],
+          "a": 0,
+          "eE": "Post-processing (후처리) converts universal Cutter Location (CL) data into machine-specific NC G-code that the physical CNC controller can read and execute.",
+          "eK": "후처리는 범용 커터 위치(CL) 데이터를 실제 CNC 제어기가 읽고 실행할 수 있는 기계별 NC G-코드로 변환합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Post-processing is the final translator before the machine cuts."
+        },
+        {
+          "qE": "Which statement regarding CNC machine tools is incorrect?",
+          "qK": "CNC 공작기계에 관한 설명으로 틀린 것은?",
+          "o": [
+            "CNC controller is a special-purpose computer for machine control.",
+            "1st-generation NC machines lacked memory to store NC programs.",
+            "The Machine Control Unit (MCU) consists of the Data Processing Unit (DPU) and Control Loop Unit (CLU).",
+            "The Data Processing Unit (DPU) of a CNC machine controls axis position, speed, etc."
+          ],
+          "a": 3,
+          "eE": "The DPU calculates the math and decodes the program. It is the CLU (Control Loop Unit) that generates the actual control signals to drive the axis position and speed.",
+          "eK": "DPU는 수학을 계산하고 프로그램을 해독합니다. 축 위치와 속도를 구동하기 위한 실제 제어 신호를 생성하는 것은 CLU(제어 루프 장치)입니다.",
+          "mT": "🛠️ Maia's Memory Tool: DPU = Data/Accountant (does the math). CLU = Control/Driver (moves the motors)."
+        },
+        {
+          "qE": "In the following machining center program, what does G98 mean in the canned cycle block G81 G90 G98 X50. Y50. Z100. R5. ;?",
+          "qK": "다음 머시닝센터 프로그램에서 고정 사이클 블록의 G98이 의미하는 것은? G81 G90 G98 X50. Y50. Z100. R5. ;",
+          "o": [
+            "R 원점 복귀 (R-point return)",
+            "초기점 복귀 (Initial point return)",
+            "절대지령 (Absolute command)",
+            "증분지령 (Incremental command)"
+          ],
+          "a": 1,
+          "eE": "G98 commands the tool to retract all the way back to the initial safety start point after finishing a hole, ensuring safe clearance over fixtures. G99 would be R-point return.",
+          "eK": "G98은 구멍 가공을 마친 후 초기 안전 시작점까지 완전히 후퇴하도록 지시하여 고정구 위로 안전한 여유 공간을 확보합니다. G99는 R점 복귀입니다.",
+          "mT": "🛠️ Maia's Memory Tool: G98 pulls ALL the way up to the initial safe height. G99 just bumps up to the R-plane."
+        }
+      ],
+      "Maia's Picks": [
+        {
+          "qE": "According to the professor's review, what is the fundamental difference in the primary machining application between a lathe and a milling machine? (MAIA'S PICK)",
+          "qK": "교수님의 복습 강의에 따르면, 선반과 밀링 머신의 주요 가공 용도의 근본적인 차이는 무엇인가? (MAIA'S PICK)",
+          "o": [
+            "Lathes process flat surfaces, while milling machines handle cylindrical components.",
+            "Lathes handle cylindrical processing, while milling machines specifically process flat surfaces.",
+            "Lathes are used for rapid traverse, while milling machines are used for contouring.",
+            "Lathes use open-loop systems, while milling machines use closed-loop systems."
+          ],
+          "a": 1,
+          "eE": "In the Week 8 transcript, the professor explicitly states: 'A lathe is specifically designed for machining cylindrical components... Milling machining specifically involves a tool processing a flat surface.'",
+          "eK": "8주차 강의록에서 교수님은 '선반은 원통형 부품 가공을 위해 특별히 설계되었으며... 밀링 가공은 구체적으로 공구가 평면을 가공하는 것을 포함합니다'라고 명시했습니다.",
+          "mT": "🛠️ Maia's Memory Tool: Lathes make Logs (cylinders). Mills make Meadows (flat surfaces)."
+        },
+        {
+          "qE": "What does the 'C' in CNC specifically signify, distinguishing it from early general-purpose NC machines? (MAIA'S PICK)",
+          "qK": "초기 범용 NC 기계와 구별되는 CNC의 'C'는 구체적으로 무엇을 의미하는가? (MAIA'S PICK)",
+          "o": [
+            "Centralized",
+            "Contouring",
+            "Computer-aided",
+            "Cylindrical"
+          ],
+          "a": 2,
+          "eE": "The professor noted, 'NC refers to numerical control... If you add a C in front, that C signifies computer-aided numerical control.' It means a computer is embedded directly into the machine.",
+          "eK": "교수님은 'NC는 수치 제어를 의미합니다... 앞에 C를 추가하면 그 C는 컴퓨터 지원 수치 제어를 의미합니다'라고 언급했습니다. 이는 컴퓨터가 기계에 직접 내장되어 있음을 의미합니다.",
+          "mT": "🛠️ Maia's Memory Tool: CNC = Computer inside. DNC = Director of many machines."
+        },
+        {
+          "qE": "Why does the professor emphasize the use of the Sequence Number (Address N) in a CNC program? (MAIA'S PICK)",
+          "qK": "교수님이 CNC 프로그램에서 전개번호(어드레스 N)의 사용을 강조하는 이유는 무엇인가? (MAIA'S PICK)",
+          "o": [
+            "It dictates the spindle rotation speed.",
+            "It distinguishes completely different part programs from one another.",
+            "It allows the programmer to easily find a specific line to make corrections in programs with thousands of lines.",
+            "It cancels active canned cycles."
+          ],
+          "a": 2,
+          "eE": "The professor gave a specific example: 'If an NC program code has 20,000 lines, you need to say which line it is to go to that position and make corrections... if you say it's at N100, it's easy to find.'",
+          "eK": "교수님은 구체적인 예를 들었습니다. 'NC 프로그램 코드가 20,000줄인 경우 해당 위치로 이동하여 수정하려면 몇 번째 줄인지 알려주어야 합니다... N100이라고 하면 찾기 쉽습니다.'",
+          "mT": "🛠️ Maia's Memory Tool: N = Navigate. It helps you Navigate to the exact line of code to fix it. (Address O = Overall program name)."
+        },
+        {
+          "qE": "Which coordinate system is described as constantly changing based on the viewpoint/current set position of the tool? (MAIA'S PICK)",
+          "qK": "공구의 현재 설정 위치나 관점에 따라 끊임없이 변하는 것으로 설명되는 좌표계는 무엇인가? (MAIA'S PICK)",
+          "o": [
+            "Absolute coordinate system (G90)",
+            "Machine coordinate system (MCS)",
+            "Relative / Incremental coordinate system (G91)",
+            "Workpiece coordinate system (WCS)"
+          ],
+          "a": 2,
+          "eE": "The professor stated, 'the relative coordinate system will constantly change, right? It will differ based on my viewpoint. So, it's a coordinate system based on my set position.' This defines the Incremental (G91) method, which measures from where the tool currently is.",
+          "eK": "교수님은 '상대 좌표계는 끊임없이 변하겠죠? 내 관점에 따라 다를 것입니다. 따라서 현재 설정된 위치를 기반으로 하는 좌표계입니다.'라고 말씀하셨습니다. 이는 공구의 현재 위치에서 측정하는 증분(G91) 방식을 정의합니다.",
+          "mT": "🛠️ Maia's Memory Tool: Incremental (G91) acts like an Inchworm, stepping forward from wherever its foot currently is."
+        },
+        {
+          "qE": "According to the professor, what is the most crucial aspect for a student to understand, rather than just clicking through advanced CAM software? (MAIA'S PICK)",
+          "qK": "교수님에 따르면, 고급 CAM 소프트웨어를 단순히 클릭하는 것보다 학생이 이해해야 할 가장 중요한 측면은 무엇인가? (MAIA'S PICK)",
+          "o": [
+            "How to automatically generate 3D CAD models.",
+            "Understanding the position detection hardware inside the machine.",
+            "Gaining a foundational understanding of the basic principles of G-codes and M-codes by manually programming them.",
+            "Memorizing every single vast number of G-code types in existence."
+          ],
+          "a": 2,
+          "eE": "The professor explicitly said: 'All those advanced CAM functionalities where you click a few times... are less important than the foundational understanding. Therefore, the crucial aspect is gaining an understanding of the basic principles of G-codes and M-codes by manually programming them with your own hands.'",
+          "eK": "교수님은 명확히 말씀하셨습니다. '몇 번 클릭하는 고급 CAM 기능은... 기초적인 이해보다 덜 중요합니다. 따라서 중요한 것은 직접 손으로 수동 프로그래밍하여 G코드와 M코드의 기본 원리를 이해하는 것입니다.'",
+          "mT": "🛠️ Maia's Memory Tool: Code before Clicks. You must know the alphabet (G and M codes) before you let the computer write the essay (CAM)."
         }
       ]
     }
