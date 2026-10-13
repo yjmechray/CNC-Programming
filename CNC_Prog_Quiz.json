@@ -377,7 +377,7 @@
             "개방회로방식 (Open loop system)",
             "반개방회로방식 (Semi-open loop system)",
             "반폐쇄회로방식 (Semi-closed loop system)",
-            "하이브리 서보방식 (Hybrid servo system)"
+            "하이브리드 서보방식 (Hybrid servo system)"
           ],
           "a": 3,
           "eE": "The Hybrid servo system is a blend of the semi-closed and closed-loop systems. It is primarily utilized for heavy or large-scale machine tools where increasing the physical stiffness (rigidity) is difficult, yet high precision is demanded.",
@@ -983,6 +983,62 @@
           "eE": "The professor explicitly discussed the DDA (Digital Differential Analyzer) method as a way to generate paths for continuous interpolation by using binary conversions and sequential addition to map out tiny steps.",
           "eK": "교수님은 이진 변환과 순차적 덧셈을 사용하여 미세한 단계를 매핑함으로써 연속 보간을 위한 경로를 생성하는 방법으로 DDA(디지털 미분 해석기) 방법을 명시적으로 논의했습니다.",
           "mT": "🛠️ Maia's Memory Tool: DDA = Digital Data Addition. It adds binary numbers to build a stair-step curve."
+        },
+        {
+          "qE": "When applying tool radius compensation, what is the fundamental difference between G41 and G42?",
+          "qK": "공구경 보정을 적용할 때 G41과 G42의 근본적인 차이는 무엇인가?",
+          "o": [
+            "G41 is for left compensation, G42 is for right compensation.",
+            "G41 is for length, G42 is for radius.",
+            "G41 turns coolant on, G42 turns it off.",
+            "G41 is absolute, G42 is incremental."
+          ],
+          "a": 0,
+          "eE": "G41 compensates the tool to the left of the programmed path, while G42 compensates to the right. G40 is used to cancel both.",
+          "eK": "G41은 프로그래밍된 경로의 왼쪽에 공구를 보정하고 G42는 오른쪽에 보정합니다. G40은 두 가지 모두를 취소하는 데 사용됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: G41 = Left (L has 1 vertical line). G42 = Right."
+        },
+        {
+          "qE": "Which preparatory command is standardly used to establish the first Workpiece Coordinate System (WCS) on a CNC machine?",
+          "qK": "CNC 기계에서 첫 번째 공작물 좌표계(WCS)를 설정하는 데 표준으로 사용되는 준비 지령은 무엇인가?",
+          "o": [
+            "G28",
+            "G54",
+            "G90",
+            "G92"
+          ],
+          "a": 1,
+          "eE": "G54 is the standard code used to call the first established Workpiece Coordinate System (WCS) offset, telling the machine where the part's specific origin (X0, Y0, Z0) is located on the table.",
+          "eK": "G54는 설정된 첫 번째 공작물 좌표계(WCS) 오프셋을 호출하는 데 사용되는 표준 코드로, 테이블에서 부품의 특정 원점(X0, Y0, Z0)이 위치한 곳을 기계에 알려줍니다.",
+          "mT": "🛠️ Maia's Memory Tool: G54 is the standard 'home base' for your specific piece of metal."
+        },
+        {
+          "qE": "In standard CNC programming sequence, which command is used to safely return the tool to the machine's reference origin point (MCS) after machining?",
+          "qK": "표준 CNC 프로그래밍 순서에서 가공 후 공구를 기계의 기준 원점(MCS)으로 안전하게 복귀시키는 데 사용되는 지령은 무엇인가?",
+          "o": [
+            "G00",
+            "G17",
+            "G28",
+            "G80"
+          ],
+          "a": 2,
+          "eE": "G28 commands the machine to automatically return to its zero reference point (Machine Coordinate System origin). It is heavily used at the start and end of programs for safety.",
+          "eK": "G28은 기계가 기준점(기계 좌표계 원점)으로 자동 복귀하도록 지시합니다. 안전을 위해 프로그램의 시작과 끝에서 많이 사용됩니다.",
+          "mT": "🛠️ Maia's Memory Tool: G28 = Go to the state (28) gate! Return to machine home."
+        },
+        {
+          "qE": "According to the professor's explanation of a complete CNC program structure, what is the logical sequence of operations?",
+          "qK": "전체 CNC 프로그램 구조에 대한 교수님의 설명에 따르면, 논리적인 작업 순서는 무엇인가?",
+          "o": [
+            "Machining → Setup → Return to Origin",
+            "Setup & Non-cutting travel → Machining → Return to Origin & Stop",
+            "Return to Origin → Machining → Setup",
+            "Machining → Stop → Setup"
+          ],
+          "a": 1,
+          "eE": "A standard program sequence flows exactly in this order: Initial setup (tool change/spindle on) -> Rapid non-cutting travel to the start point -> The actual machining section -> Returning to origin -> Halting spindle/coolant -> Program end (M30).",
+          "eK": "표준 프로그램 순서는 정확히 이 순서대로 진행됩니다: 초기 설정(공구 교환/주축 온) -> 시작점까지 빠른 비절삭 이동 -> 실제 가공 구간 -> 원점 복귀 -> 주축/절삭유 정지 -> 프로그램 종료(M30).",
+          "mT": "🛠️ Maia's Memory Tool: Setup -> Travel -> Cut -> Go Home -> Turn Off."
         }
       ]
     }
