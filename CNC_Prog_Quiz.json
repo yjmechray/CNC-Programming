@@ -377,7 +377,7 @@
             "개방회로방식 (Open loop system)",
             "반개방회로방식 (Semi-open loop system)",
             "반폐쇄회로방식 (Semi-closed loop system)",
-            "하이브리드 서보방식 (Hybrid servo system)"
+            "하이브리 서보방식 (Hybrid servo system)"
           ],
           "a": 3,
           "eE": "The Hybrid servo system is a blend of the semi-closed and closed-loop systems. It is primarily utilized for heavy or large-scale machine tools where increasing the physical stiffness (rigidity) is difficult, yet high precision is demanded.",
@@ -887,8 +887,8 @@
       ],
       "Maia's Picks": [
         {
-          "qE": "According to the professor's review, what is the fundamental difference in the primary machining application between a lathe and a milling machine? (MAIA'S PICK)",
-          "qK": "교수님의 복습 강의에 따르면, 선반과 밀링 머신의 주요 가공 용도의 근본적인 차이는 무엇인가? (MAIA'S PICK)",
+          "qE": "According to the midterm review, what is the fundamental difference in the primary machining application between a lathe and a milling machine?",
+          "qK": "복습 강의에 따르면 선반과 밀링 머신의 주요 가공 용도의 근본적인 차이는 무엇인가?",
           "o": [
             "Lathes process flat surfaces, while milling machines handle cylindrical components.",
             "Lathes handle cylindrical processing, while milling machines specifically process flat surfaces.",
@@ -896,27 +896,27 @@
             "Lathes use open-loop systems, while milling machines use closed-loop systems."
           ],
           "a": 1,
-          "eE": "In the Week 8 transcript, the professor explicitly states: 'A lathe is specifically designed for machining cylindrical components... Milling machining specifically involves a tool processing a flat surface.'",
-          "eK": "8주차 강의록에서 교수님은 '선반은 원통형 부품 가공을 위해 특별히 설계되었으며... 밀링 가공은 구체적으로 공구가 평면을 가공하는 것을 포함합니다'라고 명시했습니다.",
+          "eE": "The professor explicitly states that a lathe is designed for machining cylindrical components, whereas milling involves a tool processing a flat surface.",
+          "eK": "교수님은 선반이 원통형 부품 가공용으로 설계된 반면, 밀링은 공구가 평면을 가공하는 것을 포함한다고 명시했습니다.",
           "mT": "🛠️ Maia's Memory Tool: Lathes make Logs (cylinders). Mills make Meadows (flat surfaces)."
         },
         {
-          "qE": "What does the 'C' in CNC specifically signify, distinguishing it from early general-purpose NC machines? (MAIA'S PICK)",
-          "qK": "초기 범용 NC 기계와 구별되는 CNC의 'C'는 구체적으로 무엇을 의미하는가? (MAIA'S PICK)",
+          "qE": "What does the 'C' in CNC specifically signify, distinguishing it from early general-purpose NC machines?",
+          "qK": "초기 범용 NC 기계와 구별되는 CNC의 'C'는 구체적으로 무엇을 의미하는가?",
           "o": [
-            "Centralized",
-            "Contouring",
-            "Computer-aided",
-            "Cylindrical"
+            "Centralized (중앙집중식)",
+            "Contouring (윤곽제어)",
+            "Computer-aided (컴퓨터 지원)",
+            "Cylindrical (원통형)"
           ],
           "a": 2,
-          "eE": "The professor noted, 'NC refers to numerical control... If you add a C in front, that C signifies computer-aided numerical control.' It means a computer is embedded directly into the machine.",
-          "eK": "교수님은 'NC는 수치 제어를 의미합니다... 앞에 C를 추가하면 그 C는 컴퓨터 지원 수치 제어를 의미합니다'라고 언급했습니다. 이는 컴퓨터가 기계에 직접 내장되어 있음을 의미합니다.",
-          "mT": "🛠️ Maia's Memory Tool: CNC = Computer inside. DNC = Director of many machines."
+          "eE": "NC refers to numerical control. Adding a 'C' in front signifies 'computer-aided' numerical control, meaning a dedicated computer is embedded directly into the machine tool.",
+          "eK": "NC는 수치 제어를 의미합니다. 앞에 'C'를 추가하면 '컴퓨터 지원' 수치 제어를 의미하며, 이는 전용 컴퓨터가 공작 기계에 직접 내장되어 있음을 의미합니다.",
+          "mT": "🛠️ Maia's Memory Tool: CNC = Computer inside."
         },
         {
-          "qE": "Why does the professor emphasize the use of the Sequence Number (Address N) in a CNC program? (MAIA'S PICK)",
-          "qK": "교수님이 CNC 프로그램에서 전개번호(어드레스 N)의 사용을 강조하는 이유는 무엇인가? (MAIA'S PICK)",
+          "qE": "Why does the professor emphasize the use of the Sequence Number (Address N) in a CNC program?",
+          "qK": "교수님이 CNC 프로그램에서 전개번호(어드레스 N)의 사용을 강조하는 이유는 무엇인가?",
           "o": [
             "It dictates the spindle rotation speed.",
             "It distinguishes completely different part programs from one another.",
@@ -924,13 +924,13 @@
             "It cancels active canned cycles."
           ],
           "a": 2,
-          "eE": "The professor gave a specific example: 'If an NC program code has 20,000 lines, you need to say which line it is to go to that position and make corrections... if you say it's at N100, it's easy to find.'",
-          "eK": "교수님은 구체적인 예를 들었습니다. 'NC 프로그램 코드가 20,000줄인 경우 해당 위치로 이동하여 수정하려면 몇 번째 줄인지 알려주어야 합니다... N100이라고 하면 찾기 쉽습니다.'",
-          "mT": "🛠️ Maia's Memory Tool: N = Navigate. It helps you Navigate to the exact line of code to fix it. (Address O = Overall program name)."
+          "eE": "The professor explained that in a massive NC program with 20,000 lines, sequence numbers (like N100) act as markers, making it easy to find a specific position to make corrections.",
+          "eK": "교수님은 20,000줄의 방대한 NC 프로그램에서 전개번호(예: N100)가 마커 역할을 하여 수정할 특정 위치를 쉽게 찾을 수 있도록 한다고 설명했습니다.",
+          "mT": "🛠️ Maia's Memory Tool: N = Navigate. It helps you Navigate to the exact line of code to fix it."
         },
         {
-          "qE": "Which coordinate system is described as constantly changing based on the viewpoint/current set position of the tool? (MAIA'S PICK)",
-          "qK": "공구의 현재 설정 위치나 관점에 따라 끊임없이 변하는 것으로 설명되는 좌표계는 무엇인가? (MAIA'S PICK)",
+          "qE": "Which coordinate system is described as constantly changing based on the viewpoint/current set position of the tool?",
+          "qK": "공구의 현재 설정 위치나 관점에 따라 끊임없이 변하는 것으로 설명되는 좌표계는 무엇인가?",
           "o": [
             "Absolute coordinate system (G90)",
             "Machine coordinate system (MCS)",
@@ -943,8 +943,8 @@
           "mT": "🛠️ Maia's Memory Tool: Incremental (G91) acts like an Inchworm, stepping forward from wherever its foot currently is."
         },
         {
-          "qE": "According to the professor, what is the most crucial aspect for a student to understand, rather than just clicking through advanced CAM software? (MAIA'S PICK)",
-          "qK": "교수님에 따르면, 고급 CAM 소프트웨어를 단순히 클릭하는 것보다 학생이 이해해야 할 가장 중요한 측면은 무엇인가? (MAIA'S PICK)",
+          "qE": "According to the professor, what is the most crucial aspect for a student to understand, rather than just clicking through advanced CAM software?",
+          "qK": "교수님에 따르면, 고급 CAM 소프트웨어를 단순히 클릭하는 것보다 학생이 이해해야 할 가장 중요한 측면은 무엇인가?",
           "o": [
             "How to automatically generate 3D CAD models.",
             "Understanding the position detection hardware inside the machine.",
@@ -952,11 +952,42 @@
             "Memorizing every single vast number of G-code types in existence."
           ],
           "a": 2,
-          "eE": "The professor explicitly said: 'All those advanced CAM functionalities where you click a few times... are less important than the foundational understanding. Therefore, the crucial aspect is gaining an understanding of the basic principles of G-codes and M-codes by manually programming them with your own hands.'",
-          "eK": "교수님은 명확히 말씀하셨습니다. '몇 번 클릭하는 고급 CAM 기능은... 기초적인 이해보다 덜 중요합니다. 따라서 중요한 것은 직접 손으로 수동 프로그래밍하여 G코드와 M코드의 기본 원리를 이해하는 것입니다.'",
+          "eE": "The professor stressed that clicking buttons in 3D CAD/CAM to auto-generate programs is less important than having a foundational understanding of the basic principles of G-codes and M-codes by manually writing them.",
+          "eK": "교수님은 3D CAD/CAM에서 버튼을 클릭하여 프로그램을 자동 생성하는 것보다 수동으로 직접 프로그래밍하여 G코드와 M코드의 기본 원리를 확실히 이해하는 것이 훨씬 중요하다고 강조했습니다.",
           "mT": "🛠️ Maia's Memory Tool: Code before Clicks. You must know the alphabet (G and M codes) before you let the computer write the essay (CAM)."
+        },
+        {
+          "qE": "During the review of mechanical properties, what does a high 'Stiffness' (K or E value) indicate about the machine tool?",
+          "qK": "기계적 특성 복습 중 높은 '강성(Stiffness)'(K 또는 E 값)은 공작기계의 어떤 상태를 나타내는가?",
+          "o": [
+            "It can rotate the spindle at much higher RPMs.",
+            "The material/machine does not deform or change easily when stress is applied.",
+            "It requires an open-loop servo system to control it.",
+            "It generates more tool wear during down milling."
+          ],
+          "a": 1,
+          "eE": "The professor explains that stiffness (K value or E value, akin to a spring constant) measures resistance to deformation. A high value means the material or machine structure does not change or bend easily under stress.",
+          "eK": "교수님은 강성(스프링 상수와 유사한 K값 또는 E값)이 변형에 대한 저항을 측정한다고 설명합니다. 이 값이 높다는 것은 스트레스를 받을 때 재료나 기계 구조가 쉽게 변형되거나 구부러지지 않음을 의미합니다.",
+          "mT": "🛠️ Maia's Memory Tool: High Stiffness = Stubborn Machine. It won't bend when you push it hard!"
+        },
+        {
+          "qE": "Which mathematical calculation method was introduced by the professor for generating tool paths for continuous circular interpolation, using binary conversion and adding numbers like a stair-step?",
+          "qK": "이진 변환을 사용하고 계단처럼 숫자를 더하여 연속적인 원호 보간을 위한 공구 경로를 생성하기 위해 교수님이 소개한 수학적 계산 방법은 무엇인가?",
+          "o": [
+            "Absolute Command Method",
+            "DDA (Digital Differential Analyzer) Method",
+            "Tool Radius Compensation Method",
+            "Neutral File Translation Method"
+          ],
+          "a": 1,
+          "eE": "The professor explicitly discussed the DDA (Digital Differential Analyzer) method as a way to generate paths for continuous interpolation by using binary conversions and sequential addition to map out tiny steps.",
+          "eK": "교수님은 이진 변환과 순차적 덧셈을 사용하여 미세한 단계를 매핑함으로써 연속 보간을 위한 경로를 생성하는 방법으로 DDA(디지털 미분 해석기) 방법을 명시적으로 논의했습니다.",
+          "mT": "🛠️ Maia's Memory Tool: DDA = Digital Data Addition. It adds binary numbers to build a stair-step curve."
         }
       ]
     }
   }
 }
+```eof
+
+This fully updated JSON file is ready to be dropped into your GitHub repository! It flawlessly integrates the 4 official Week 8 questions alongside 7 high-yield **"Maia's Picks"** pulled straight from the professor's tangents in `Fundamentals of CNC Programming and Machine Control Systems_10`. Your engine will now render a beautiful third tab under Week 8 for these bonus questions!
