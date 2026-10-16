@@ -487,6 +487,20 @@
 ]
 },
 {
+"code": "G92 X0. Y0. Z0. ;",
+"explanation": "Legacy Work Coordinate Setting (mentioned in Week 6 Lecture 1): Establishes the current tool tip position as the program origin (X0, Y0, Z0) without using G54 offsets. (공작물 좌표계 설정 지령: 현재 공구 위치를 프로그램 원점(0, 0, 0)으로 설정합니다.)",
+"breakdown": [
+{
+"part": "G92",
+"desc": "Coordinate system setting (공작물 좌표계 설정)"
+},
+{
+"part": "X0. Y0. Z0.",
+"desc": "Assigned origin coordinates (설정할 원점 좌표값)"
+}
+]
+},
+{
 "code": "T02 M06 ;",
 "explanation": "Calls Tool #2 and executes an automatic tool change via the ATC. (2번 공구를 호출하고 ATC로 자동 공구 교환을 수행합니다.)",
 "breakdown": [
@@ -1397,6 +1411,372 @@
 {
 "part": "Q0.2",
 "desc": "Shift amount 0.2mm away from wall at bottom (바닥에서 공구 이격량 0.2mm)"
+}
+]
+}
+],
+"week11": [
+{
+"type": "header",
+"text": "Post-Midterm Prep: Subprograms & Step-Down Contour Looping (M98 / M99)"
+},
+{
+"code": "M98 P2000 L4 ;",
+"explanation": "Main Program Call: Calls Subprogram O2000 and repeats it 4 times (L4) to machine a 12mm deep contour in four 3mm Z-step-downs. (메인 프로그램 호출: 보조 프로그램 O2000을 호출하여 4회 반복(L4)함으로써 3mm씩 4번, 총 12mm 깊이의 윤곽을 가공합니다.)",
+"breakdown": [
+{
+"part": "M98",
+"desc": "Subprogram call command (보조 프로그램 호출)"
+},
+{
+"part": "P2000",
+"desc": "Calls subprogram O2000 (보조 프로그램 O2000 지정)"
+},
+{
+"part": "L4",
+"desc": "Repeat cycle 4 times (반복 횟수 4회)"
+}
+]
+},
+{
+"code": "O2000 ;",
+"explanation": "Header of the target subprogram O2000 stored in CNC memory. (호출되는 보조 프로그램 O2000의 시작 번호입니다.)",
+"breakdown": [
+{
+"part": "O2000",
+"desc": "Subprogram ID number (보조 프로그램 번호)"
+}
+]
+},
+{
+"code": "G91 G01 Z-3. F80 ;",
+"explanation": "Incremental Z step-down inside the subprogram: Plunges an additional -3mm on each of the 4 repetitions (reaching Z-12mm total). (보조 프로그램 내부의 증분 Z축 절입: 반복할 때마다 현재 높이에서 3mm씩 추가로 하강합니다.)",
+"breakdown": [
+{
+"part": "G91",
+"desc": "Incremental mode for cumulative step-down (누적 절입을 위한 증분 지령)"
+},
+{
+"part": "Z-3.",
+"desc": "Step-down -3mm per pass (1회당 -3mm 추가 절입)"
+}
+]
+},
+{
+"code": "G90 G41 G01 X20. Y20. D01 F200 ;",
+"explanation": "Switches back to Absolute mode (G90) to cut the exact 2D profile geometry with left cutter compensation (G41). (절대 지령(G90)으로 전환하여 좌측 공구경 보정(G41)을 적용한 외곽 윤곽을 가공합니다.)",
+"breakdown": [
+{
+"part": "G90",
+"desc": "Absolute mode for profile coordinates (윤곽 좌표용 절대 지령)"
+},
+{
+"part": "G41 D01",
+"desc": "Left cutter radius compensation (좌측 공구경 보정)"
+}
+]
+},
+{
+"code": "M99 ;",
+"explanation": "Ends subprogram O2000 and returns control to the main program (or loops back if L count remains). (보조 프로그램 O2000을 종료하고 메인 프로그램으로 복귀합니다.)",
+"breakdown": [
+{
+"part": "M99",
+"desc": "Subprogram end and return (보조 프로그램 종료 및 복귀)"
+}
+]
+}
+],
+"week12": [
+{
+"type": "header",
+"text": "Post-Midterm Prep: Face Milling & Rectangular Pocket Machining"
+},
+{
+"code": "G54 G90 G00 X-30. Y25. S1200 M03 ;",
+"explanation": "Face Milling Setup (referenced in Week 6 Lecture 2): Positions a Ø50mm face mill safely outside the left edge (X-30.) of the workpiece. (평면 밀링(Face Milling) 준비: Ø50mm 정면 밀링 커터를 소재 좌측 외부 안전 위치(X-30.)에 위치시킵니다.)",
+"breakdown": [
+{
+"part": "G54 G90",
+"desc": "WCS #1, Absolute coordinates (공작물 좌표계 1, 절대 좌표)"
+},
+{
+"part": "X-30. Y25.",
+"desc": "External start point for face mill pass (정면 밀링 진입 시작점)"
+}
+]
+},
+{
+"code": "G01 Z0. F100 ;",
+"explanation": "Brings the face mill to the Z0 datum surface depth. (정면 밀링 커터를 가공 기준면 높이인 Z0.까지 하강시킵니다.)",
+"breakdown": [
+{
+"part": "Z0.",
+"desc": "Finished top surface level (상부 기준면 Z0)"
+}
+]
+},
+{
+"code": "G01 X130. F300 ;",
+"explanation": "Sweeps horizontally across the entire 100mm top surface to X130. to machine a flat datum face. (100mm 소재 상면을 가로질러 X130.까지 수평 이송하며 평면을 가공합니다.)",
+"breakdown": [
+{
+"part": "X130.",
+"desc": "Clears the right edge of the 100mm part (우측 끝단 통과 위치)"
+},
+{
+"part": "F300",
+"desc": "Surface facing feed rate (평면 가공 이송 속도)"
+}
+]
+},
+{
+"type": "header",
+"text": "Internal Pocket Wall Finishing with G41"
+},
+{
+"code": "G00 X50. Y40. ;",
+"explanation": "Positions the endmill at the center (50, 40) of an internal pocket before plunging. (내부 포켓 가공을 위해 포켓 중심(50, 40)으로 급속 이동합니다.)",
+"breakdown": [
+{
+"part": "X50. Y40.",
+"desc": "Pocket center coordinates (포켓 중심 좌표)"
+}
+]
+},
+{
+"code": "G01 Z-5. F60 ;",
+"explanation": "Plunges slowly into the pocket floor at Z-5mm (checking for pocket floor/wall gouging as tested in Week 3 Quiz L2 Q2). (Z-5mm 포켓 바닥까지 천천히 절입 하강합니다.)",
+"breakdown": [
+{
+"part": "Z-5. F60",
+"desc": "Controlled Z plunge into pocket (포켓 내부 Z축 절입)"
+}
+]
+},
+{
+"code": "G41 G01 X80. D02 F180 ;",
+"explanation": "Applies left cutter radius compensation (G41) to climb-mill the inside pocket wall counterclockwise. (내부 포켓 벽면을 반시계 방향 하향 절삭하기 위해 좌측 공구경 보정(G41)을 적용합니다.)",
+"breakdown": [
+{
+"part": "G41 D02",
+"desc": "Left radius offset for internal CCW pocket (내측 포켓 좌측 보정)"
+}
+]
+}
+],
+"week13": [
+{
+"type": "header",
+"text": "Post-Midterm Prep: 3-Axis Simultaneous Helical Interpolation (헬리컬 보간)"
+},
+{
+"code": "G17 G90 G00 X50. Y50. ;",
+"explanation": "Moves to the center of the bore (50, 50) on the XY plane (G17). Recall Week 5 Quiz L1 Q4: Helical interpolation requires simultaneous 3-axis control! (XY 평면(G17) 상의 보어 중심(50, 50)으로 이동합니다. 5주차 퀴즈 기출: 헬리컬 보간은 3축 동시 제어가 필수입니다!)",
+"breakdown": [
+{
+"part": "G17",
+"desc": "XY plane for circular motion (원호 운동을 위한 XY 평면)"
+},
+{
+"part": "X50. Y50.",
+"desc": "Helix center coordinates (헬리컬 가공 중심 좌표)"
+}
+]
+},
+{
+"code": "G41 G01 X70. D01 F150 ;",
+"explanation": "Moves to the 20mm radius perimeter (X70.) with left cutter compensation enabled. (좌측 공구경 보정(G41)을 적용하여 반경 20mm 외곽 시작점(X70.)으로 진입합니다.)",
+"breakdown": [
+{
+"part": "G41 X70. D01",
+"desc": "Compensated approach to circle perimeter (원주 외곽 보정 진입)"
+}
+]
+},
+{
+"code": "G03 X70. Y50. I-20. J0. Z-2.0 F100 ;",
+"explanation": "3-Axis Helical Interpolation Block: Cuts a full 360° CCW circle in X and Y (I-20. J0.) while simultaneously ramping down to Z-2.0mm in a corkscrew path! (3축 헬리컬 보간 블록: X, Y축으로 360도 반시계 방향 원호(I-20. J0.)를 그리면서 동시에 Z축으로 -2.0mm 나선형 하강합니다!)",
+"breakdown": [
+{
+"part": "G03",
+"desc": "CCW circular interpolation (반시계방향 원호 보간)"
+},
+{
+"part": "X70. Y50.",
+"desc": "XY endpoint (same as start for 360° turn) (XY 평면 회전 종점)"
+},
+{
+"part": "I-20. J0.",
+"desc": "Center vector from (70, 50) to (50, 50) (중심점 벡터)"
+},
+{
+"part": "Z-2.0",
+"desc": "Simultaneous 3rd-axis linear pitch drop (동시 3축 Z 하강 깊이)"
+}
+]
+},
+{
+"code": "G03 X70. Y50. I-20. J0. F150 ;",
+"explanation": "Performs a flat 360° cleanup pass at the bottom depth (Z-2.0) without Z movement to flatten the floor. (Z축 이동 없이 바닥면(Z-2.0)에서 360도 평면 원호 가공을 수행하여 바닥을 평탄하게 다듬습니다.)",
+"breakdown": [
+{
+"part": "I-20. J0.",
+"desc": "Flat 360° bottom cleanup pass (바닥면 360도 다듬질 패스)"
+}
+]
+},
+{
+"code": "G40 G01 X50. Y50. ;",
+"explanation": "Returns linearly to the center of the hole while canceling cutter radius compensation (G40). (구멍 중심(50, 50)으로 직선 복귀하며 공구경 보정(G40)을 안전하게 해제합니다.)",
+"breakdown": [
+{
+"part": "G40 X50. Y50.",
+"desc": "Cancel compensation at hole center (중심 복귀 및 보정 취소)"
+}
+]
+}
+],
+"week14": [
+{
+"type": "header",
+"text": "Post-Midterm Prep: Multi-Tool Machining Center Integration (T01 -> T02 -> T03)"
+},
+{
+"code": "T01 M06 ;",
+"explanation": "Operation 1: Loads Tool #1 (Endmill for outer contour) via the Automatic Tool Changer (ATC). (공정 1: 자동 공구 교환 장치(ATC)를 통해 1번 공구(외곽 가공용 엔드밀)를 장착합니다.)",
+"breakdown": [
+{
+"part": "T01 M06",
+"desc": "Tool #1 automatic change (1번 공구 자동 교환)"
+}
+]
+},
+{
+"code": "G43 Z10. H01 M08 ;",
+"explanation": "Applies Tool #1 length offset H01! Crucial Rule: Tool number T01 must match Length Offset H01! (1번 공구의 길이 보정 번호 H01을 적용합니다. 핵심 규칙: 공구 번호 T01과 길이 보정 번호 H01을 일치시켜야 충돌을 방지합니다!)",
+"breakdown": [
+{
+"part": "G43 H01",
+"desc": "Matches Tool #1 with Length Offset H01 (T01과 H01 보정 번호 일치)"
+}
+]
+},
+{
+"code": "G91 G28 Z0. M05 ;",
+"explanation": "Safely retracts Tool #1 to machine Z-zero and stops the spindle before calling the next tool. (다음 공구 교환 전에 1번 공구를 Z축 기계 원점으로 복귀시키고 주축을 정지합니다.)",
+"breakdown": [
+{
+"part": "G91 G28 Z0.",
+"desc": "Mandatory Z home return before M06 (공구 교환 전 필수 Z원점 복귀)"
+}
+]
+},
+{
+"code": "T02 M06 ;",
+"explanation": "Operation 2: Swaps to Tool #2 (Drill) automatically via the ATC. (공정 2: ATC를 작동하여 2번 공구(드릴)로 자동 교환합니다.)",
+"breakdown": [
+{
+"part": "T02 M06",
+"desc": "Tool #2 automatic change (2번 공구 자동 교환)"
+}
+]
+},
+{
+"code": "G54 G90 G00 X30. Y20. S1200 M03 ;",
+"explanation": "Moves Tool #2 to the first hole coordinate (30, 20) and starts the spindle at 1200 RPM for drilling. (2번 드릴 공구를 첫 번째 구멍 위치(30, 20)로 이동시키고 1200 RPM으로 주축을 회전시킵니다.)",
+"breakdown": [
+{
+"part": "X30. Y20.",
+"desc": "Hole position in G54 WCS (G54 좌표계 내 구멍 위치)"
+}
+]
+},
+{
+"code": "G43 Z10. H02 M08 ;",
+"explanation": "Applies Tool #2's dedicated length compensation offset H02. (2번 공구에 맞는 전용 길이 보정 번호 H02를 적용합니다.)",
+"breakdown": [
+{
+"part": "G43 H02",
+"desc": "Matches Tool #2 with Length Offset H02 (T02와 H02 보정 번호 일치)"
+}
+]
+},
+{
+"code": "G98 G83 Z-30. R3. Q5. F100 ;",
+"explanation": "Executes deep-hole peck drilling with Tool #2 to Z-30mm in 5mm pecks. (2번 공구로 Z-30mm 깊이까지 5mm씩 심공 펙 드릴링을 수행합니다.)",
+"breakdown": [
+{
+"part": "G83 Q5.",
+"desc": "Peck drilling 5mm per step (5mm 절입 심공 드릴링)"
+}
+]
+},
+{
+"code": "G80 G49 G00 Z100. M09 ;",
+"explanation": "Cancels both the canned cycle (G80) and tool length offset (G49) before ending Operation 2. (2번 공구 공정을 마치고 고정 사이클(G80)과 길이 보정(G49)을 모두 해제합니다.)",
+"breakdown": [
+{
+"part": "G80 G49",
+"desc": "Cancels cycle and length offset together (사이클 및 길이보정 동시 취소)"
+}
+]
+}
+],
+"week15": [
+{
+"type": "header",
+"text": "Post-Midterm Prep: 3D CAD/CAM Surfacing & Post-Processed NC Output"
+},
+{
+"code": "( PART: 3D_CURVED_MOLD.STEP -> CL_DATA -> FANUC_POST ) ;",
+"explanation": "Operator comment in parentheses: Documents the CAD/CAM pipeline (Neutral STEP file -> CL Data -> Post-Processed NC code). Text inside ( ) is ignored by the motion controller. (괄호 안의 주석문: 중립 파일(STEP)에서 CL 데이터 생성 후 포스트 프로세싱된 파일임을 표시합니다.)",
+"breakdown": [
+{
+"part": "( ... )",
+"desc": "Control-out comment ignored by MCU (제어기가 무시하는 주석문)"
+},
+{
+"part": ".STEP -> CL_DATA",
+"desc": "Neutral CAD file to Cutter Location path (중립파일 및 공구위치 데이터)"
+}
+]
+},
+{
+"code": "N0110 G01 X45.1284 Y32.0041 Z-4.8512 F600 ;",
+"explanation": "3D Contouring Micro-Segment (Week 5 Quiz L1 Q3 Concept): Because G-code does not contain raw CAD spline equations, the CAM post-processor approximates 3D freeform surfaces into thousands of tiny simultaneous X-Y-Z linear G01 moves! (3D 곡면 미세 직선 보간: 파트 프로그램에는 CAD 곡선 수식이 들어있지 않으므로, CAM이 3D 곡면을 수천 개의 미세한 동시 3축 G01 직선 좌표로 분할하여 출력합니다!)",
+"breakdown": [
+{
+"part": "G01 X... Y... Z...",
+"desc": "Simultaneous 3-axis contouring cut (동시 3축 윤곽 절삭)"
+},
+{
+"part": "X45.1284 Z-4.8512",
+"desc": "4-decimal CL data post-processed point (소수점 4자리 정밀 좌표)"
+}
+]
+},
+{
+"code": "N0120 X45.2519 Y32.1108 Z-4.8695 ;",
+"explanation": "Next consecutive 3D micro-step: Modal G01 and F600 are omitted by the post-processor to reduce file size in 20,000-line CAM programs. (연속되는 3D 미세 블록: 20,000줄 이상의 대용량 CAM 프로그램 용량을 줄이기 위해 모달 지령인 G01과 F600은 생략됩니다.)",
+"breakdown": [
+{
+"part": "N0120",
+"desc": "Sequence number for block search (블록 탐색용 전개번호)"
+},
+{
+"part": "X45.2519 Y32.1108 Z-4.8695",
+"desc": "Next 3D surface interpolation point (다음 3D 곡면 보간 좌표)"
+}
+]
+},
+{
+"code": "N0380 M02 ;",
+"explanation": "End of program generated by the NX CAM post-processor (as shown on Week 7 Slide 5). (7주차 5슬라이드 NX CAM 출력 예제와 동일하게 프로그램 종료(M02)를 수행합니다.)",
+"breakdown": [
+{
+"part": "M02",
+"desc": "Program end (프로그램 종료)"
 }
 ]
 }
